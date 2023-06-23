@@ -47,8 +47,8 @@ Route::get('/deny', function () {
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
-Route::get('/MovieOrder', [MovieOrderController::class, 'index'])->name('MovieOrder');
-Route::get('/Users', [UsersController::class, 'index'])->name('users');
-Route::get('/UsersRoles', [UsersRolesController::class, 'index'])->name('UsersRoles');
-Route::get('/MovieOrder/create', [MovieOrderController::class, 'create']);
-Route::get('/MovieOrder/store', [MovieOrderController::class, 'store']);
+// Route::get('/MovieOrder', [MovieOrderController::class, 'index'])->name('MovieOrder');
+// Route::get('/Users', [UsersController::class, 'index'])->name('users');
+// Route::get('/UsersRoles', [UsersRolesController::class, 'index'])->name('UsersRoles');
+// Route::get('/MovieOrder/create', [MovieOrderController::class, 'create']);
+// Route::get('/MovieOrder/store', [MovieOrderController::class, 'store']);
