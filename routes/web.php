@@ -9,6 +9,8 @@ use App\Http\Controllers\UsersRolesController;
 use App\Http\Controllers\MovieGenreController;
 //use Illuminate\Auth\Middleware\Authenticate;
 use App\Http\Controllers\MoviesController;
+use App\Http\Controllers\MovieScheduleController;
+use App\Http\Controllers\MoviesScheduleController;
 
 /*
 |--------------------------------------------------------------------------
@@ -75,3 +77,6 @@ Route::get('/movies/show/{id}', [MoviesController::class,'show'])->name('movies.
 Route::get('/movies/edit/{id}', [MoviesController::class,'edit'])->name('movies.edit');
 Route::put('/movies/update', [MoviesController::class,'update'])->name('movies.update');
 Route::delete('/movies/delete/{id}', [MoviesController::class,'destroy'])->name('movies.destroy');
+
+
+Route::get('/movies/schedule', [MoviesScheduleController::class, 'index'])->name('movie_schedule');
