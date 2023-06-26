@@ -9,7 +9,7 @@ use App\Http\Controllers\UsersRolesController;
 use App\Http\Controllers\MovieGenreController;
 //use Illuminate\Auth\Middleware\Authenticate;
 use App\Http\Controllers\MoviesController;
-use App\Http\Controllers\MoviesScheduleController;
+use App\Http\Controllers\MovieScheduleController;
 use App\Http\Controllers\SeatsController;
 use App\Http\Controllers\CinemasController;
 
@@ -80,7 +80,13 @@ Route::put('/movies/update', [MoviesController::class,'update'])->name('movies.u
 Route::delete('/movies/delete/{id}', [MoviesController::class,'destroy'])->name('movies.destroy');
 
 
-Route::get('/movies/schedule', [MoviesScheduleController::class, 'index'])->name('movie_schedule');
+Route::get('/movies/schedule', [MovieScheduleController::class, 'index'])->name('movie_schedule');
+Route::get('/movies/schedule/create', [MovieScheduleController::class, 'create'])->name('movie_schedule.create');
+Route::post('/movies/schedule/store', [MovieScheduleController::class, 'store'])->name('movie_schedule.store');
+Route::get('/movies/schedule/edit/{id}', [MovieScheduleController::class, 'edit'])->name('movie_schedule.edit');
+Route::put('/movies/schedule/update', [MovieScheduleController::class, 'update'])->name('movie_schedule.update');
+Route::delete('/movies/schedule/delete/{id}', [MovieScheduleController::class, 'destroy'])->name('movie_schedule.destroy');
+Route::get('/movies/schedule/show/{id}', [MovieScheduleController::class, 'show'])->name('movie_schedule.show');
 
 
 Route::get('/cinemas', [CinemasController::class, 'index'])->name('cinemas');
@@ -96,3 +102,5 @@ Route::post('/seats/store', [SeatsController::class, 'store'])->name('seats.stor
 Route::get('/seats/edit/{id}', [SeatsController::class, 'edit'])->name('seats.edit');
 Route::put('/seats/update', [SeatsController::class, 'update'])->name('seats.update');
 Route::delete('/seats/delete/{id}', [SeatsController::class, 'destroy'])->name('seats.destroy');
+
+

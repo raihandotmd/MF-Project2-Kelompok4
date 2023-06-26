@@ -5,7 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class MoviesSchedule extends Model
+class MovieSchedule extends Model
 {
     use HasFactory;
     protected $table = 'movie_schedule';

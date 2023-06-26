@@ -9,7 +9,7 @@
                     </div>
                     <div class="card-content">
                         <div class="card-body py-1">
-                            <a href="{{ route('movies.create') }}" class="btn btn-primary">Create</a>
+                            <a href="{{ route('movie_schedule.create') }}" class="btn btn-primary">Create</a>
                         </div>
                         <!-- table hover -->
                         <div class="table-responsive">
@@ -22,6 +22,7 @@
                                         <th>Starts</th>
                                         <th>Ends</th>
                                         <th>Price</th>
+                                        <th>Action</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -31,15 +32,15 @@
                                             <td>{{ $movie->movie_id }}</td>
                                             <td>{{ $movie->cinema_id }}</td>
                                             <td>{{ $movie->starts }}</td>
-                                            <td>{{ $movie->end }}</td>
+                                            <td>{{ $movie->ends }}</td>
                                             <td>{{ $movie->price }}</td>
                                             <td>
-                                                <a href="{{ route('movies.show', $movie->id) }}"
+                                                <a href="{{ route('movie_schedule.show', $movie->id) }}"
                                                     class="btn btn-primary">Show</a>
-                                                <a href="{{ route('movies.edit', $movie->id) }}"
+                                                <a href="{{ route('movie_schedule.edit', $movie->id) }}"
                                                     class="btn btn-warning">Edit</a>
-                                                <form action="{{ route('movies.destroy', $movie->id) }}" method="POST"
-                                                    class="d-inline">
+                                                <form action="{{ route('movie_schedule.destroy', $movie->id) }}"
+                                                    method="POST" class="d-inline">
                                                     @csrf
                                                     @method('DELETE')
                                                     <button type="submit" class="btn btn-danger"
