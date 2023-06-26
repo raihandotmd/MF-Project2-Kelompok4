@@ -15,6 +15,13 @@
                                 <div class="form-body">
                                     <div class="row">
                                         <div class="col-md-4">
+                                            <label for="name-horizontal">Code</label>
+                                        </div>
+                                        <div class="col-md-8 form-group">
+                                            <input type="text" id="name-horizontal" class="form-control" name="code"
+                                                placeholder="type code..." />
+                                        </div>
+                                        <div class="col-md-4">
                                             <label for="name-horizontal">Title</label>
                                         </div>
                                         <div class="col-md-8 form-group">
@@ -90,8 +97,8 @@
                                             <label for="name-horizontal">Language</label>
                                         </div>
                                         <div class="col-md-8 form-group">
-                                            <input type="text" id="name-horizontal" class="form-control" name="language"
-                                                placeholder="type language..." />
+                                            <input type="text" id="name-horizontal" class="form-control"
+                                                name="language" placeholder="type language..." />
                                         </div>
                                         <div class="col-md-4">
                                             <label for="name-horizontal">Age Limit</label>

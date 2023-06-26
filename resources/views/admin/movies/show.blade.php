@@ -20,6 +20,10 @@
                                     <td>{{ $movie->id }}</td>
                                 </tr>
                                 <tr>
+                                    <th>Code </th>
+                                    <td>{{ $movie->code }}</td>
+                                </tr>
+                                <tr>
                                     <th>Title </th>
                                     <td>{{ $movie->title }}</td>
                                 </tr>

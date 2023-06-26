@@ -16,6 +16,13 @@
                                 <div class="form-body">
                                     <div class="row">
                                         <div class="col-md-4">
+                                            <label for="name-horizontal">Code</label>
+                                        </div>
+                                        <div class="col-md-8 form-group">
+                                            <input type="text" id="name-horizontal" class="form-control" name="code"
+                                                placeholder="type code..." value="{{ $movie->code }}" />
+                                        </div>
+                                        <div class="col-md-4">
                                             <label for="name-horizontal">Title</label>
                                         </div>
                                         <div class="col-md-8 form-group">
@@ -89,8 +96,9 @@
                                             <label for="name-horizontal">Country</label>
                                         </div>
                                         <div class="col-md-8 form-group">
-                                            <input type="text" id="name-horizontal" class="form-control" name="country"
-                                                placeholder="type country..." value="{{ $movie->country }}" />
+                                            <input type="text" id="name-horizontal" class="form-control"
+                                                name="country" placeholder="type country..."
+                                                value="{{ $movie->country }}" />
                                         </div>
                                         <div class="col-md-4">
                                             <label for="name-horizontal">Language</label>
