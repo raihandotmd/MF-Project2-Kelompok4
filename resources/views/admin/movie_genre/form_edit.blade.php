@@ -6,12 +6,13 @@
             <div class="col-md-6 col-12">
                 <div class="card">
                     <div class="card-header">
-                        <h4 class="card-title">Create Movie Genre</h4>
+                        <h4 class="card-title">Edit Movie Genre #{{ $movie_genre->id }}</h4>
                     </div>
                     <div class="card-content">
                         <div class="card-body">
-                            <form class="form form-horizontal" action="{{ route('movie_genre.store') }}" method="POST">
+                            <form class="form form-horizontal" action="{{ route('movie_genre.update') }}" method="post">
                                 @csrf
+                                @method('PUT')
                                 <div class="form-body">
                                     <div class="row">
                                         <div class="col-md-4">
@@ -19,11 +20,12 @@
                                         </div>
                                         <div class="col-md-8 form-group">
                                             <input type="text" id="name-horizontal" class="form-control" name="name"
-                                                placeholder="Genre Name" />
+                                                placeholder="Genre Name" value="{{ $movie_genre->name }}" />
                                         </div>
                                         <div class="col-sm-12 d-flex justify-content-end">
+                                            <input type="hidden" name="idedit" value="{{ $movie_genre->id }}">
                                             <button type="submit" class="btn btn-primary me-1 mb-1">
-                                                Create
+                                                Save
                                             </button>
                                             <button type="reset" class="btn btn-light-secondary me-1 mb-1">
                                                 Reset

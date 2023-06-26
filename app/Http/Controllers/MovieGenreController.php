@@ -34,27 +34,22 @@ class MovieGenreController extends Controller
     }
 
     /**
-     * Display the specified resource.
-     */
-    public function show(string $id)
-    {
-        //
-    }
-
-    /**
      * Show the form for editing the specified resource.
      */
     public function edit(string $id)
     {
-        //
+        $movie_genre = MovieGenre::find($id);
+        return view('admin.movie_genre.form_edit', compact('movie_genre'));
     }
 
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, string $id)
+    public function update(Request $request)
     {
-        //
+        $movieGenre = MovieGenre::find($request->idedit);
+        $movieGenre->update($request->all());
+        return redirect()->route('movie_genre');
     }
 
     /**
@@ -62,6 +57,8 @@ class MovieGenreController extends Controller
      */
     public function destroy(string $id)
     {
-        //
+        $movieGenre = MovieGenre::find($id);
+        $movieGenre->delete();
+        return redirect()->route('movie_genre');
     }
 }

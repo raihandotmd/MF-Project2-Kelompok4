@@ -27,15 +27,15 @@
                                             <td>{{ $loop->iteration }}</td>
                                             <td>{{ $movie_genre->name }}</td>
                                             <td>
-                                                {{-- <a href="{{ route('movie_genre.edit', $movie_genre->id) }}"
-                                                    class="btn btn-warning">Edit</a> --}}
-                                                {{-- <form action="{{ route('movie_genre.destroy', $movie_genre->id) }}"
+                                                <a href="{{ route('movie_genre.edit', $movie_genre->id) }}"
+                                                    class="btn btn-warning">Edit</a>
+                                                <form action="{{ route('movie_genre.destroy', $movie_genre->id) }}"
                                                     method="POST" class="d-inline">
                                                     @csrf
                                                     @method('DELETE')
                                                     <button type="submit" class="btn btn-danger"
                                                         onclick="return confirm('Are you sure?')">Delete</button>
-                                                </form> --}}
+                                                </form>
                                             </td>
                                         </tr>
                                     @endforeach
