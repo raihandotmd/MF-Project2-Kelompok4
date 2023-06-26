@@ -8,6 +8,7 @@ use App\Http\Controllers\UsersController;
 use App\Http\Controllers\UsersRolesController;
 use App\Http\Controllers\MovieGenreController;
 //use Illuminate\Auth\Middleware\Authenticate;
+use App\Http\Controllers\MoviesController;
 
 /*
 |--------------------------------------------------------------------------
@@ -66,3 +67,11 @@ Route::prefix('movieGenre')->group(function(){
     Route::put('/update', [MovieGenreController::class, 'update'])->name('movie_genre.update');
     Route::delete('/delete/{id}', [MovieGenreController::class, 'destroy'])->name('movie_genre.destroy');
 });
+
+Route::get('/movies', [MoviesController::class,'index'])->name('movies');
+Route::get('/movies/create', [MoviesController::class,'create'])->name('movies.create');
+Route::post('/movies/store', [MoviesController::class,'store'])->name('movies.store');
+Route::get('/movies/show/{id}', [MoviesController::class,'show'])->name('movies.show');
+Route::get('/movies/edit/{id}', [MoviesController::class,'edit'])->name('movies.edit');
+Route::put('/movies/update', [MoviesController::class,'update'])->name('movies.update');
+Route::delete('/movies/delete/{id}', [MoviesController::class,'destroy'])->name('movies.destroy');
