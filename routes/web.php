@@ -6,6 +6,7 @@ use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\MovieOrderController;
 use App\Http\Controllers\UsersController;
 use App\Http\Controllers\UsersRolesController;
+use App\Http\Controllers\MovieGenreController;
 //use Illuminate\Auth\Middleware\Authenticate;
 
 /*
@@ -52,3 +53,17 @@ Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard
 // Route::get('/UsersRoles', [UsersRolesController::class, 'index'])->name('UsersRoles');
 // Route::get('/MovieOrder/create', [MovieOrderController::class, 'create']);
 // Route::get('/MovieOrder/store', [MovieOrderController::class, 'store']);
+
+
+// Route::get('/movieGenre', [MovieGenreController::class, 'index'])->name('MovieOrder');
+
+
+Route::prefix('movieGenre')->group(function(){
+    Route::get('/', [MovieGenreController::class, 'index'])->name('movie_genre');
+    Route::get('/view/{id}', [MovieGenreController::class, 'show'])->name('movie_genre.show');
+    Route::get('/create', [MovieGenreController::class, 'create'])->name('movie_genre.create');
+    Route::post('/store', [MovieGenreController::class, 'store'])->name('movie_genre.store');
+    Route::get('/edit/{id}', [MovieGenreController::class, 'edit'])->name('movie_genre.edit');
+    Route::post('/update', [MovieGenreController::class, 'update'])->name('movie_genre.update');
+    Route::get('/delete/{id}', [MovieGenreController::class, 'destroy'])->name('movie_genre.delete');
+});
