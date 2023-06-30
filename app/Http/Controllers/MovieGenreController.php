@@ -29,8 +29,17 @@ class MovieGenreController extends Controller
      */
     public function store(MovieGenre $movieGenre, Request $request)
     {
-        $movieGenre->create($request->all());
-        return redirect()->route('movie_genre');
+
+        $validated = $request->validate([
+            'name' => 'required|unique:movie_genre|max:25',
+
+        ]);
+
+        $movieGenre->create($validated);
+        if ($movieGenre) {
+            return redirect()->route('movie_genre');
+        }
+        return back();
     }
 
     /**
@@ -47,9 +56,17 @@ class MovieGenreController extends Controller
      */
     public function update(Request $request)
     {
+        $validated = $request->validate([
+            'name' => 'required|unique:movie_genre|max:25',
+
+        ]);
         $movieGenre = MovieGenre::find($request->idedit);
-        $movieGenre->update($request->all());
-        return redirect()->route('movie_genre');
+        
+        $movieGenre->update($validated);
+        if ($movieGenre) {
+            return redirect()->route('movie_genre');
+        }
+        return back();
     }
 
     /**

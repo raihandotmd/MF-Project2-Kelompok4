@@ -21,6 +21,13 @@
                                             <input type="text" id="name-horizontal" class="form-control" name="name"
                                                 placeholder="Genre Name" />
                                         </div>
+                                        @error('name')
+                                            <div class="alert alert-danger alert-dismissible show fade">
+                                                {{ $message }}
+                                                <button type="button" class="btn-close" data-bs-dismiss="alert"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                        @enderror
                                         <div class="col-sm-12 d-flex justify-content-end">
                                             <button type="submit" class="btn btn-primary me-1 mb-1">
                                                 Create
