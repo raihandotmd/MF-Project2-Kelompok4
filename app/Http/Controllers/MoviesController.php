@@ -31,8 +31,29 @@ class MoviesController extends Controller
      */
     public function store(Request $request, Movies $movies)
     {
-        $movies->create($request->all());
-        return redirect()->route('movies');
+        $validated = $request->validate([
+            'code' => 'required|max:255',
+            'title' => 'required|max:50',
+            'description' => 'required',
+            'genre_id' => 'required',
+            'image' => 'required',
+            'trailer' => 'required',
+            'duration' => 'required',
+            'release_date' => 'required',
+            'director' => 'required',
+            'cast' => 'required',
+            'country' => 'required',
+            'language' => 'required',
+            'age_limit' => 'required',
+        ]);
+
+        $movies->create($validated);
+
+        
+        if ($movies) {
+            return redirect()->route('movies');
+        }
+        return back();
     }
 
     /**
@@ -60,9 +81,29 @@ class MoviesController extends Controller
      */
     public function update(Request $request)
     {
+        $validated = $request->validate([
+            'code' => 'required|max:255',
+            'title' => 'required|max:50',
+            'description' => 'required',
+            'genre_id' => 'required',
+            'image' => 'required',
+            'trailer' => 'required',
+            'duration' => 'required',
+            'release_date' => 'required',
+            'director' => 'required',
+            'cast' => 'required',
+            'country' => 'required',
+            'language' => 'required',
+            'age_limit' => 'required',
+        ]);
+
         $movie = Movies::find($request->idedit);
-        $movie->update($request->all());
-        return redirect()->route('movies');
+        $movie->update($validated);
+        
+        if ($movie) {
+            return redirect()->route('movies');
+        }
+        return back();
     }
 
     /**
