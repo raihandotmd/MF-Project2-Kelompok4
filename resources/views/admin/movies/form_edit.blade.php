@@ -23,7 +23,11 @@
                                                 class="form-control @error('code') is-invalid @enderror" name="code"
                                                 placeholder="type code..." value="{{ old('code', $movie->code) }}" />
                                             @error('code')
-                                                <div class="invalid-feedback">{{ $message }}</div>
+                                                <div class="alert alert-danger alert-dismissible show fade mt-2">
+                                                    {{ $message }}
+                                                    <button type="button" class="btn-close" data-bs-dismiss="alert"
+                                                        aria-label="Close"></button>
+                                                </div>
                                             @enderror
                                         </div>
                                         <div class="col-md-4">
@@ -34,7 +38,11 @@
                                                 class="form-control @error('title') is-invalid @enderror" name="title"
                                                 placeholder="type title..." value="{{ old('title', $movie->title) }}" />
                                             @error('title')
-                                                <div class="invalid-feedback">{{ $message }}</div>
+                                                <div class="alert alert-danger alert-dismissible show fade mt-2">
+                                                    {{ $message }}
+                                                    <button type="button" class="btn-close" data-bs-dismiss="alert"
+                                                        aria-label="Close"></button>
+                                                </div>
                                             @enderror
                                         </div>
                                         <div class="col-md-4">
@@ -44,7 +52,11 @@
                                             <textarea id="name-horizontal" class="form-control @error('description') is-invalid @enderror" name="description"
                                                 placeholder="type desc...">{{ old('description', $movie->description) }}</textarea>
                                             @error('description')
-                                                <div class="invalid-feedback">{{ $message }}</div>
+                                                <div class="alert alert-danger alert-dismissible show fade mt-2">
+                                                    {{ $message }}
+                                                    <button type="button" class="btn-close" data-bs-dismiss="alert"
+                                                        aria-label="Close"></button>
+                                                </div>
                                             @enderror
                                         </div>
                                         <div class="col-md-4">
@@ -62,7 +74,11 @@
                                                 @endforeach
                                             </select>
                                             @error('genre_id')
-                                                <div class="invalid-feedback">{{ $message }}</div>
+                                                <div class="alert alert-danger alert-dismissible show fade mt-2">
+                                                    {{ $message }}
+                                                    <button type="button" class="btn-close" data-bs-dismiss="alert"
+                                                        aria-label="Close"></button>
+                                                </div>
                                             @enderror
                                         </div>
                                         <div class="col-md-4">
@@ -73,7 +89,11 @@
                                                 class="form-control @error('image') is-invalid @enderror" name="image"
                                                 placeholder="type here..." value="{{ old('image', $movie->image) }}" />
                                             @error('image')
-                                                <div class="invalid-feedback">{{ $message }}</div>
+                                                <div class="alert alert-danger alert-dismissible show fade mt-2">
+                                                    {{ $message }}
+                                                    <button type="button" class="btn-close" data-bs-dismiss="alert"
+                                                        aria-label="Close"></button>
+                                                </div>
                                             @enderror
                                         </div>
                                         <div class="col-md-4">
@@ -85,7 +105,11 @@
                                                 placeholder="type trailer..."
                                                 value="{{ old('trailer', $movie->trailer) }}" />
                                             @error('trailer')
-                                                <div class="invalid-feedback">{{ $message }}</div>
+                                                <div class="alert alert-danger alert-dismissible show fade mt-2">
+                                                    {{ $message }}
+                                                    <button type="button" class="btn-close" data-bs-dismiss="alert"
+                                                        aria-label="Close"></button>
+                                                </div>
                                             @enderror
                                         </div>
                                         <div class="col-md-4">
@@ -93,11 +117,15 @@
                                         </div>
                                         <div class="col-md-8 form-group">
                                             <input type="text" id="name-horizontal"
-                                                class="form-control @error('duration') is-invalid @enderror" name="duration"
-                                                placeholder="type duration..."
+                                                class="form-control @error('duration') is-invalid @enderror"
+                                                name="duration" placeholder="type duration..."
                                                 value="{{ old('duration', $movie->duration) }}" />
                                             @error('duration')
-                                                <div class="invalid-feedback">{{ $message }}</div>
+                                                <div class="alert alert-danger alert-dismissible show fade mt-2">
+                                                    {{ $message }}
+                                                    <button type="button" class="btn-close" data-bs-dismiss="alert"
+                                                        aria-label="Close"></button>
+                                                </div>
                                             @enderror
                                         </div>
                                         <div class="col-md-4">
@@ -109,7 +137,11 @@
                                                 name="release_date" placeholder="type release date..."
                                                 value="{{ old('release_date', $movie->release_date) }}" />
                                             @error('release_date')
-                                                <div class="invalid-feedback">{{ $message }}</div>
+                                                <div class="alert alert-danger alert-dismissible show fade mt-2">
+                                                    {{ $message }}
+                                                    <button type="button" class="btn-close" data-bs-dismiss="alert"
+                                                        aria-label="Close"></button>
+                                                </div>
                                             @enderror
                                         </div>
                                         <div class="col-md-4">
@@ -117,11 +149,15 @@
                                         </div>
                                         <div class="col-md-8 form-group">
                                             <input type="text" id="name-horizontal"
-                                                class="form-control @error('director') is-invalid @enderror" name="director"
-                                                placeholder="type director..."
+                                                class="form-control @error('director') is-invalid @enderror"
+                                                name="director" placeholder="type director..."
                                                 value="{{ old('director', $movie->director) }}" />
                                             @error('director')
-                                                <div class="invalid-feedback">{{ $message }}</div>
+                                                <div class="alert alert-danger alert-dismissible show fade mt-2">
+                                                    {{ $message }}
+                                                    <button type="button" class="btn-close" data-bs-dismiss="alert"
+                                                        aria-label="Close"></button>
+                                                </div>
                                             @enderror
                                         </div>
                                         <div class="col-md-4">
@@ -132,7 +168,11 @@
                                                 class="form-control @error('cast') is-invalid @enderror" name="cast"
                                                 placeholder="type cast..." value="{{ old('cast', $movie->cast) }}" />
                                             @error('cast')
-                                                <div class="invalid-feedback">{{ $message }}</div>
+                                                <div class="alert alert-danger alert-dismissible show fade mt-2">
+                                                    {{ $message }}
+                                                    <button type="button" class="btn-close" data-bs-dismiss="alert"
+                                                        aria-label="Close"></button>
+                                                </div>
                                             @enderror
                                         </div>
                                         <div class="col-md-4">
@@ -144,7 +184,11 @@
                                                 name="country" placeholder="type country..."
                                                 value="{{ old('country', $movie->country) }}" />
                                             @error('country')
-                                                <div class="invalid-feedback">{{ $message }}</div>
+                                                <div class="alert alert-danger alert-dismissible show fade mt-2">
+                                                    {{ $message }}
+                                                    <button type="button" class="btn-close" data-bs-dismiss="alert"
+                                                        aria-label="Close"></button>
+                                                </div>
                                             @enderror
                                         </div>
                                         <div class="col-md-4">
@@ -156,7 +200,11 @@
                                                 name="language" placeholder="type language..."
                                                 value="{{ old('language', $movie->language) }}" />
                                             @error('language')
-                                                <div class="invalid-feedback">{{ $message }}</div>
+                                                <div class="alert alert-danger alert-dismissible show fade mt-2">
+                                                    {{ $message }}
+                                                    <button type="button" class="btn-close" data-bs-dismiss="alert"
+                                                        aria-label="Close"></button>
+                                                </div>
                                             @enderror
                                         </div>
                                         <div class="col-md-4">
@@ -167,8 +215,12 @@
                                                 class="form-control @error('age_limit') is-invalid @enderror"
                                                 name="age_limit" placeholder="type age limit..."
                                                 value="{{ old('age_limit', $movie->age_limit) }}" />
-                                            @error('age_limit')
-                                                <div class="invalid-feedback">{{ $message }}</div>
+                                            @error('code')
+                                                <div class="alert alert-danger alert-dismissible show fade mt-2">
+                                                    {{ $message }}
+                                                    <button type="button" class="btn-close" data-bs-dismiss="alert"
+                                                        aria-label="Close"></button>
+                                                </div>
                                             @enderror
                                         </div>
                                         <div class="col-sm-12 d-flex justify-content-end">

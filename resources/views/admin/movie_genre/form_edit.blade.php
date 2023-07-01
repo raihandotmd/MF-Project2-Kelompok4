@@ -19,11 +19,12 @@
                                             <label for="name-horizontal">Name</label>
                                         </div>
                                         <div class="col-md-8 form-group">
-                                            <input type="text" id="name-horizontal" class="form-control" name="name"
-                                                placeholder="Genre Name" value="{{ $movie_genre->name }}" />
+                                            <input type="text" id="name-horizontal"
+                                                class="form-control @error('name') is-invalid @enderror" name="name"
+                                                placeholder="Genre Name" value="{{ old('name', $movie_genre->code) }}" />
                                         </div>
                                         @error('name')
-                                            <div class="alert alert-danger alert-dismissible show fade">
+                                            <div class="alert alert-danger alert-dismissible show fade mt-2">
                                                 {{ $message }}
                                                 <button type="button" class="btn-close" data-bs-dismiss="alert"
                                                     aria-label="Close"></button>

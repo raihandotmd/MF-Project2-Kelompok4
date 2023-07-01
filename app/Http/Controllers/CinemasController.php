@@ -29,8 +29,15 @@ class CinemasController extends Controller
      */
     public function store(Request $request, Cinemas $cinemas)
     {
-        $cinemas->create($request->all());
-        return redirect()->route('cinemas');
+        $validated = $request->validate([
+            'code' => 'required|unique:cinemas|max:3',
+        ]);
+
+        $cinemas->create($validated);
+        if ($cinemas) {
+            return redirect()->route('cinemas');
+        }
+        return back();
     }
 
     /**
@@ -47,9 +54,17 @@ class CinemasController extends Controller
      */
     public function update(Request $request, Cinemas $cinemas)
     {
+        $validated = $request->validate([
+            'code' => 'required|unique:cinemas|max:3',
+        ]);
+
         $cinemas = Cinemas::find($request->idedit);
-        $cinemas->update($request->all());
-        return redirect()->route('cinemas');
+        $cinemas->update($validated);
+        
+        if ($cinemas) {
+            return redirect()->route('cinemas');
+        }
+        return back();
     }
 
     /**

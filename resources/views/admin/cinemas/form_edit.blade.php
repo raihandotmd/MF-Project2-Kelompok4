@@ -19,11 +19,20 @@
                                             <label for="name-horizontal">Cinema Code</label>
                                         </div>
                                         <div class="col-md-8 form-group">
-                                            <input type="text" id="name-horizontal" class="form-control" name="code"
-                                                placeholder="type.." value="{{ $cinema->code }}" />
+                                            <input type="text" id="name-horizontal"
+                                                class="form-control @error('code') is-invalid @enderror" name="code"
+                                                placeholder="type.." value="{{ old('code', $cinema->code) }}" />
+                                            @error('code')
+                                                <div class="alert alert-danger alert-dismissible show fade mt-2">
+                                                    {{ $message }}
+                                                    <button type="button" class="btn-close" data-bs-dismiss="alert"
+                                                        aria-label="Close"></button>
+                                                </div>
+                                            @enderror
                                         </div>
                                         <div class="col-sm-12 d-flex justify-content-end">
                                             <input type="hidden" name="idedit" value="{{ $cinema->id }}">
+                                            <a href="{{ route('cinemas') }}" class="btn btn-danger me-1 mb-1">Cancel</a>
                                             <button type="submit" class="btn btn-primary me-1 mb-1">
                                                 Save
                                             </button>
