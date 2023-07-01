@@ -17,6 +17,7 @@
                                 <thead>
                                     <tr>
                                         <th>No.</th>
+                                        <th>Code</th>
                                         <th>Title</th>
                                         <th>Image</th>
                                         <th>Trailer</th>
@@ -28,6 +29,7 @@
                                     @foreach ($movies as $movie)
                                         <tr>
                                             <td>{{ $loop->iteration }}</td>
+                                            <td>{{ $movie->code }}</td>
                                             <td>{{ $movie->title }}</td>
                                             <td>{{ $movie->image }}</td>
                                             <td>{{ $movie->trailer }}</td>

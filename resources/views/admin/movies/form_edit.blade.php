@@ -173,7 +173,7 @@
                                         </div>
                                         <div class="col-sm-12 d-flex justify-content-end">
                                             <input type="hidden" name="idedit" value="{{ $movie->id }}">
-                                            <a href="{{ route('movies') }}" class="btn btn-danger">Back</a>
+                                            <a href="{{ route('movies') }}" class="btn btn-danger me-1 mb-1">Cancel</a>
                                             <button type="submit" class="btn btn-primary me-1 mb-1">
                                                 Save
                                             </button>
