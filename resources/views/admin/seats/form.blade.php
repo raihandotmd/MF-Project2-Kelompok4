@@ -23,13 +23,29 @@
                                                     <option value="{{ $cinema->id }}">{{ $cinema->code }}</option>
                                                 @endforeach
                                             </select>
+                                            @error('cinema_id')
+                                                <div class="alert alert-danger alert-dismissible show fade mt-2">
+                                                    {{ $message }}
+                                                    <button type="button" class="btn-close" data-bs-dismiss="alert"
+                                                        aria-label="Close"></button>
+                                                </div>
+                                            @enderror
                                         </div>
                                         <div class="col-md-4">
                                             <label for="name-horizontal">Seat Code</label>
                                         </div>
                                         <div class="col-md-8 form-group">
-                                            <input type="text" id="name-horizontal" class="form-control" name="seat_code"
-                                                placeholder="Genre Name" />
+                                            <input type="text" id="name-horizontal"
+                                                class="form-control @error('seat_code') is-invalid @enderror"
+                                                name="seat_code" placeholder="Type seat code.."
+                                                value="{{ old('seat_code') }}" />
+                                            @error('seat_code')
+                                                <div class="alert alert-danger alert-dismissible show fade mt-2">
+                                                    {{ $message }}
+                                                    <button type="button" class="btn-close" data-bs-dismiss="alert"
+                                                        aria-label="Close"></button>
+                                                </div>
+                                            @enderror
                                         </div>
                                         <div class="col-md-4">
                                             <label for="name-horizontal">Seat Status</label>
@@ -39,8 +55,16 @@
                                                 <option value="available">Available</option>
                                                 <option value="unavailable">Not Available</option>
                                             </select>
+                                            @error('seat_status')
+                                                <div class="alert alert-danger alert-dismissible show fade mt-2">
+                                                    {{ $message }}
+                                                    <button type="button" class="btn-close" data-bs-dismiss="alert"
+                                                        aria-label="Close"></button>
+                                                </div>
+                                            @enderror
                                         </div>
                                         <div class="col-sm-12 d-flex justify-content-end">
+                                            <a href="{{ route('seats') }}" class="btn btn-danger me-1 mb-1">Cancel</a>
                                             <button type="submit" class="btn btn-primary me-1 mb-1">
                                                 Create
                                             </button>

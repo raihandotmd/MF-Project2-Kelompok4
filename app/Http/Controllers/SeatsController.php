@@ -29,10 +29,20 @@ class SeatsController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store(Request $request)
+    public function store(Request $request, Seats $seats)
     {
-        Seats::create($request->all());
-        return redirect()->route('seats');
+        $validated = $request->validate([
+            'cinema_id' => 'required',
+            'seat_code' => 'required|unique:seats|max:3',
+            'seat_status' => 'required',
+        ]);
+
+        $seats->create($validated);
+
+        if ($seats) {
+            return redirect()->route('seats');
+        }
+        return back();
     }
 
     /**
@@ -40,6 +50,8 @@ class SeatsController extends Controller
      */
     public function edit(string $id)
     {
+
+        
         $seat = Seats::find($id);
         $cinemas = Cinemas::all();
         return view('admin.seats.form_edit', compact('seat', 'cinemas'));
@@ -51,9 +63,18 @@ class SeatsController extends Controller
      */
     public function update(Request $request, Seats $seat)
     {
+        $validated = $request->validate([
+            'cinema_id' => 'required',
+            'seat_code' => 'required|max:3',
+            'seat_status' => 'required',
+        ]);
+
         $seat = Seats::find($request->idedit);
-        $seat->update($request->all());
-        return redirect()->route('seats');
+        $seat->update($validated);
+        if ($seat) {
+            return redirect()->route('seats');
+        }
+        return back();
     }
 
     /**
