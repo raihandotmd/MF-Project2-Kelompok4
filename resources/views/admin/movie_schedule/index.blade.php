@@ -35,8 +35,6 @@
                                             <td>{{ $movie->ends }}</td>
                                             <td>{{ $movie->price }}</td>
                                             <td>
-                                                <a href="{{ route('movie_schedule.show', $movie->id) }}"
-                                                    class="btn btn-primary">Show</a>
                                                 <a href="{{ route('movie_schedule.edit', $movie->id) }}"
                                                     class="btn btn-warning">Edit</a>
                                                 <form action="{{ route('movie_schedule.destroy', $movie->id) }}"

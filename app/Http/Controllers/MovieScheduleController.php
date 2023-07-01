@@ -33,30 +33,31 @@ class MovieScheduleController extends Controller
      */
     public function store(Request $request, MovieSchedule $moviesSchedule)
     {
-        $moviesSchedule->create($request->all());
-        return redirect()->route('movie_schedule');
-    }
+        $validated = $request->validate([
+            'movie_id' => 'required',
+            'cinema_id' => 'required',
+            'starts' => 'required',
+            'ends' => 'required',
+            'price' => 'required',
+        ]);
 
-    /**
-     * Display the specified resource.
-     */
-    public function show(MovieSchedule $movie_schedule,string $id)
-    {
-        $movie_schedule = MovieSchedule::find($id);
-        $cinema = Cinemas::find($movie_schedule->cinema_id);
-        $movie = Movies::find($movie_schedule->movie_id);
-        return view('admin.movie_schedule.show', compact('movie_schedule', 'cinema', 'movie'));
+        $moviesSchedule->create($validated);
+        if ($moviesSchedule) {
+            return redirect()->route('movie_schedule');
+        }
+        return redirect()->back();
     }
 
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(MovieSchedule $moviesSchedule, string $id)
+    public function edit(string $id)
     {
-        $movies_schedule = MovieSchedule::find($id);
+
+        $movie_schedule = MovieSchedule::find($id);
         $movies = Movies::all();
         $cinemas = Cinemas::all();
-        return view('admin.movie_schedule.form', compact('movies_schedule', 'movies', 'cinemas'));
+        return view('admin.movie_schedule.form_edit', compact('movie_schedule', 'movies', 'cinemas'));
     }
 
     /**
@@ -64,7 +65,19 @@ class MovieScheduleController extends Controller
      */
     public function update(Request $request, MovieSchedule $movieSchedule)
     {
-        //
+        $validated = $request->validate([
+            'movie_id' => 'required',
+            'cinema_id' => 'required',
+            'starts' => 'required',
+            'ends' => 'required',
+            'price' => 'required',
+        ]);
+        $movieSchedule = MovieSchedule::find($request->idedit);
+        $movieSchedule->update($validated);
+        if ($movieSchedule) {
+            return redirect()->route('movie_schedule');
+        }
+        return redirect()->back();
     }
 
     /**

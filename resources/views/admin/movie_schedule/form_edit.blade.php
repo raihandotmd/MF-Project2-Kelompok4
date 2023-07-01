@@ -10,8 +10,9 @@
                     </div>
                     <div class="card-content">
                         <div class="card-body">
-                            <form class="form form-horizontal" action="{{ route('movie_schedule.store') }}" method="POST">
+                            <form class="form form-horizontal" action="{{ route('movie_schedule.update') }}" method="POST">
                                 @csrf
+                                @method('PUT')
                                 <div class="form-body">
                                     <div class="row">
                                         <div class="col-md-4">
@@ -64,9 +65,11 @@
                                                 placeholder="type.." value="{{ $movie_schedule->price }}" />
                                         </div>
                                         <div class="col-sm-12 d-flex justify-content-end">
-                                            <a href="{{ route('movies') }}" class="btn btn-danger">Back</a>
+                                            <input type="hidden" name="idedit" value="{{ $movie_schedule->id }}" />
+                                            <a href="{{ route('movie_schedule') }}"
+                                                class="btn btn-danger me-1 mb-1">Cancel</a>
                                             <button type="submit" class="btn btn-primary me-1 mb-1">
-                                                Create
+                                                Save
                                             </button>
                                             <button type="reset" class="btn btn-light-secondary me-1 mb-1">
                                                 Reset

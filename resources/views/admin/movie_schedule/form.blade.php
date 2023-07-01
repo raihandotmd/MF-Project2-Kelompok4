@@ -40,6 +40,13 @@
                                         <div class="col-md-8 form-group">
                                             <input type="datetime-local" id="name-horizontal" class="form-control"
                                                 name="starts" placeholder="type.." />
+                                            @error('starts')
+                                                <div class="alert alert-danger alert-dismissible show fade mt-2">
+                                                    {{ $message }}
+                                                    <button type="button" class="btn-close" data-bs-dismiss="alert"
+                                                        aria-label="Close"></button>
+                                                </div>
+                                            @enderror
                                         </div>
                                         <div class="col-md-4">
                                             <label for="name-horizontal">Ends</label>
@@ -47,6 +54,13 @@
                                         <div class="col-md-8 form-group">
                                             <input type="datetime-local" id="name-horizontal" class="form-control"
                                                 name="ends" placeholder="type.." />
+                                            @error('ends')
+                                                <div class="alert alert-danger alert-dismissible show fade mt-2">
+                                                    {{ $message }}
+                                                    <button type="button" class="btn-close" data-bs-dismiss="alert"
+                                                        aria-label="Close"></button>
+                                                </div>
+                                            @enderror
                                         </div>
                                         <div class="col-md-4">
                                             <label for="name-horizontal">Price</label>
@@ -54,9 +68,17 @@
                                         <div class="col-md-8 form-group">
                                             <input type="number" id="name-horizontal" class="form-control" name="price"
                                                 placeholder="type.." />
+                                            @error('price')
+                                                <div class="alert alert-danger alert-dismissible show fade mt-2">
+                                                    {{ $message }}
+                                                    <button type="button" class="btn-close" data-bs-dismiss="alert"
+                                                        aria-label="Close"></button>
+                                                </div>
+                                            @enderror
                                         </div>
                                         <div class="col-sm-12 d-flex justify-content-end">
-                                            <a href="{{ route('movies') }}" class="btn btn-danger">Back</a>
+                                            <a href="{{ route('movie_schedule') }}"
+                                                class="btn btn-danger me-1 mb-1">Cancel</a>
                                             <button type="submit" class="btn btn-primary me-1 mb-1">
                                                 Create
                                             </button>
