@@ -62,7 +62,16 @@ Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard
 // Route::get('/movieGenre', [MovieGenreController::class, 'index'])->name('MovieOrder');
 
 
-Route::prefix('movieGenre')->group(function(){
+Route::prefix('/movies/order')->group(function(){
+    Route::get('/', [MovieOrderController::class, 'index'])->name('movie_order');
+    Route::get('/create', [MovieOrderController::class, 'create'])->name('movie_order.create');
+    Route::post('/store', [MovieOrderController::class, 'store'])->name('movie_order.store');
+    Route::get('/edit/{id}', [MovieOrderController::class, 'edit'])->name('movie_order.edit');
+    Route::put('/update', [MovieOrderController::class, 'update'])->name('movie_order.update');
+    Route::delete('/delete/{id}', [MovieOrderController::class, 'destroy'])->name('movie_order.destroy');
+});
+
+Route::prefix('/movies/genre')->group(function(){
     Route::get('/', [MovieGenreController::class, 'index'])->name('movie_genre');
     Route::get('/create', [MovieGenreController::class, 'create'])->name('movie_genre.create');
     Route::post('/store', [MovieGenreController::class, 'store'])->name('movie_genre.store');
@@ -86,7 +95,6 @@ Route::post('/movies/schedule/store', [MovieScheduleController::class, 'store'])
 Route::get('/movies/schedule/edit/{id}', [MovieScheduleController::class, 'edit'])->name('movie_schedule.edit');
 Route::put('/movies/schedule/update', [MovieScheduleController::class, 'update'])->name('movie_schedule.update');
 Route::delete('/movies/schedule/delete/{id}', [MovieScheduleController::class, 'destroy'])->name('movie_schedule.destroy');
-Route::get('/movies/schedule/show/{id}', [MovieScheduleController::class, 'show'])->name('movie_schedule.show');
 
 
 Route::get('/cinemas', [CinemasController::class, 'index'])->name('cinemas');
@@ -103,4 +111,13 @@ Route::get('/seats/edit/{id}', [SeatsController::class, 'edit'])->name('seats.ed
 Route::put('/seats/update', [SeatsController::class, 'update'])->name('seats.update');
 Route::delete('/seats/delete/{id}', [SeatsController::class, 'destroy'])->name('seats.destroy');
 
+Route::get('/users', [UsersController::class, 'index'])->name('users');
+Route::delete('/users/delete/{id}', [UsersController::class, 'destroy'])->name('users.destroy');
+
+Route::get('/users/roles', [UsersRolesController::class, 'index'])->name('users_roles');
+Route::get('/users/roles/create', [UsersRolesController::class, 'create'])->name('users_roles.create');
+Route::post('/users/roles/store', [UsersRolesController::class, 'store'])->name('users_roles.store');
+Route::get('/users/roles/edit/{id}', [UsersRolesController::class, 'edit'])->name('users_roles.edit');
+Route::put('/users/roles/update', [UsersRolesController::class, 'update'])->name('users_roles.update');
+Route::delete('/users/roles/delete/{id}', [UsersRolesController::class, 'destroy'])->name('users_roles.destroy');
 
