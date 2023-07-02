@@ -4,6 +4,8 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use App\Models\Movies;
+use App\Models\Cinema;
 
 class MovieSchedule extends Model
 {
@@ -16,4 +18,13 @@ class MovieSchedule extends Model
         'ends',
         'price',
     ];
+
+    public function movie()
+    {
+        return $this->belongsTo(Movies::class);
+    }
+    public function cinema()
+    {
+        return $this->belongsTo(Cinema::class);
+    }
 }

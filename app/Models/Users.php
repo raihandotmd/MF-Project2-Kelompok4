@@ -4,6 +4,8 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use App\Models\UserRoles;
+use Illuminate\Support\Facades\DB;
 
 class Users extends Model
 {
@@ -22,7 +24,7 @@ class Users extends Model
                 
             ];
             public function usersRoles(){
-                return $this->belongTo(users::class);
+                return $this->belongTo(UserRoles::class);
             }
             public function getAllData(){
                 return DB::table('Users')

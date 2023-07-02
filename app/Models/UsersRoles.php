@@ -9,12 +9,10 @@ class UserRoles extends Model
 {
     use HasFactory;
         //panggil tabel
-        protected $table = 'UserRoles';
+        protected $table = 'users_roles';
         //kolom yang bisa diisi
         protected $fillable = [
             'nama',
-         ];
-        public function usersRoles(){
-        return $this->belongsTo(usersRoles::class);}
+        ];
 
 }
