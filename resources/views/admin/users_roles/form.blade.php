@@ -18,10 +18,19 @@
                                             <label for="name-horizontal">User Name</label>
                                         </div>
                                         <div class="col-md-8 form-group">
-                                            <input type="text" id="name-horizontal" class="form-control" name="name"
-                                                placeholder="type.." />
+                                            <input type="text" id="name-horizontal"
+                                                class="form-control @error('name') is-invalid @enderror" name="name"
+                                                placeholder="type.." {{ old('name') }} />
+                                            @error('name')
+                                                <div class="alert alert-danger alert-dismissible show fade mt-2">
+                                                    {{ $message }}
+                                                    <button type="button" class="btn-close" data-bs-dismiss="alert"
+                                                        aria-label="Close"></button>
+                                                </div>
+                                            @enderror
                                         </div>
                                         <div class="col-sm-12 d-flex justify-content-end">
+                                            <a href="{{ route('users_roles') }}" class="btn btn-danger me-1 mb-1">Cancel</a>
                                             <button type="submit" class="btn btn-primary me-1 mb-1">
                                                 Create
                                             </button>
