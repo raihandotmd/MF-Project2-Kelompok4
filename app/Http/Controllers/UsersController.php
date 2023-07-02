@@ -3,8 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\users;
-Use DB;
+use App\Models\Users;
+Use Illuminate\Support\Facades\DB;
 
 class UsersController extends Controller
 {
@@ -21,48 +21,8 @@ class UsersController extends Controller
             ->get();
 
         
-            return view('admin.users.Users', compact('users'));
+            return view('admin.users.index', compact('users'));
         }
-    }
-
-    /**
-     * Show the form for creating a new resource.
-     */
-    public function create()
-    {
-        //
-    }
-
-    /**
-     * Store a newly created resource in storage.
-     */
-    public function store(Request $request)
-    {
-        //
-    }
-
-    /**
-     * Display the specified resource.
-     */
-    public function show(string $id)
-    {
-        //
-    }
-
-    /**
-     * Show the form for editing the specified resource.
-     */
-    public function edit(string $id)
-    {
-        //
-    }
-
-    /**
-     * Update the specified resource in storage.
-     */
-    public function update(Request $request, string $id)
-    {
-        //
     }
 
     /**
@@ -70,6 +30,11 @@ class UsersController extends Controller
      */
     public function destroy(string $id)
     {
-        //
+        $users = users::find($id);
+        $users->delete();
+        if ($users) {
+            return redirect()->route('users');
+        }
+        return back();
     }
 }
