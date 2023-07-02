@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\movieOrder;
-Use DB;
+use Illuminate\Support\Facades\DB;
 
 class MovieOrderController extends Controller
 {
@@ -13,12 +13,11 @@ class MovieOrderController extends Controller
      */
     public function index()
     {
-        $movieOrders = DB::table('movie_order')
+        $movies_order = DB::table('movie_order')
             ->join('users', 'movie_order.user_id', '=', 'users.id')
             ->select('movie_order.*', 'users.name as name_movie')
             ->get();
-    
-        return view('admin.MovieOrder.MovieOrder', compact('movieOrders'));
+        return view('admin.movies_order.index', compact('movies_order'));
     }
     
 
@@ -27,35 +26,30 @@ class MovieOrderController extends Controller
      */
     public function create()
     {
-        //
-        $movieOrders = DB ::table('movie_order')->get();
+        $movies_schedule = DB::table('movie_schedule')->get();
         $users = DB ::table('users')->get(); 
 
-        return view ('admin.MovieOrder.create', compact('users','movieOrder'));
+        return view ('admin.movies_order.form', compact('users','movies_schedule'));
     }
 
     /**
      * Store a newly created resource in storage.
      */
-    public function store(Request $request)
+    public function store(Request $request, movieOrder $movieOrder)
     {
-        //
-        $movieOrders = new movieOrder;
-        $movieOrders->movie_schedule = $request->movie_schedule;
-        $movieOrders->user_id = $request->user_id;
-        $movieOrders->seat = $request->seat;
-        $movieOrders->ticket_code = $request->ticket_code;
-        $movieOrders->save();
-        return redirect('MovieOrder');
+        
+        $validated = $request->validate([
+            'movie_schedule' => 'required',
+            'user_id' => 'required',
+            'seat' => 'required|max:3',
+            'ticket_code' => 'required|max:13',
+        ]);
 
-    }
-
-    /**
-     * Display the specified resource.
-     */
-    public function show(string $id)
-    {
-        //
+        $movieOrder->create($validated);
+        if ($movieOrder) {
+            return redirect()->route('movie_order');
+        }
+        return back();
     }
 
     /**
@@ -63,15 +57,30 @@ class MovieOrderController extends Controller
      */
     public function edit(string $id)
     {
-        //
+        $movie_order = movieOrder::find($id);
+        $movies_schedule = DB::table('movie_schedule')->get();
+        $users = DB ::table('users')->get(); 
+
+        return view('admin.movies_order.form_edit', compact('movie_order','users','movies_schedule'));
     }
 
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, string $id)
+    public function update(Request $request, string $id, movieOrder $movie_order)
     {
-        //
+        $validated = $request->validate([
+            'movie_schedule' => 'required',
+            'user_id' => 'required',
+            'seat' => 'required|max:3',
+            'ticket_code' => 'required|max:13',
+        ]);
+        $movie_order = movieOrder::find($id);
+        $movie_order->update($validated);
+        if ($movie_order) {
+            return redirect()->route('movie_order');
+        }
+        return back();
     }
 
     /**
@@ -79,6 +88,8 @@ class MovieOrderController extends Controller
      */
     public function destroy(string $id)
     {
-        //
+        $movieOrder = movieOrder::find($id);
+        $movieOrder->delete();
+        return redirect()->route('movie_order')->with('success', 'Data berhasil dihapus');
     }
 }
