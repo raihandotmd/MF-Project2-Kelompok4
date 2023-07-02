@@ -38,8 +38,9 @@
                                             <label for="name-horizontal">Starts</label>
                                         </div>
                                         <div class="col-md-8 form-group">
-                                            <input type="datetime-local" id="name-horizontal" class="form-control"
-                                                name="starts" placeholder="type.." />
+                                            <input type="datetime-local" id="name-horizontal"
+                                                class="form-control  @error('starts') is-invalid @enderror" name="starts"
+                                                placeholder="type.." value="{{ old('starts') }}" />
                                             @error('starts')
                                                 <div class="alert alert-danger alert-dismissible show fade mt-2">
                                                     {{ $message }}
@@ -52,8 +53,9 @@
                                             <label for="name-horizontal">Ends</label>
                                         </div>
                                         <div class="col-md-8 form-group">
-                                            <input type="datetime-local" id="name-horizontal" class="form-control"
-                                                name="ends" placeholder="type.." />
+                                            <input type="datetime-local" id="name-horizontal"
+                                                class="form-control  @error('ends') is-invalid @enderror" name="ends"
+                                                placeholder="type.." {{ old('ends') }} />
                                             @error('ends')
                                                 <div class="alert alert-danger alert-dismissible show fade mt-2">
                                                     {{ $message }}
@@ -66,8 +68,9 @@
                                             <label for="name-horizontal">Price</label>
                                         </div>
                                         <div class="col-md-8 form-group">
-                                            <input type="number" id="name-horizontal" class="form-control" name="price"
-                                                placeholder="type.." />
+                                            <input type="number" id="name-horizontal"
+                                                class="form-control  @error('price') is-invalid @enderror" name="price"
+                                                placeholder="type.." {{ old('price') }} />
                                             @error('price')
                                                 <div class="alert alert-danger alert-dismissible show fade mt-2">
                                                     {{ $message }}

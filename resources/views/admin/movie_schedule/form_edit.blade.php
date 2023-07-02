@@ -47,21 +47,24 @@
                                             <label for="name-horizontal">Starts</label>
                                         </div>
                                         <div class="col-md-8 form-group">
-                                            <input type="datetime-local" id="name-horizontal" class="form-control"
-                                                name="starts" placeholder="type.." value="{{ $movie_schedule->starts }}" />
+                                            <input type="datetime-local" id="name-horizontal"
+                                                class="form-control @error('starts') is-invalid @enderror" name="starts"
+                                                placeholder="type.." value="{{ $movie_schedule->starts }}" />
                                         </div>
                                         <div class="col-md-4">
                                             <label for="name-horizontal">Ends</label>
                                         </div>
                                         <div class="col-md-8 form-group">
-                                            <input type="datetime-local" id="name-horizontal" class="form-control"
-                                                name="ends" placeholder="type.." value="{{ $movie_schedule->ends }}" />
+                                            <input type="datetime-local" id="name-horizontal"
+                                                class="form-control @error('ends') is-invalid @enderror" name="ends"
+                                                placeholder="type.." value="{{ $movie_schedule->ends }}" />
                                         </div>
                                         <div class="col-md-4">
                                             <label for="name-horizontal">Price</label>
                                         </div>
                                         <div class="col-md-8 form-group">
-                                            <input type="number" id="name-horizontal" class="form-control" name="price"
+                                            <input type="number" id="name-horizontal"
+                                                class="form-control @error('price') is-invalid @enderror" name="price"
                                                 placeholder="type.." value="{{ $movie_schedule->price }}" />
                                         </div>
                                         <div class="col-sm-12 d-flex justify-content-end">
