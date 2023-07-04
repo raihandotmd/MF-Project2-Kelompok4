@@ -1,3 +1,22 @@
+@php
+    $activeMoviesRoutes = ['movies', 'movie_genre', 'movie_schedule', 'movie_order', 'cinemas', 'seats'];
+    $isMoviesActive = in_array(
+        request()
+            ->route()
+            ->getName(),
+        $activeMoviesRoutes,
+    );
+    
+    $activeUsersRoutes = ['users', 'users_roles'];
+    $isUsersActive = in_array(
+        request()
+            ->route()
+            ->getName(),
+        $activeUsersRoutes,
+    );
+@endphp
+
+
 <div id="sidebar">
     <div class="sidebar-wrapper active">
         <div class="sidebar-header position-relative">
@@ -42,42 +61,60 @@
             <ul class="menu">
                 <li class="sidebar-title">Menu</li>
 
-                <li class="sidebar-item active">
-                    <a href="index.html" class="sidebar-link">
+                <li class="sidebar-item {{ request()->routeIs('dashboard') ? 'active' : '' }}">
+                    <a href="{{ route('dashboard') }}" class="sidebar-link">
                         <i class="bi bi-grid-fill"></i>
                         <span>Dashboard</span>
                     </a>
                 </li>
 
-                <li class="sidebar-item has-sub">
+                <li class="sidebar-item has-sub {{ $isMoviesActive ? 'active' : '' }}">
                     <a href="#" class="sidebar-link">
-                        <i class="bi bi-stack"></i>
-                        <span>MOVIES</span>
+                        <i class="bi bi-film"></i>
+                        <span>Movies</span>
                     </a>
 
                     <ul class="submenu">
-                        <li class="submenu-item">
-                            <a href="{{ url('movies_order.index') }}" class="submenu-link">Movies</a>
+                        <li class="submenu-item {{ request()->routeIs('movies') ? 'active' : '' }}">
+                            <a href="{{ route('movies') }}" class="submenu-link ">Movies</a>
                         </li>
 
-                        <li class="submenu-item">
-                            <a href="component-alert.html" class="submenu-link">Movie Genre</a>
+                        <li class="submenu-item {{ request()->routeIs('movie_genre') ? 'active' : '' }}">
+                            <a href="{{ route('movie_genre') }}" class="submenu-link">Movie
+                                Genre</a>
                         </li>
 
-                        <li class="submenu-item">
-                            <a href="component-badge.html" class="submenu-link">Movie Schedule</a>
+                        <li class="submenu-item {{ request()->routeIs('movie_schedule') ? 'active' : '' }}">
+                            <a href="{{ route('movie_schedule') }}" class="submenu-link">Movie Schedule</a>
                         </li>
 
-                        <li class="submenu-item">
-                            <a href="component-breadcrumb.html" class="submenu-link">Movie Order</a>
+                        <li class="submenu-item {{ request()->routeIs('movie_order') ? 'active' : '' }}">
+                            <a href="{{ route('movie_order') }}" class="submenu-link">Movie Order</a>
+                        </li>
+                        <li class="submenu-item {{ request()->routeIs('cinemas') ? 'active' : '' }}">
+                            <a href="{{ route('cinemas') }}" class="submenu-link">Cinemas</a>
                         </li>
 
-                        <li class="submenu-item">
-                            <a href="component-button.html" class="submenu-link">Seats</a>
+                        <li class="submenu-item {{ request()->routeIs('seats') ? 'active' : '' }}">
+                            <a href="{{ route('seats') }}" class="submenu-link">Seats</a>
                         </li>
 
-                        <li class="submenu-item">
-                            <a href="component-card.html" class="submenu-link">User</a>
+
+                    </ul>
+                </li>
+                <li class="sidebar-item has-sub {{ $isUsersActive ? 'active' : '' }}">
+                    <a href="#" class="sidebar-link">
+                        <i class="bi bi-person-fill"></i>
+                        <span>Users</span>
+                    </a>
+
+                    <ul class="submenu">
+                        <li class="submenu-item {{ request()->routeIs('users') ? 'active' : '' }}">
+                            <a href="{{ route('users') }}" class="submenu-link ">Users</a>
+                        </li>
+                        <li class="submenu-item {{ request()->routeIs('users_roles') ? 'active' : '' }}">
+                            <a href="{{ route('users_roles') }}" class="submenu-link">User
+                                Roles</a>
                         </li>
                     </ul>
                 </li>
