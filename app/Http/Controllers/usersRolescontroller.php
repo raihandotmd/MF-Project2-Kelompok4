@@ -42,7 +42,7 @@ class UsersRolesController extends Controller
         $user_roles->create($validated);
 
         if ($user_roles) {
-            return redirect()->route('users_roles');
+            return redirect()->route('users_roles')->with('success', 'User Role created successfully');
         }
         return back();
     }
@@ -73,7 +73,7 @@ class UsersRolesController extends Controller
         $user_roles = UsersRoles::find($request->idedit);
         $user_roles ->update($validated);
         if ($user_roles) {
-            return redirect()->route('user_roles');
+            return redirect()->route('users_roles')->with('success', 'User Role updated successfully');
         }
         return back();
     }
@@ -87,7 +87,7 @@ class UsersRolesController extends Controller
         $user_roles->delete();
 
         if ($user_roles) {
-            return redirect()->route('users_roles');
+            return redirect()->route('users_roles')->with('success', 'User Role deleted successfully');
         }
         return back();
     }

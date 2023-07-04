@@ -37,7 +37,7 @@ class MovieGenreController extends Controller
 
         $movieGenre->create($validated);
         if ($movieGenre) {
-            return redirect()->route('movie_genre');
+            return redirect()->route('movie_genre')->with('success', 'Movie Genre created successfully');
         }
         return back();
     }
@@ -64,7 +64,7 @@ class MovieGenreController extends Controller
         
         $movieGenre->update($validated);
         if ($movieGenre) {
-            return redirect()->route('movie_genre');
+            return redirect()->route('movie_genre')->with('success', 'Movie Genre updated successfully');
         }
         return back();
     }
@@ -76,6 +76,6 @@ class MovieGenreController extends Controller
     {
         $movieGenre = MovieGenre::find($id);
         $movieGenre->delete();
-        return redirect()->route('movie_genre');
+        return redirect()->route('movie_genre')->with('success', 'Movie Genre deleted successfully');
     }
 }

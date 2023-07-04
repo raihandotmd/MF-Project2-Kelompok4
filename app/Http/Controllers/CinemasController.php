@@ -35,7 +35,7 @@ class CinemasController extends Controller
 
         $cinemas->create($validated);
         if ($cinemas) {
-            return redirect()->route('cinemas');
+            return redirect()->route('cinemas')->with('success', 'Cinema created successfully');
         }
         return back();
     }
@@ -62,7 +62,7 @@ class CinemasController extends Controller
         $cinemas->update($validated);
         
         if ($cinemas) {
-            return redirect()->route('cinemas');
+            return redirect()->route('cinemas')->with('success', 'Cinema updated successfully');
         }
         return back();
     }
@@ -74,6 +74,6 @@ class CinemasController extends Controller
     {
         $cinema = Cinemas::find($id);
         $cinema->delete();
-        return redirect()->route('cinemas');
+        return redirect()->route('cinemas')->with('success', 'Cinema deleted successfully');
     }
 }

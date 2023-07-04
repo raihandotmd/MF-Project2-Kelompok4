@@ -40,7 +40,7 @@ class SeatsController extends Controller
         $seats->create($validated);
 
         if ($seats) {
-            return redirect()->route('seats');
+            return redirect()->route('seats')->with('success', 'Seat created successfully');
         }
         return back();
     }
@@ -72,7 +72,7 @@ class SeatsController extends Controller
         $seat = Seats::find($request->idedit);
         $seat->update($validated);
         if ($seat) {
-            return redirect()->route('seats');
+            return redirect()->route('seats')->with('success', 'Seat updated successfully');
         }
         return back();
     }
@@ -84,6 +84,6 @@ class SeatsController extends Controller
     {
         $seat = Seats::find($id);
         $seat->delete();
-        return redirect()->route('seats');
+        return redirect()->route('seats')->with('success', 'Seat deleted successfully');
     }
 }

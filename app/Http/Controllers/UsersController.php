@@ -25,16 +25,5 @@ class UsersController extends Controller
         }
     }
 
-    /**
-     * Remove the specified resource from storage.
-     */
-    public function destroy(string $id)
-    {
-        $users = users::find($id);
-        $users->delete();
-        if ($users) {
-            return redirect()->route('users');
-        }
-        return back();
-    }
+
 }

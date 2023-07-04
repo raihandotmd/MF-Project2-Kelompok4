@@ -43,7 +43,7 @@ class MovieScheduleController extends Controller
 
         $moviesSchedule->create($validated);
         if ($moviesSchedule) {
-            return redirect()->route('movie_schedule');
+            return redirect()->route('movie_schedule')->with('success', 'Movie Schedule created successfully');
         }
         return redirect()->back();
     }
@@ -75,7 +75,7 @@ class MovieScheduleController extends Controller
         $movieSchedule = MovieSchedule::find($request->idedit);
         $movieSchedule->update($validated);
         if ($movieSchedule) {
-            return redirect()->route('movie_schedule');
+            return redirect()->route('movie_schedule')->with('success', 'Movie Schedule updated successfully');
         }
         return redirect()->back();
     }
@@ -87,7 +87,7 @@ class MovieScheduleController extends Controller
     {
         $movie_schedule = MovieSchedule::find($id);
         $movie_schedule->delete();
-        return redirect()->route('movie_schedule');
+        return redirect()->route('movie_schedule')->with('success', 'Movie Schedule deleted successfully');
         
     }
 }

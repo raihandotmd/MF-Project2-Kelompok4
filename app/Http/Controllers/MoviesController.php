@@ -51,7 +51,7 @@ class MoviesController extends Controller
 
         
         if ($movies) {
-            return redirect()->route('movies');
+            return redirect()->route('movies')->with('success', 'Movie created successfully');
         }
         return back();
     }
@@ -101,7 +101,7 @@ class MoviesController extends Controller
         $movie->update($validated);
         
         if ($movie) {
-            return redirect()->route('movies');
+            return redirect()->route('movies')->with('success', 'Movie updated successfully');
         }
         return back();
     }
@@ -113,6 +113,6 @@ class MoviesController extends Controller
     {
         $movie = Movies::find($id);
         $movie->delete();
-        return redirect()->route('movies');
+        return redirect()->route('movies')->with('success', 'Movie deleted successfully');
     }
 }
