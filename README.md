@@ -2,7 +2,7 @@
 
 Name: MoFlix
 <br>
-Description: Ordering Movies Ticket Online
+Description: Order Movies Ticket Online
 
 ## Anggota Kelompok
 
@@ -15,3 +15,4 @@ Description: Ordering Movies Ticket Online
 ### Resource
 
 -   Website Structure/Brainstorm [Figma](https://www.figma.com/file/N46jyZrxIVHfsBAUefQSPo/Project-UAS-MoFlix?type=whiteboard&node-id=0%3A1&t=h8SUNckoQTCOW8q0-1)
+-   Project [Progress](https://github.com/users/notRaihan/projects/4)
