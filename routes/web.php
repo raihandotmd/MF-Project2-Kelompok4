@@ -12,6 +12,7 @@ use App\Http\Controllers\MoviesController;
 use App\Http\Controllers\MovieScheduleController;
 use App\Http\Controllers\SeatsController;
 use App\Http\Controllers\CinemasController;
+use App\Http\Controllers\FrontendController;
 
 /*
 |--------------------------------------------------------------------------
@@ -23,6 +24,9 @@ use App\Http\Controllers\CinemasController;
 | be assigned to the "web" middleware group. Make something great! 
 |
 */
+
+
+Route::get('/frontend', [FrontendController::class, 'index']);
 
 Route::get('/', function () {
     return view('welcome');
