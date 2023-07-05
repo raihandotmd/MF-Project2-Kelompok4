@@ -60,6 +60,21 @@
                                             @enderror
                                         </div>
                                         <div class="col-md-4">
+                                            <label for="name-horizontal">Rating</label>
+                                        </div>
+                                        <div class="col-md-8 form-group">
+                                            <input type="number" max="5" id="name-horizontal"
+                                                class="form-control @error('image') is-invalid @enderror" name="rating"
+                                                placeholder="input rating..." value="{{ old('rating') }}" />
+                                        </div>
+                                        @error('rating')
+                                            <div class="alert alert-danger alert-dismissible show fade mt-2">
+                                                {{ $message }}
+                                                <button type="button" class="btn-close" data-bs-dismiss="alert"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                        @enderror
+                                        <div class="col-md-4">
                                             <label for="name-horizontal">Genre</label>
                                         </div>
                                         <div class="col-md-8 form-group">

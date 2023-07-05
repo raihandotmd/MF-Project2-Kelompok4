@@ -32,6 +32,10 @@
                                     <td>{{ $movie->description }}</td>
                                 </tr>
                                 <tr>
+                                    <th>Rating </th>
+                                    <td>{{ $movie->rating }}</td>
+                                </tr>
+                                <tr>
                                     <th>Genre </th>
                                     <td>{{ $genre->name }}</td>
                                 </tr>
