@@ -782,7 +782,6 @@
                                                 </svg></a>
                                         </p>
                                     </div>
-
                                 </div>
                                 <div class="clearfix"> </div>
                             </div>

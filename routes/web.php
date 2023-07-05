@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\FrontendController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -14,5 +15,6 @@ use App\Http\Controllers\FrontendController;
 */
 
 Route::get('/frontend', [FrontendController::class, 'index']);
+
 
 
