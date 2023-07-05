@@ -13,6 +13,7 @@ class Movies extends Model
         'code',
         'title',
         'description',
+        'rating',
         'genre_id',
         'image',
         'trailer',
