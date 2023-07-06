@@ -31,9 +31,9 @@
     <link href="assets/css/font-awesome.min.css" rel="stylesheet" />
     <link href="assets/css/font-awesome.css" rel="stylesheet">
     <!-- Custom styles for this template -->
-    <link href="assets/css/style.css" rel="stylesheet" />
+    <link href="{{ asset('assets/css/style.css') }}" rel="stylesheet" />
     <!-- responsive style -->
-    <link href="assets/css/responsive.css" rel="stylesheet" />
+    <link href="{{ asset('assets/css/responsive.css') }}" rel="stylesheet" />
     <link href='//fonts.googleapis.com/css?family=Tangerine:400,700' rel='stylesheet' type='text/css'>
     <link href="//fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900" rel="stylesheet">
     <link href='//fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
