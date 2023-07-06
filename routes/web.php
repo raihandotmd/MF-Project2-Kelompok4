@@ -48,7 +48,6 @@ Route::middleware(['auth'])->group(function () {
     })->name('user');
 });
 
-Auth::routes();
 
 Route::get('/deny', function () {
     return 'You are not allowed to access this page.';

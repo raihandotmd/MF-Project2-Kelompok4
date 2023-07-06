@@ -44,19 +44,19 @@
                         <x-frontend.box />
                     </div>
                     <div class="col-sm-6 col-xl-4 col-lg-3">
-                        <x-frontend.box />
+                        <x-frontend.box2 />
                     </div>
                     <div class="col-sm-6 col-xl-4 col-lg-3">
-                        <x-frontend.box />
+                        <x-frontend.box3 />
                     </div>
                     <div class="col-sm-6 col-xl-4 col-lg-3">
-                        <x-frontend.box />
+                        <x-frontend.box4 />
                     </div>
                     <div class="col-sm-6  col-xl-4 col-lg-3">
-                        <x-frontend.box />
+                        <x-frontend.box5 />
                     </div>
                     <div class="col-sm-6 col-xl-4 col-lg-3">
-                        <x-frontend.box />
+                        <x-frontend.box6 />
                     </div>
                     <div class="btn-box">
                         <a href="">
