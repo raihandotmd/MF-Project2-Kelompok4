@@ -1,4 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+:root{
+	--secondary-color : #e6c511;
+}
+
 body {
   font-family: "Poppins", sans-serif;
   color: #0c0c0c;
@@ -2987,7 +2992,7 @@ a.w3_play_icon2 span {
 p.fexi_header {
 	text-transform: uppercase;
 	font-size: 1.3em;
-	color: #02a388;
+	color: #e6c511;
 	font-weight: bold;
 	padding-bottom: 1em;
 }
@@ -3007,7 +3012,7 @@ p.fexi_header_para label {
 }
 
 p.fexi_header_para span {
-	color: #02a388;
+	color: #e6c511;
 	font-size: 14px;
 	font-weight: bold;
 	float: left;
@@ -3745,21 +3750,21 @@ a.w3_play_icon2 span {
 }
 
 .player-text {
-	background: #0c0d0d;
+	background: #4d0000;
 	padding: 1.8em 1em;
 }
 
 p.fexi_header {
 	text-transform: uppercase;
 	font-size: 1.3em;
-	color: #02a388;
+	color: #e6c511;
 	font-weight: bold;
 	padding-bottom: 1em;
 }
 
 p.fexi_header_para {
 	margin-top: .8em;
-	color: #9ea2a2;
+	color: #fff;
 	line-height: 1.5em;
 	position: relative;
 }
@@ -3772,7 +3777,7 @@ p.fexi_header_para label {
 }
 
 p.fexi_header_para span {
-	color: #02a388;
+	color: #e6c511;
 	font-size: 14px;
 	font-weight: bold;
 	float: left;
@@ -4494,3 +4499,17 @@ a img {
     border: 0;
 }
 
+section.featured_movie {
+	border-radius: 40px 0 0 40px;
+}
+
+section.featured_movie h1 span {
+	color: var(--secondary-color);
+}
+
+@media screen and (max-width: 1200px) {
+	section.featured_movie {
+		border-radius: 65px 65px 0 0;
+		border-bottom: 3px dotted rgba(230, 197, 17, 0.2);
+	}
+}

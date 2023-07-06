@@ -32,10 +32,10 @@
             </div>
     </section> --}}
 
-    <section class="d-md-flex flex-md-column flex-xl-row">
+    <section class="d-md-flex flex-md-column flex-xl-row justify-content-between">
         <!--/top-movies-->
         <section class="shop_section layout_padding p-5">
-            <div class="container  my-auto">
+            <div class="container">
                 <div class="heading_container heading_center">
                     <h1 class="agile_w3_title"> Rilis <span> Movies </span> </h1>
                 </div>
@@ -66,14 +66,17 @@
 
                 </div>
         </section>
-        <section class="player-text p-5 d-flex flex-column align-items-center">
+        <section class="player-text d-flex flex-column align-items-center align-self-center featured_movie"
+            style="padding: 5rem">
             <div class="heading_container heading_center mb-4">
                 <h1 class="agile_w3_title text-white"> Featured <span> Movies </span> </h1>
             </div>
-            <div class="d-flex flex-md-column align-items-center">
+            <div class="container d-flex flex-column align-items-center">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/cqGjhVJWtEg"
                     title="YouTube video player" frameborder="0" class="overflow-x-scroll"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    style=" width: 100%;
+                    aspect-ratio: 16/9;"></iframe>
                 <div class="player-text two w-auto">
                     <p class="fexi_header pb-0">Spiderman </p>
                     <p class="fexi_header_para mb-4">
@@ -82,7 +85,6 @@
                         EXPENDABLES (2023) - Andy Samberg Movie the company's top
                         delivery stork,
                         lands in hot water when the Baby Factory produces an adorable.......
-
                     </p>
                     <p class="fexi_header_para">
                         <span>Release On<label>:</label> </span>
@@ -137,7 +139,7 @@
 
     <section class="about_section layout_padding py-10"><br><br>
         <div class="container">
-            <div class="">
+            <div class="d-lg-flex align-items-center flex-sm-column flex-lg-row">
                 <div class="col-md col-lg-5 ">
                     <div class="img-box">
                         <img src="assets/images/about-img.png" alt="">
