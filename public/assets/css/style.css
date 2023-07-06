@@ -4510,7 +4510,6 @@ section.featured_movie h1 span {
 @media screen and (max-width: 1200px) {
 	section.featured_movie {
 		border-radius: 65px 65px 0 0;
+		border-bottom: 3px dotted rgba(230, 197, 17, 0.2);
 	}
-}
-	
 }
