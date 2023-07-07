@@ -12,7 +12,8 @@
               Contact Us
             </h2>
           </div>
-          <form action="">
+          <form class="form form-horizontal" action="{{ route('frontend.contact', ['id' => $id]) }}" method="GET">
+    @csrf
             <div>
               <input type="text" placeholder="Full Name " />
             </div>
