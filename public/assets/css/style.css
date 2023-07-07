@@ -4513,3 +4513,40 @@ section.featured_movie h1 span {
 		border-bottom: 3px dotted rgba(230, 197, 17, 0.2);
 	}
 }
+
+.desc-movie {
+	list-style: none;
+	margin: 0 0 30px;
+	padding: 0
+}
+.desc-movie li {
+	padding-left: 90px;
+	font-weight: 300;
+	font-size: 13px;
+	position: relative;
+	text-align: justify;
+	line-height: 1.8;
+	color: #000000
+}
+.desc-movie li span {
+	min-width: 90px;
+	position: absolute;
+	left: 0;
+	top: 0
+}
+.desc-movie li span::before {
+	content: ":";
+	position: absolute;
+	top: 0;
+	right: 5px
+}
+ 
+.poster-box a {
+	display: block;
+	background-color: #F9CC14;
+	color: #000000;
+	padding: 11px;
+	text-align: center;
+	font-weight: 600
+}
+
