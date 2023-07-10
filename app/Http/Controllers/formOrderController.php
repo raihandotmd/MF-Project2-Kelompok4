@@ -2,10 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Controllers\Frontend;
 use Illuminate\Http\Request;
+use App\Models\movieOrder;
+use Illuminate\Support\Facades\DB;
 
-class FrontendController extends Controller
+class formOrderController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -13,7 +14,7 @@ class FrontendController extends Controller
     public function index()
     {
         //
-        return view ('frontend.index');
+
     }
 
     /**
@@ -22,6 +23,10 @@ class FrontendController extends Controller
     public function create()
     {
         //
+        $movies_schedule = DB::table('movie_schedule')->get();
+        $users = DB ::table('users')->get(); 
+
+    return view ('frontend.formOrder', compact('users','movies_schedule'));
     }
 
     /**

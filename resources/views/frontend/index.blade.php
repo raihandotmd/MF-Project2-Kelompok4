@@ -142,7 +142,7 @@
             <div class="d-lg-flex align-items-center flex-sm-column flex-lg-row">
                 <div class="col-md col-lg-5 ">
                     <div class="img-box">
-                        <img src="assets/images/about-img.png" alt="">
+                        <img src="assets/images/bioskop.png" alt="">
                     </div>
                 </div>
                 <div class="col-md col-lg-7">
@@ -200,11 +200,9 @@
                                 <div class="thumb">
                                     <div class="hover-content">
                                         <ul>
-                                            <li><a href="single-product.html"><i class="fa fa-eye"></i></a></li>
                                             <li><a href="https://www.youtube.com/watch?v=avz06PDqDbM"><i
                                                         class="fa-solid fa-play"></i></a></li>
-                                            <li><a href="single-product.html"><i class="fa fa-shopping-cart"></i></a>
-                                            </li>
+
                                         </ul>
                                     </div>
                                     <img src="assets/images/mission.jpg" alt="">
@@ -220,7 +218,7 @@
                                         <ul>
 
                                             <li><a href="https://www.youtube.com/watch?v=jzQn0-WH4WM"><i
-                                                        class="fa fa-star"></i></a></li>
+                                                class="fa-solid fa-play"></i></a></li>
 
                                         </ul>
                                     </div>
@@ -237,7 +235,7 @@
                                         <ul>
 
                                             <li><a href="https://www.youtube.com/watch?v=DhlaBO-SwVE"><i
-                                                        class="fa fa-star"></i></a></li>
+                                                class="fa-solid fa-play"></i></a></li>
 
                                         </ul>
                                     </div>
@@ -254,7 +252,7 @@
                                         <ul>
 
                                             <li><a href="https://www.youtube.com/watch?v=zL2BtTdIuLI"><i
-                                                        class="fa fa-star"></i></a></li>
+                                                class="fa-solid fa-play"></i></a></li>
 
                                         </ul>
                                     </div>
@@ -505,7 +503,7 @@
                         <div class="heading_container">
                             <p class="gt-teks">READY TO CREATE EVENT WITH US?</p>
                         </div>
-                        <form action="">
+                        <form action="../frontend/partials/contact.blade.php">
                             <div>
                                 <input type="text" placeholder="Full Name " />
                             </div>
@@ -902,4 +900,5 @@
             </div>
         </div>
     </div>
+
 </x-frontend.layout>

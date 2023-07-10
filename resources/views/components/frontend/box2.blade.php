@@ -5,7 +5,7 @@
         </div>
         <div class="detail-box">
             <h6>
-                Comedy
+                Action
             </h6>
             <h6>
                 Rating:
