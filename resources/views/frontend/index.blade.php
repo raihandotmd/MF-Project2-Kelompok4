@@ -37,7 +37,7 @@
         <section class="shop_section layout_padding p-5">
             <div class="container">
                 <div class="heading_container heading_center">
-                    <h1 class="agile_w3_title"> Rilis <span> Movies </span> </h1>
+                    <h1 class="agile_w3_title"> Now <span> Playing </span> </h1>
                 </div>
                 <div class="row">
                     <div class="col-sm-6 col-xl-4 col-lg-3">
@@ -185,7 +185,7 @@
             <div class="row">
                 <div class="col-lg-6">
                     <div class="section-heading">
-                        <h2>NOW SHOWING IN CINEMAS</h2>
+                        <h2>COMING SOON IN CINEMAS</h2>
 
                     </div>
                 </div>
@@ -271,7 +271,7 @@
 
     <!-- feature section -->
 
-    <section class="feature_section layout_padding">
+    <section class="feature_section layout_padding mt-5">
         <div class="container">
             <div class="heading_container">
                 <h2 class="gt-teks">
