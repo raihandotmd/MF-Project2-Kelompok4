@@ -4195,6 +4195,9 @@ blockquote, dd, div, dl, dt, form, h1, h2, h3, h4, h5, h6, li, ol, p, pre, td, t
 	transform: translateY(-5px);
 }
 
+
+
+
 .hot_section .carousel_container {
 	border: 1px solid #c2c2c2;
 	padding: 45px 0 15px 0;
@@ -4303,7 +4306,7 @@ blockquote, dd, div, dl, dt, form, h1, h2, h3, h4, h5, h6, li, ol, p, pre, td, t
     display: flex;
     align-items: center;
     justify-content: center;
-    background: var(--primary);
+    background: var(--primary-color);
     transform: scale(0);
     transition: .5s;
 }
@@ -4313,7 +4316,7 @@ blockquote, dd, div, dl, dt, form, h1, h2, h3, h4, h5, h6, li, ol, p, pre, td, t
 }
 
 .team-item .team-overlay .btn {
-    color: var(--primary);
+    color: var(--primary-color);
     background: #FFFFFF;
 }
 
@@ -4566,4 +4569,7 @@ section.featured_movie h1 span {
 
 .feature_section h5 {
 	margin-bottom: 0.6rem;
+}
+.hot_section{
+	border-bottom: 3px dotted #eee
 }
