@@ -32,7 +32,7 @@
                         <a class="nav-link" href="../promo.blade.php"> Promo </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="contact.blade.php">Contact Us</a>
+                        <a class="nav-link" href="../contact.blade.php">Contact Us</a>
                     </li>
                     <li class="nav-item order-sm-first order-lg-last ml-lg-auto my-2">
                         <div class="user_option-box">

@@ -503,7 +503,7 @@
                         <div class="heading_container">
                             <p class="gt-teks">READY TO CREATE EVENT WITH US?</p>
                         </div>
-                        <form action="">
+                        <form action="../frontend/partials/contact.blade.php">
                             <div>
                                 <input type="text" placeholder="Full Name " />
                             </div>

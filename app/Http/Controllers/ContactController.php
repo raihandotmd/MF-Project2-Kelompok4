@@ -2,18 +2,19 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Controllers\Frontend;
+use App\Models\Contact;
 use Illuminate\Http\Request;
 
-class FrontendController extends Controller
+class ContactController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        //
-        return view ('frontend.index');
+        $contact = "Ini adalah informasi kontak";
+
+    return view('frontend.contact', compact('contact'));
     }
 
     /**
@@ -38,6 +39,7 @@ class FrontendController extends Controller
     public function show(string $id)
     {
         //
+        return view('frontend.contact.show', compact('id'));
     }
 
     /**
