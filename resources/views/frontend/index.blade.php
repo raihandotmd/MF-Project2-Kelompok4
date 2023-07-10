@@ -492,7 +492,7 @@
     <br><br>
     <section class="hot_section layout_padding">
         <div class="container">
-            <div class="heading_container">
+            <div class="heading_container align-items-center">
                 <h3 class="gt-teks">
                     Payment
                 </h3>
@@ -501,106 +501,11 @@
                 </h1>
                 <hr>
             </div>
-
-        </div>
-        <div class="carousel_container">
-            <div class="container">
-                <div class="carousel-wrap ">
-                    <div class="owl-carousel">
-                        <div class="item">
-                            <div class="box">
-                                <div class="img-box">
-                                    <img src="assets/images/dana.jpg" />
-                                </div>
-                                <div class="detail-box">
-                                    <h4>
-                                        $30
-                                    </h4>
-                                    <p>
-                                        There are many variations of passages of Lorem Ipsum available,
-                                    </p>
-                                    <a href="">
-                                        Order Now
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="box">
-                                <div class="img-box">
-                                    <img src="assets/images/bca.png" />
-                                </div>
-                                <div class="detail-box">
-                                    <h4>
-                                        $30
-                                    </h4>
-                                    <p>
-                                        There are many variations of passages of Lorem Ipsum available,
-                                    </p>
-                                    <a href="">
-                                        Order Now
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="box">
-                                <div class="img-box">
-                                    <img src="assets/images/btn.png" />
-                                </div>
-                                <div class="detail-box">
-                                    <h4>
-                                        $30
-                                    </h4>
-                                    <p>
-                                        There are many variations of passages of Lorem Ipsum available,
-                                    </p>
-                                    <a href="">
-                                        Order Now
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="box">
-                                <div class="img-box">
-                                    <img src="assets/images/shoopepay.jpg" />
-                                </div>
-                                <div class="detail-box">
-                                    <h4>
-                                        $30
-                                    </h4>
-                                    <p>
-                                        There are many variations of passages of Lorem Ipsum available,
-                                    </p>
-                                    <a href="">
-                                        Order Now
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="box">
-                                <div class="img-box">
-                                    <img src="assets/images/gopay.png" />
-                                </div>
-                                <div class="detail-box">
-                                    <h4>
-                                        $30
-                                    </h4>
-                                    <p>
-                                        There are many variations of passages of Lorem Ipsum available,
-                                    </p>
-                                    <a href="">
-                                        Order Now
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="all-payments">
+                <img class="mx-auto" src="{{ asset('assets/images/payments.png') }}" alt="all payments">
             </div>
         </div>
+
     </section>
 
     <div class="container-xxl py-5">
