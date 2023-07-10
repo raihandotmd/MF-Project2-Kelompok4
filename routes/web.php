@@ -59,7 +59,7 @@ Route::get('/deny', function () {
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
 //Route::get('/_contact', [App\Http\Controllers\ContactController::class, 'index'])->name('_contact.blade.php');
-Route::post('/contact', [ContactController::class, 'index'])->name('contact');
+Route::get('/contact', [ContactController::class, 'index'])->name('contact');
 
 
 Route::prefix('/movies')->group(function(){

@@ -14,7 +14,7 @@ class ContactController extends Controller
     {
         $contact = "Ini adalah informasi kontak";
 
-    return view('frontend.contact.index', compact('contact'));
+    return view('frontend.contact', compact('contact'));
     }
 
     /**
