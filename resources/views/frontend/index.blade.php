@@ -218,7 +218,7 @@
                                         <ul>
 
                                             <li><a href="https://www.youtube.com/watch?v=jzQn0-WH4WM"><i
-                                                class="fa-solid fa-play"></i></a></li>
+                                                        class="fa-solid fa-play"></i></a></li>
 
                                         </ul>
                                     </div>
@@ -235,7 +235,7 @@
                                         <ul>
 
                                             <li><a href="https://www.youtube.com/watch?v=DhlaBO-SwVE"><i
-                                                class="fa-solid fa-play"></i></a></li>
+                                                        class="fa-solid fa-play"></i></a></li>
 
                                         </ul>
                                     </div>
@@ -252,7 +252,7 @@
                                         <ul>
 
                                             <li><a href="https://www.youtube.com/watch?v=zL2BtTdIuLI"><i
-                                                class="fa-solid fa-play"></i></a></li>
+                                                        class="fa-solid fa-play"></i></a></li>
 
                                         </ul>
                                     </div>
@@ -277,319 +277,168 @@
                 <h2 class="gt-teks">
                     Facility
                 </h2>
-                <p>
+                <p class="text-2xl w-75">
                     Modern cinemas usually offer various facilities to enhance the movie viewing experience for
                     viewers.
                     Here are some of the facilities commonly found in cinemas
                 </p>
             </div>
-            <div class="row">
-                <div class="col-sm-6 col-lg-3">
-                    <div class="box">
-                        <div class="img-box">
-                            <img src="assets/images/layar_lebar.png" alt="">
-                        </div>
-                        <div class="detail-box">
-                            <h5>
-                                Widescreen
-                            </h5>
-                            <p>
-                                Cinemas are equipped with large screens that present high-resolution movie images.
-                                These
-                                screens are designed to provide an immersive, cinematic experience.
-                            </p>
-                            <br><br><br>
-                            <a href="">
-                                <div class="promo-box">
-                                    <a href=""> Get </a>
-                                </div>
-                            </a>
-                        </div>
+            <div class="d-grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 mt-8">
+                <div class="box m-0">
+                    <div class="img-box text-7xl">
+                        <i class="fa-solid fa-video"></i>
+
+                    </div>
+                    <div class="detail-box">
+                        <h5>
+                            Widescreen
+                        </h5>
+                        <p>
+                            Cinemas are equipped with large screens that present high-resolution movie images.
+                            These
+                            screens are designed to provide an immersive, cinematic experience.
+                        </p>
+
                     </div>
                 </div>
-                <div class="col-sm-6 col-lg-3">
-                    <div class="box">
-                        <div class="img-box">
-                            <img src="assets/images/audio.png" alt="">
-                        </div>
-                        <div class="detail-box">
-                            <h5>
-                                Audio System
-                            </h5>
-                            <p>
-                                Cinemas are equipped with high-quality audio systems, such as Dolby Atmos or other
-                                surround
-                                sound systems. This allows viewers to enjoy clear and immersive sound effects during
-                                movie
-                                viewing.
-                            </p>
-                            <br>
-                            <a href="">
-                                <a href="">
-                                    <div class="promo-box">
-                                        <a href=""> Get </a>
-                                    </div>
-                                </a>
-                            </a>
-                        </div>
+                <div class="box m-0">
+                    <div class="img-box text-7xl">
+                        <i class="fa-solid fa-volume-high"></i>
+                    </div>
+                    <div class="detail-box">
+                        <h5>
+                            Audio System
+                        </h5>
+                        <p>
+                            Cinemas are equipped with high-quality audio systems, such as Dolby Atmos or other
+                            surround
+                            sound systems. This allows viewers to enjoy clear and immersive sound effects during
+                            movie
+                            viewing.
+                        </p>
+
                     </div>
                 </div>
-                <div class="col-sm-6 col-lg-3">
-                    <div class="box">
-                        <div class="img-box">
-                            <img src="assets/images/duduk.png" alt="">
-                        </div>
-                        <div class="detail-box">
-                            <h5>
-                                Comfortable Seating
-                            </h5>
-                            <p>
-                                Modern cinemas are usually equipped with comfortable seats. Some theaters even offer
-                                reclining seats or VIP seats for more space and extra comfort.
-                            </p>
-                            <br><br>
-                            <a href="">
-                                <a href="">
-                                    <div class="promo-box">
-                                        <a href=""> Get </a>
-                                    </div>
-                                </a>
-                            </a>
-                        </div>
+                <div class="box m-0">
+                    <div class="img-box text-7xl">
+                        <i class="fa-solid fa-couch"></i>
+                    </div>
+                    <div class="detail-box">
+                        <h5>
+                            Comfortable Seating
+                        </h5>
+                        <p>
+                            Modern cinemas are usually equipped with comfortable seats. Some theaters even offer
+                            reclining seats or VIP seats for more space and extra comfort.
+                        </p>
+
                     </div>
                 </div>
-                <div class="col-sm-6 col-lg-3">
-                    <div class="box">
-                        <div class="img-box">
-                            <img src="assets/images/cafe.png" alt="">
-                        </div>
-                        <div class="detail-box">
-                            <h5>
-                                Food Court/Cafe
-                            </h5>
-                            <p>
-                                Cinemas often have a food and drink area located within their complex. Viewers can
-                                purchase
-                                snacks, drinks or a full meal before or after the movie.
-                            </p>
-                            <br>
-                            <a href="">
-                                <a href="">
-                                    <div class="promo-box">
-                                        <a href=""> Get </a>
-                                    </div>
-                                </a>
-                            </a>
-                        </div>
+                <div class="box m-0">
+                    <div class="img-box text-7xl">
+                        <i class="fa fa-cutlery" aria-hidden="true"></i>
+
+                    </div>
+                    <div class="detail-box">
+                        <h5>
+                            Food Court/Cafe
+                        </h5>
+                        <p>
+                            Cinemas often have a food and drink area located within their complex. Viewers can
+                            purchase
+                            snacks, drinks or a full meal before or after the movie.
+                        </p>
+
                     </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-6 col-lg-3">
-                    <div class="box">
-                        <div class="img-box">
-                            <img src="assets/images/toilet.png" alt="">
-                        </div>
-                        <div class="detail-box">
-                            <h5>
-                                WC and Public Facilities
-                            </h5>
-                            <p>
-                                Cinemas provide toilet facilities and other public facilities such as smoking areas,
-                                nursing
-                                rooms, and accessibility for persons with disabilities.
-                            </p>
-                            <br><br>
-                            <a href="">
-                                <div class="promo-box">
-                                    <a href=""> Get </a>
-                                </div>
-                            </a>
-                        </div>
+                <div class="box m-0">
+                    <div class="img-box text-7xl">
+                        <i class="fas fa-toilet"></i>
+                    </div>
+                    <div class="detail-box">
+                        <h5>
+                            WC and Public Facilities
+                        </h5>
+                        <p>
+                            Cinemas provide toilet facilities and other public facilities such as smoking areas,
+                            nursing
+                            rooms, and accessibility for persons with disabilities.
+                        </p>
+
                     </div>
                 </div>
-                <div class="col-sm-6 col-lg-3">
-                    <div class="box">
-                        <div class="img-box">
-                            <img src="assets/images/snack-bar.png" width="40px" alt="">
-                        </div>
-                        <div class="detail-box">
-                            <h5>
-                                Snack Bar
-                            </h5>
-                            <p>
-                                In cinemas, there is usually a special counter that sells snacks such as popcorn,
-                                candy,
-                                chips and soft drinks. This snack is a popular choice to enjoy during a movie.
-                            </p>
-                            <br><br>
-                            <a href="">
-                                <a href="">
-                                    <div class="promo-box">
-                                        <a href=""> Get </a>
-                                    </div>
-                                </a>
-                            </a>
-                        </div>
+                <div class="box m-0">
+                    <div class="img-box text-7xl">
+                        <i class="fa-solid fa-cookie-bite"></i>
+                    </div>
+                    <div class="detail-box">
+                        <h5>
+                            Snack Bar
+                        </h5>
+                        <p>
+                            In cinemas, there is usually a special counter that sells snacks such as popcorn,
+                            candy,
+                            chips and soft drinks. This snack is a popular choice to enjoy during a movie.
+                        </p>
+
                     </div>
                 </div>
-                <div class="col-sm-6 col-lg-3">
-                    <div class="box">
-                        <div class="img-box">
-                            <img src="assets/images/parking.png" alt="">
-                        </div>
-                        <div class="detail-box">
-                            <h5>
-                                Parking lot
-                            </h5>
-                            <p>
-                                Cinemas often have sufficient parking facilities for spectator vehicles. This makes
-                                it
-                                easier for the audience to find a safe parking space close to the cinema.
-                            </p>
-                            <br>
-                            <a href="">
-                                <a href="">
-                                    <div class="promo-box">
-                                        <a href=""> Get </a>
-                                    </div>
-                                </a>
-                            </a>
-                        </div>
+                <div class="box m-0">
+                    <div class="img-box text-7xl">
+                        <i class="fa-solid fa-square-parking"></i>
+                    </div>
+                    <div class="detail-box">
+                        <h5>
+                            Parking lot
+                        </h5>
+                        <p>
+                            Cinemas often have sufficient parking facilities for spectator vehicles. This makes
+                            it
+                            easier for the audience to find a safe parking space close to the cinema.
+                        </p>
+
                     </div>
                 </div>
-                <div class="col-sm-6 col-lg-3">
-                    <div class="box">
-                        <div class="img-box">
-                            <img src="assets/images/waiting_area.jpg" alt="">
-                        </div>
-                        <div class="detail-box">
-                            <h5>
-                                Waiting Area
-                            </h5>
-                            <p>
-                                There is usually a comfortable waiting area in theaters, where audience members can
-                                sit
-                                back
-                                and relax before the movie starts. Some cinemas also offer a waiting room equipped
-                                with
-                                a
-                                play area or billiard room.
-                            </p>
-                            <a href="">
-                                <a href="">
-                                    <div class="promo-box">
-                                        <a href=""> Get </a>
-                                    </div>
-                                </a>
-                            </a>
-                        </div>
+                <div class="box m-0 ">
+                    <div class="img-box text-7xl">
+                        <i class="fa-solid fa-clock"></i>
+                    </div>
+                    <div class="detail-box">
+                        <h5>
+                            Waiting Area
+                        </h5>
+                        <p>
+                            There is usually a comfortable waiting area in theaters, where audience members can
+                            sit
+                            back
+                            and relax before the movie starts. Some cinemas also offer a waiting room equipped
+                            with
+                            a
+                            play area or billiard room.
+                        </p>
+
                     </div>
                 </div>
             </div>
+
 
         </div>
     </section>
 
     <!-- end feature section -->
-
-    <!-- contact section -->
-    <br><br>
-    <section class="contact_section">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="form_container">
-                        <div class="heading_container">
-                            <p class="gt-teks">READY TO CREATE EVENT WITH US?</p>
-                        </div>
-                        <form action="../frontend/partials/contact.blade.php">
-                            <div>
-                                <input type="text" placeholder="Full Name " />
-                            </div>
-                            <div>
-                                <input type="email" placeholder="Email" />
-                            </div>
-                            <div>
-                                <input type="text" placeholder="Phone number" />
-                            </div>
-                            <div>
-                                <input type="text" class="message-box" placeholder="Message" />
-                            </div>
-                            <div class="flex flex-col relative">
-                                <label for="attachment">Attachment</label>
-                                <br>
-                                <span class="text-secondary-gray text-sm mb-3">Upload any relevant files regarding
-                                    your
-                                    event. *Max size
-                                    5 mb</span>
-                                <br>
-                                <label
-                                    class="w-1/2 lg:w-1/5 flex flex-col items-center p-2 bg-white text-blue rounded-full tracking-wide border border-primary-gray cursor-pointer hover:opacity-75"
-                                    id="fileUpload">
-                                    <span class="text-sm font-semibold text-primary-gray">Browse File</span>
-                                    <input type="file" name="file" class="hidden" id="attachment"
-                                        accept=".pdf,.docx,.doc,.xlsx,.xls,.pptx,.ppt,.rar,.zip,.jpg,.jpeg,.png,.mp4,.mov">
-                                </label>
-
-                            </div>
-                            <div class="flex flex-col">
-                                <div id="inline-badge" class="h-[60px]">
-                                    <div class="grecaptcha-badge" data-style="inline"
-                                        style="width: 256px; height: 60px; box-shadow: gray 0px 0px 5px;">
-                                        <div class="grecaptcha-logo"><iframe title="reCAPTCHA"
-                                                src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6LcBeF0mAAAAANPfoX-nxmBeO8yW56rMA1o56kzD&amp;co=aHR0cHM6Ly93d3cudGl4LmlkOjQ0Mw..&amp;hl=id&amp;v=khH7Ei3klcvfRI74FvDcfuOo&amp;size=invisible&amp;badge=inline&amp;cb=8joscchpc2t6"
-                                                width="256" height="60" role="presentation"
-                                                name="a-kduxxwv3suvr" frameborder="0" scrolling="no"
-                                                sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox allow-storage-access-by-user-activation"></iframe>
-                                        </div>
-                                        <div class="grecaptcha-error"></div>
-                                        <textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response"
-                                            style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;">03AAYGu2QmO8-T48YnZVGulNbm0K29iPPSRxB9ESP-kVGlNd1yWsWHegaGYAVFsL1NyvRqJUXkrNIqzY9yIzG7xHTfJOXIlTj1B9NgzN9DOkK0mgQBpQdZwhLEIIECvrPh0RAzQvosz1IZ2atXUBLHVFundrF3SmV5OUEffURnHmCKBWwn62_-MofP91hG8GEknZU45BeWdrFSH8AgHjUOl2qCXTN1uQHfWebbjPv5e-dYZ3k0ZMZ782bWFvdm0Yj9-ySZ2IFV_Sj4K2PdX0tUNtgUr-gWznv8VCr4Bb8C-cyTkNW-oEIdwtIPSHAm6tq-4rWAK18z_LOnoGPcB5Z68mJ4if7QBtIsRu1UcwPMXTA4gXsZNR3v7nY7aMLiAqP2l916LgYLtnIaz0TI-4PsSp7K43atavAR3ut90hEpwTELDXSidt9IWjKVCHf9rQ1Ig08f70u9Yh-EJ56Ea7J5AtWwXMPJcXNAuoJAeyYCo4HUKRhzdN2sQUVrDv88m-8wEe3L4GQyiiew8UIR6cKIpBFDmd65YvJhZiRElaFml9Oc3I3M971lgyzNc9WP9H8BModj8HGmiykGKDuiAigIiJwJRy8Vv2Wredk6aoOfAGrdvjSCYu5zSJGdccNOpqrw7ic1eFbU58OZoDLEE069ehWB8X4As5oZOj4x7JsoqBJApPZn0_lVr62PG__tMvhn_xElgQYvH5xTybuCQtHv5my-kgp-okNHZN1fiSI_x6RP7xI8tvJABVVkjhKIF5Q9eg2RpbQMjjZJzsTokI9gASFKcYV8NllE2HdyR0jZ2M1UpsGQIpwdlxrdB5AW3DGR-eICYqshgi4wm9qWFuJk9v4ynAq8RMzLemdGBdIqSPqgomTH94X5ZXO4vDYdW4Ga1vSQtooBZotUiCWy-l823Y5jZJ_V86vRA8hYkDrgaFW26D6Aqlr_9xsj7FVV5YeYDOo8bxLxnTKqx9OkPoSjzjm94e2oS_PZQJIpqUZ-_sdcJAZec_INoSIXBwf9COiqFsrPVXDWMLiL2LYDvLT9yZKeGwdV2UvVEtP285eGKWsyN4ELBB-6tGjgO3e_azfuH_8Cx7KPiTWhCWCcPVZoa4F83aLNENJvHtk_WIvB_xNK_v9QEYNfFoqE2M9OWKP2R3xHVDn11N40mCQBE-Aak-OUb67_GNpCtXOQvtaw70mBKICSVtijY9qjJtmYMIf8R5BDWSuha35Zny1UCcfy6sMxEzelbqwBSKpclkmTTiP0IHlBbeNA8492-a20U3uV142qyrn8OAC5XHdSz0pP4hez6wUvGjJ_4Ptnl22Jnsf1QoxnB0KJ_WsGicWvKjBvVef3ZvFZoLoWjZPheZTxKsZiVcf8pwu8Rbfk90qk4IiukI5A7EyIeb_kQwp353qHKicmA3zHR9sKUVLS11dhV77WHnnQNhfGtLvoIgs-LTSCRHLp_d5YpdNw9ZP7MEoA1E7yHr8YVIhr</textarea>
-                                    </div><iframe style="display: none;"></iframe>
-                                </div>
-                            </div>
-
-                            <div class="d-flex ">
-                                <button>
-                                    SEND
-                                </button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="col-md-6 wow fadeIn" data-wow-delay="0.1s">
-                        <iframe class="position-relative rounded w-400 h-100"
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3001156.4288297426!2d-78.01371936852176!3d42.72876761954724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4ccc4bf0f123a5a9%3A0xddcfc6c1de189567!2sNew%20York%2C%20USA!5e0!3m2!1sen!2sbd!4v1603794290143!5m2!1sen!2sbd"
-                            frameborder="0" style="min-height: 850px; width:950px; border:0;" allowfullscreen=""
-                            aria-hidden="false" tabindex="0"></iframe>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- end contact section -->
-
-    <div>
-
-    </div>
-
-    <br><br>
-    <section class="chocolate_section ">
+    <section class="chocolate_section my-5 p-5">
         <div class="container">
             <div class="heading_container">
                 <h1 class="gt-teks">PROMO</h1>
-                <p>
+                <p class="text-3xl w-75">
                     Many desktop publishing packages and web pagend web page editors now use Lorem Ipsum as their
                 </p>
             </div>
         </div>
         <div class="container">
-            <div class="chocolate_container">
+            <div class="chocolate_container align-items-center pb-3 flex-wrap justify-content-center">
                 <div class="box">
-                    <div class="img-box">
+                    <div class="img-box h-auto">
                         <img src="assets/images/promo.jpg" alt="">
                     </div>
                     <div class="detail-box">
@@ -605,7 +454,7 @@
                     </div>
                 </div>
                 <div class="box">
-                    <div class="img-box">
+                    <div class="img-box h-auto">
                         <img src="assets/images/promo_2.jpg" alt="">
                     </div>
                     <div class="detail-box">
@@ -621,7 +470,7 @@
                     </div>
                 </div>
                 <div class="box">
-                    <div class="img-box">
+                    <div class="img-box h-auto">
                         <img src="assets/images/promo_3.jpeg" alt="">
                     </div>
                     <div class="detail-box">
