@@ -26,11 +26,12 @@ use App\Http\Controllers\FrontendController;
 */
 
 
-Route::get('/frontend', [FrontendController::class, 'index']);
+Route::get('/', [FrontendController::class, 'index'])->name('home');
+Route::get('/about', [FrontendController::class, 'about'])->name('about');
+Route::get('/fasilitas', [FrontendController::class, 'fasilitas'])->name('fasilitas');
+Route::get('/promo', [FrontendController::class, 'promo'])->name('promo');
+Route::get('/contact', [FrontendController::class, 'contact'])->name('contact');
 
-Route::get('/', function () {
-    return view('welcome');
-});
 
 // admin route
 Route::middleware(['admin.auth'])->group(function () {
@@ -55,7 +56,7 @@ Route::get('/deny', function () {
 
 
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+// Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
 
 

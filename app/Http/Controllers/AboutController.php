@@ -14,17 +14,7 @@ class FrontendController extends Controller
     public function about()
     {
         //
-        return view ('frontend.about');
-    }
-    public function fasilitas()
-    {
-        //
-        return view ('frontend.fasilitas');
-    }
-    public function promo()
-    {
-        //
-        return view ('frontend.promo');
+        return view ('frontend.index');
     }
 
 }
