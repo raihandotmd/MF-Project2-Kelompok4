@@ -31,13 +31,13 @@ class MoviesController extends Controller
      */
     public function store(Request $request, Movies $movies)
     {
+
         $validated = $request->validate([
             'code' => 'required|max:255',
             'title' => 'required|max:50',
             'description' => 'required',
             'rating' => 'required|max:5|numeric',
             'genre_id' => 'required',
-            'image' => 'required',
             'trailer' => 'required',
             'duration' => 'required',
             'release_date' => 'required',
@@ -48,6 +48,9 @@ class MoviesController extends Controller
             'age_limit' => 'required',
         ]);
 
+        if ($request->hasFile('image')) {
+            $validated['image'] = $request->file('image')->store('movies', 'public');
+        }
         $movies->create($validated);
 
         
@@ -88,7 +91,6 @@ class MoviesController extends Controller
             'description' => 'required',
             'rating' => 'required|max:5|numeric',
             'genre_id' => 'required',
-            'image' => 'required',
             'trailer' => 'required',
             'duration' => 'required',
             'release_date' => 'required',
@@ -100,6 +102,12 @@ class MoviesController extends Controller
         ]);
 
         $movie = Movies::find($request->idedit);
+
+
+        if ($request->hasFile('image')) {
+            $validated['image'] = $request->file('image')->store('movies', 'public');
+        }
+
         $movie->update($validated);
         
         if ($movie) {

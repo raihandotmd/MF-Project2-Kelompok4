@@ -10,7 +10,8 @@
                     </div>
                     <div class="card-content">
                         <div class="card-body">
-                            <form class="form form-horizontal" action="{{ route('movies.update') }}" method="POST">
+                            <form class="form form-horizontal" enctype="multipart/form-data"
+                                action="{{ route('movies.update') }}" method="POST">
                                 @csrf
                                 @method('PUT')
                                 <div class="form-body">
@@ -100,9 +101,8 @@
                                             <label for="name-horizontal">Image</label>
                                         </div>
                                         <div class="col-md-8 form-group">
-                                            <input type="text" id="name-horizontal"
-                                                class="form-control @error('image') is-invalid @enderror" name="image"
-                                                placeholder="type here..." value="{{ old('image', $movie->image) }}" />
+                                            <input name="image" type="file" required data-max-file-size="3MB"
+                                                data-max-files="1" accept=".jpg, .jpeg, .png" />
                                             @error('image')
                                                 <div class="alert alert-danger alert-dismissible show fade mt-2">
                                                     {{ $message }}

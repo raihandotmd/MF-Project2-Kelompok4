@@ -10,7 +10,8 @@
                     </div>
                     <div class="card-content">
                         <div class="card-body">
-                            <form class="form form-horizontal" action="{{ route('movies.store') }}" method="POST">
+                            <form class="form form-horizontal" enctype="multipart/form-data"
+                                action="{{ route('movies.store') }}" method="POST">
                                 @csrf
                                 <div class="form-body">
                                     <div class="row">
@@ -93,11 +94,11 @@
                                         </div>
                                         <div class="col-md-4">
                                             <label for="name-horizontal">Image</label>
+
                                         </div>
                                         <div class="col-md-8 form-group">
-                                            <input type="text" id="name-horizontal"
-                                                class="form-control @error('image') is-invalid @enderror" name="image"
-                                                placeholder="type here..." value="{{ old('image') }}" />
+                                            <input name="image" type="file" required data-max-file-size="3MB"
+                                                data-max-files="1" accept=".jpg, .jpeg, .png" />
                                         </div>
                                         @error('image')
                                             <div class="alert alert-danger alert-dismissible show fade mt-2">
@@ -234,6 +235,7 @@
                                             </div>
                                         @enderror
                                         <div class="col-sm-12 d-flex justify-content-end">
+
                                             <a href="{{ route('movies') }}" class="btn btn-danger me-1 mb-1">Cancel</a>
                                             <button type="submit" class="btn btn-primary me-1 mb-1">
                                                 Create
@@ -244,6 +246,7 @@
                                         </div>
                                     </div>
                                 </div>
+
                             </form>
                         </div>
                     </div>
