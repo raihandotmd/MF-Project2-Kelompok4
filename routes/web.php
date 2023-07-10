@@ -13,6 +13,7 @@ use App\Http\Controllers\MovieScheduleController;
 use App\Http\Controllers\SeatsController;
 use App\Http\Controllers\CinemasController;
 use App\Http\Controllers\FrontendController;
+use App\Http\Controllers\formOrderController;
 use App\Http\Controllers\ContactController;
 
 /*
@@ -28,6 +29,7 @@ use App\Http\Controllers\ContactController;
 
 
 Route::get('/frontend', [FrontendController::class, 'index']);
+Route::get('/formOrder', [formOrderController::class, 'create']);
 
 Route::get('/', function () {
     return view('welcome');

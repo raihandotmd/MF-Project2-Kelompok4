@@ -1,12 +1,12 @@
-8@extends('admin.layouts.app')
+@extends('layouts.app')
 @section('content')
-    <!-- Basic Horizontal form layout section start -->
+<!-- Basic Horizontal form layout section start -->
     <section id="basic-horizontal-layouts">
         <div class="row match-height justify-content-center">
             <div class="col-md-6 col-12">
                 <div class="card">
                     <div class="card-header">
-                        <h4 class="card-title">Create Movie Order</h4>
+                        <h4 class="card-title">Ticket Order</h4>
                     </div>
                     <div class="card-content">
                         <div class="card-body">
@@ -16,7 +16,7 @@
                                     <div class="row">
                                         <div class="col-md-4">
                                             <label for="name-horizontal">Movie Schedule</label>
-                                        </div>7u6y+
+                                        </div>
                                         <div class="col-md-8 form-group">
                                             <select name="movie_schedule" id="movie_schedule" class="form-select">
                                                 @foreach ($movies_schedule as $movie_schedule)
@@ -66,12 +66,14 @@
                                                 </div>
                                             @enderror
                                         </div>
+                                        <br>
+                                        <br>
                                         <div class="col-sm-12 d-flex justify-content-end">
                                             <a href="{{ route('movie_order') }}" class="btn btn-danger me-1 mb-1">Cancel</a>
                                             <button type="submit" class="btn btn-primary me-1 mb-1">
                                                 Save
                                             </button>
-                                            <button type="reset" class="btn btn-light-secondary me-1 mb-1">
+                                            <button type="reset" class="btn btn-secondary me-1 mb-1">
                                                 Reset
                                             </button>
                                         </div>
@@ -86,4 +88,3 @@
     </section>
     <!-- // Basic Horizontal form layout section end -->
 @endsection
-
