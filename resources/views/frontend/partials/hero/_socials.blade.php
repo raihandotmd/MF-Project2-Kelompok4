@@ -1,4 +1,4 @@
-<div class="hero_social">
+<div class="hero_social d-sm-flex d-none">
     <a href="">
         <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-facebook"
             viewBox="0 0 16 16">
