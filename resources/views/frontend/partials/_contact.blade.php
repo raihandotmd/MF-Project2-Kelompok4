@@ -1,3 +1,5 @@
+@extends('frontend.layout.main')
+@section('content')
 <!-- contact section -->
 
 <section class="contact_section layout_padding">
@@ -41,3 +43,4 @@
 </section>
 
 <!-- end contact section -->
+@endsection
