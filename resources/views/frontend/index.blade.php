@@ -33,7 +33,7 @@
             </div>
     </section> --}}
 
-    <section class="d-md-flex flex-md-column flex-xl-row justify-content-between xl:my-24">
+    <section class="d-md-flex flex-md-column flex-xl-row justify-content-between xl:my-24" id="now-playing">
         <!--/top-movies-->
         <section class="shop_section layout_padding p-5">
             <div class="container">
@@ -125,7 +125,7 @@
 
     <!-- about section -->
 
-    <section class="about_section layout_padding py-10"><br><br>
+    <section class="about_section layout_padding py-10" id="about-us"><br><br>
         <div class="container">
             <div class="d-lg-flex align-items-center flex-sm-column flex-lg-row">
                 <div class="col-md col-lg-5 ">
@@ -157,9 +157,6 @@
                             orang di seluruh
                             dunia untuk mendukung misi perusahaan.
                         </p>
-                        <a href="">
-                            Read More
-                        </a>
                     </div>
                 </div>
             </div>
@@ -414,7 +411,7 @@
     </section>
 
     <!-- end feature section -->
-    <section class="chocolate_section my-5 p-5">
+    <section class="chocolate_section my-5 p-5" id="promo">
         <div class="container">
             <div class="heading_container">
                 <h1 class="gt-teks">PROMO</h1>
@@ -496,7 +493,7 @@
 
     </section>
 
-    <div class="container-xxl py-5">
+    <div class="container-xxl py-5" id="team">
         <div class="container">
             <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
 

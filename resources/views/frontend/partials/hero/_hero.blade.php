@@ -3,7 +3,7 @@
     @include('frontend.partials.hero._socials')
     @include('frontend.partials._nav')
 
-    <section class="slider_section ">
+    <section class="slider_section " id="hero">
         <div id="customCarousel1" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
