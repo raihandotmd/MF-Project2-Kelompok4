@@ -39,26 +39,26 @@
                 <div class="heading_container heading_center">
                     <h1 class="agile_w3_title"> Now <span> Playing </span> </h1>
                 </div>
-                <div class="row">
-                    <div class="col-sm-6 col-xl-4 col-lg-3">
+                <div class="d-grid gap-10 grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+                    <div>
                         <x-frontend.box />
                     </div>
-                    <div class="col-sm-6 col-xl-4 col-lg-3">
+                    <div>
                         <x-frontend.box2 />
                     </div>
-                    <div class="col-sm-6 col-xl-4 col-lg-3">
+                    <div>
                         <x-frontend.box3 />
                     </div>
-                    <div class="col-sm-6 col-xl-4 col-lg-3">
+                    <div>
                         <x-frontend.box4 />
                     </div>
-                    <div class="col-sm-6  col-xl-4 col-lg-3">
+                    <div>
                         <x-frontend.box5 />
                     </div>
-                    <div class="col-sm-6 col-xl-4 col-lg-3">
+                    <div>
                         <x-frontend.box6 />
                     </div>
-                    <div class="btn-box">
+                    <div class="btn-box col-span-full">
                         <a href="">
                             View All
                         </a>
