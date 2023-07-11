@@ -1,4 +1,5 @@
 <x-frontend.layout>
+    @include('frontend.partials.hero._hero')
     {{-- <section class="shop_section layout_padding mt-5">
         <div class="container">
             <div class="heading_container heading_center">
@@ -42,7 +43,7 @@
                 <div class="d-grid gap-10 grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
                     @foreach ($movies as $movie)
                         <div>
-                            <x-frontend.box :movie="$movie" />
+                            <x-frontend.movie_box :movie="$movie" />
                         </div>
                     @endforeach
                     <div class="btn-box col-span-full">
