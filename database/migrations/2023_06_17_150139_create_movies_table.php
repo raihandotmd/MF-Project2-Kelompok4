@@ -19,14 +19,14 @@ return new class extends Migration
                 table: 'movie_genre', indexName: 'movie_genre_id'
             )->required();
             $table->string('image', 25)->required();
-            $table->string('trailer', 25)->required();
+            $table->string('trailer', 255)->required();
             $table->string('duration',10)->required();
             $table->date('release_date')->required();
-            $table->string('director', 25)->required();
-            $table->string('cast', 25)->required();
-            $table->string('country', 25)->required();
-            $table->string('language', 25)->required();
-            $table->string('age_limit', 25)->required();
+            $table->string('director', 255)->required();
+            $table->string('cast', 255)->required();
+            $table->string('country', 255)->required();
+            $table->string('language', 255)->required();
+            $table->string('age_limit', 255)->required();
             $table->timestamps();
         });
     }
