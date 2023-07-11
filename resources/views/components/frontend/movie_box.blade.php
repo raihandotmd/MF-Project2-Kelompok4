@@ -1,7 +1,11 @@
 @props(['movie'])
 
+@php
+    $movie = \App\Models\Movies::find($movie->movie_id);
+@endphp
+
 <div class="box">
-    <a href="">
+    <a href="{{ route('movie.show', $movie->id) }}">
         <div class="img-box px-2">
             <img src="{{ asset('storage/' . $movie->image) }}" alt="{{ $movie->title }}">
         </div>
