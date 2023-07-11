@@ -65,7 +65,7 @@
                                         <div class="col-md-8 form-group">
                                             <input type="number" max="5" id="name-horizontal"
                                                 class="form-control @error('image') is-invalid @enderror" name="rating"
-                                                placeholder="input rating..." value="{{ old('rating') }}" />
+                                                placeholder="input rating..." value="{{ old('rating') }}" step="0.01" />
                                         </div>
                                         @error('rating')
                                             <div class="alert alert-danger alert-dismissible show fade mt-2">
