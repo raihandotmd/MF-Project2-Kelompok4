@@ -1,5 +1,4 @@
 @include('frontend.partials._header')
-@include('frontend.partials.hero._hero')
 
 <body>
     {{ $slot }}
