@@ -32,7 +32,7 @@
             </div>
     </section> --}}
 
-    <section class="d-md-flex flex-md-column flex-xl-row justify-content-between">
+    <section class="d-md-flex flex-md-column flex-xl-row justify-content-between xl:my-24">
         <!--/top-movies-->
         <section class="shop_section layout_padding p-5">
             <div class="container">
@@ -40,24 +40,11 @@
                     <h1 class="agile_w3_title"> Now <span> Playing </span> </h1>
                 </div>
                 <div class="d-grid gap-10 grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-                    <div>
-                        <x-frontend.box />
-                    </div>
-                    <div>
-                        <x-frontend.box2 />
-                    </div>
-                    <div>
-                        <x-frontend.box3 />
-                    </div>
-                    <div>
-                        <x-frontend.box4 />
-                    </div>
-                    <div>
-                        <x-frontend.box5 />
-                    </div>
-                    <div>
-                        <x-frontend.box6 />
-                    </div>
+                    @foreach ($movies as $movie)
+                        <div>
+                            <x-frontend.box :movie="$movie" />
+                        </div>
+                    @endforeach
                     <div class="btn-box col-span-full">
                         <a href="">
                             View All

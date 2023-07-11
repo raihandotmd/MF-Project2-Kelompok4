@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Http\Controllers\Frontend;
 use Illuminate\Http\Request;
-
+use App\Models\Movies;
 class FrontendController extends Controller
 {
     /**
@@ -12,8 +12,8 @@ class FrontendController extends Controller
      */
     public function index()
     {
-        //
-        return view ('frontend.index');
+        $movies = Movies::take(6)->get();
+        return view ('frontend.index', compact('movies'));
     }
 
     /**
