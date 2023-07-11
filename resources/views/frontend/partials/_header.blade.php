@@ -15,7 +15,7 @@
     <meta name="author" content="" />
     <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
 
-    <title>MF-Movie</title>
+    <title>MoFlix</title>
 
     <!-- mdb -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
