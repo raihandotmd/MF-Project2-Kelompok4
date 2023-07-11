@@ -162,7 +162,7 @@ a:focus {
   }
   
   .custom_nav-container .navbar-nav .nav-item:hover .nav-link, .custom_nav-container .navbar-nav .nav-item.active .nav-link {
-	color: 	rgb(0, 0, 255);
+	color: 	var(--secondary-color);
 	background-color: #ffffff;
   }
   
@@ -290,7 +290,7 @@ a:focus {
 }
 
 .user_option-box a:hover {
-  color: #3b4a6b;
+  color: var(--secondary-color);
 }
 
 /*end header section*/
