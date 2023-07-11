@@ -31,7 +31,7 @@
                             <center>
                                 <h1 class="h2">{{ $movie->title }}</h1><br>
                             </center>
-                            <h3>Movie Details <span>:</span></h3><br>
+
                             <ul class="desc-movie">
                                 <li class="movie_genre">
                                     <span>Genre</span> {{ $movie->genre->name }}
