@@ -19,22 +19,21 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr class="">
-                                    <td>No.</td>
-                                    <td>Ordered At</td>
-                                    <td>Movie Name</td>
-                                    <td>Cinema</td>
-                                    <td>Seat</td>
-                                    <td>Ticket Code</td>
-                                </tr>
-                                <tr class="">
-                                    <td>No.</td>
-                                    <td>Ordered At</td>
-                                    <td>Movie Name</td>
-                                    <td>Cinema</td>
-                                    <td>Seat</td>
-                                    <td>Ticket Code</td>
-                                </tr>
+                                @foreach ($movieOrder as $order)
+                                    @if ($order->user_id === auth()->user()->id)
+                                        <tr>
+                                            <td>{{ $loop->iteration }}</td>
+                                            <td>{{ $order->created_at }}</td>
+                                            <td>{{ $order->movieSchedule->movie->title }}
+                                            </td>
+                                            <td>
+                                                {{ $order->movieSchedule->cinema->code }}
+                                            </td>
+                                            <td>{{ $order->seat }}</td>
+                                            <td>#{{ $order->ticket_code }}</td>
+                                        </tr>
+                                    @endif
+                                @endforeach
                             </tbody>
                         </table>
                     </div>
