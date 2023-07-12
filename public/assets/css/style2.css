@@ -1,0 +1,1582 @@
+body {
+    font-family: "Avenir LT Std";
+  }
+  
+  #home-now-showing {
+    display: block;
+  }
+  
+  #home-now-showing-mobile {
+    display: none;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  ul {
+    margin: 0;
+  }
+  
+  .glide-now-playing li p img {
+    width: 100%;
+    height: 467px;
+  }
+  
+  .glide-now-playing li p a {
+    color: #333333;
+    font-family: "Avenir LT Std";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 25px;
+  }
+  
+  .gt-header i.fas.fa-link {
+    background: linear-gradient(270deg, #ffd27c 0%, #d3a24c 100%);
+    border-radius: 50px;
+    padding: 10px 18px;
+    font-family: inherit;
+    color: #192c4f;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1;
+    height: 31px;
+  }
+  
+  .gt-header i.fas.fa-link:after {
+    content: "Download TIX ID";
+  }
+  
+  .gt-header i.fas.fa-link:before {
+    content: "";
+  }
+  
+  .gt-footer {
+    font-family: "Brandon Grotesque";
+    text-transform: uppercase;
+  }
+  
+  .gt-header .gt-menu > ul {
+    font-family: "Brandon Grotesque";
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 16px;
+  }
+  
+  .gt-copyright.gt-style-1.gt-dark,
+  .gt-footer-widgets.gt-style-1.gt-dark {
+    background: none;
+  }
+  
+  /* HOT FIXES FOOTER Copyright */
+  .gt-copyright.gt-style-1 {
+    padding: 0px;
+    height: 60px;
+  }
+  
+  .gt-copyright.gt-style-1 .gt-flex-container {
+    padding: 0px;
+    height: 60px;
+  }
+  
+  .gt-copyright.gt-style-1.gt-dark {
+    background: #192C4F;
+  }
+  
+  .gt-footer {
+    background: #001a3a;
+  }
+  
+  .gt-main {
+    margin-top: 120px;
+  }
+  
+  .single-post .gt-page-wrapper {
+    padding: 40px 0;
+  }
+  
+  .home-item-row-container h3 {
+    font-family: "Brandon Grotesque";
+    text-transform: uppercase;
+    font-size: 36px;
+    font-weight: 900;
+    padding-bottom: 40px !important;
+  }
+  
+  .gt-title-item .gt-title {
+    font-family: "Avenir LT Std";
+    color: #333333;
+  }
+  
+  .gt-title a,
+  .gt-title a:hover {
+    color: #333333;
+  }
+  
+  #home-vouchers {
+    display: none;
+  }
+  
+  .section-home-vouchers {
+    background: linear-gradient(100.46deg, #f9f9f9 0%, #cbcfd1 100%);
+  }
+  
+  .section-home-onlinetv {
+    background: linear-gradient(299.16deg, #192c4f 30.84%, #145f9f 100%);
+    color: white !important;
+  }
+  
+  .section-home-onlinetv h3,
+  .section-home-onlinetv .gt-title a {
+    color: white !important;
+  }
+  
+  .partner-logo-container img {
+    max-width: 75%;
+    height: auto;
+  }
+  
+  .gt-footer i.fas.fa-link {
+    display: none;
+  }
+  
+  .career-list-category-list {
+    border-radius: 20px;
+    border: 1px solid #ebecee;
+  }
+  
+  .career-category-list-container {
+    margin-bottom: 24px;
+  }
+  
+  .career-list-container .category-list-career-list {
+    margin-right: 0 !important;
+  }
+  
+  .career-list-container .nav-link {
+    color: #7a8aa7 !important;
+    text-align: left !important;
+    padding: 20px 37px !important;
+    font-size: 20px !important;
+  }
+  
+  .career-list-container .nav-pills .nav-link.active,
+  .nav-pills .show > .nav-link {
+    background-color: #f6fbff !important;
+  }
+  
+  .career-list-container .nav-pills .nav-link.active,
+  .nav-pills .show > .nav-link a {
+    color: #108ee9 !important;
+    font-weight: bold;
+  }
+  
+  .career-list-container .nav-pills .nav-link:first-child {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+  
+  .career-list-container .nav-pills .nav-link:last-child {
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+  
+  .icon-single-merchant {
+    margin-right: 10px;
+    border-radius: 2px;
+    padding: 3px 4px !important;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+      Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-weight: bold;
+    font-size: 13px;
+    color: #ffffff;
+  }
+  
+  .icon-single-merchant-XXI {
+    background: linear-gradient(90deg, #c7a24b 0%, #93682b 100%);
+  }
+  
+  .icon-single-merchant-CGV {
+    background: #ee2e25;
+  }
+  
+  .icon-single-merchant-CinÃ©polis {
+    background: #032165;
+  }
+  
+  .gt-poster img {
+    border-radius: 15px;
+  }
+  
+  .glide__arrow {
+    top: unset;
+    position: absolute;
+    display: block;
+    z-index: 2;
+    color: #333333;
+  
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+    bottom: -15%;
+  }
+  
+  .glide__arrow:hover {
+    background-color: transparent;
+    color: #333333;
+  }
+  
+  .video-thumbnail-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  
+  #home-vouchers .glide__slide img,
+  #home-spotlight .glide__slide img {
+    border-radius: 15px;
+    width: 100%;
+    height: auto;
+  }
+  
+  .glide__slide .btn-play,
+  .btn-play-for-tix-videos-and-trailers {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .glide__slide img.video-thumbnail {
+    border-radius: 15px;
+    width: 100%;
+    height: auto;
+  }
+  
+  .glide__slide a span,
+  #title-videos
+    > div.gt-module-content
+    > div
+    > div
+    > div
+    > div.swiper-wrapper
+    div.gt-title
+    > a {
+    color: #333333;
+    font-family: "Avenir LT Std";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 27px;
+    letter-spacing: 0px;
+    text-align: left;
+    margin-top: 20px !important;
+    display: block;
+  }
+  
+  .glide__bullets {
+    bottom: -1em;
+  }
+  
+  .glide__bullet {
+    background-color: #c0c5c8;
+    box-shadow: none;
+  }
+  
+  .glide__bullet--active {
+    background-color: #7a8aa7;
+  }
+  
+  .gt-carousel-controls.gt-style-1.gt-bordered {
+    border: none;
+    padding: 40px 0;
+    margin: 0;
+  }
+  
+  #home-video-and-trailers a.popup-video span {
+    color: white !important;
+  }
+  
+  .section-home-onlinetv .gt-carousel-pagination span {
+    background: white !important;
+  }
+  
+  .home-tix-now-container {
+    /* padding-left: 0 !important; */
+    padding-right: 100px !important;
+  }
+  
+  .home-tix-now-container ul,
+  .home-tix-now-sidebar-container ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .home-tix-now-container ul li {
+    margin-bottom: 25px;
+  }
+  
+  .home-tix-now-container ul li img {
+    border-radius: 15px;
+    margin-bottom: 15px;
+  }
+  
+  .home-tix-now-container ul li h4 a {
+    font-family: "Avenir LT Std";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 27px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #333333;
+  }
+  
+  .home-tix-now-sidebar-container li {
+    border-bottom: 1px solid #192c4f;
+    padding-bottom: 28px;
+    margin-bottom: 28px;
+  }
+  
+  .home-tix-now-sidebar-container li a {
+    color: #333333;
+    font-weight: bold;
+  }
+  
+  .home-tix-now-meta {
+    color: #a5a8ae;
+  }
+  
+  .btn-view-more-article {
+    /* pure white */
+    display: inline-block;
+    background: #ffffff;
+    /* primary blue */
+    padding: 6px 22px;
+    border: 1px solid #001a3a;
+    box-sizing: border-box;
+    border-radius: 60px;
+    font-family: "Brandon Grotesque";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 26px;
+    /* identical to box height */
+  
+    text-align: center;
+    text-transform: uppercase;
+  
+    /* primary blue */
+  
+    color: #001a3a;
+  }
+  
+  /* .glide__slides {
+    margin-left: 0 !important;
+  } */
+  
+  img.wp-post-image {
+    border-radius: 15px;
+    min-width: 100%;
+    height: auto;
+  }
+  
+  .single-post .gt-content-body img {
+    border-radius: 15px;
+    min-width: 100%;
+    height: auto;
+  }
+  
+  .single-post .gt-content-header {
+    margin-bottom: 40px;
+  }
+  
+  .single-post .gt-content-header h1 {
+    font-family: "Avenir LT Std";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 56px;
+    line-height: 64px;
+    color: #333333;
+  }
+  
+  .gt-sidebar #recent-posts-2 a,
+  .rpwe-title a {
+    font-family: "Avenir LT Std";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 27px;
+    text-decoration: none;
+    color: #333333;
+  }
+  
+  .gt-sidebar #recent-posts-2 li,
+  .rpwe-ul .rpwe-li {
+    border-bottom: 1px solid #192c4f;
+    padding-bottom: 28px;
+    margin-bottom: 28px;
+  }
+  
+  .gt-item-crew-module li {
+    width: 33%;
+    float: left;
+  }
+  
+  .gt-item-crew-module li .gt-subtitle {
+    color: #bac0ca;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .gt-item-crew-module li .gt-name {
+    color: #333333;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .gt-item-modules .gt-heading h5 {
+    font-family: "Brandon Grotesque";
+    font-size: 24px;
+    line-height: 34px;
+    text-transform: uppercase;
+    font-weight: 900 !important;
+  }
+  
+  #title-photos .gt-photo img,
+  .gt-item-photos-module.gt-style-1 .gt-photo {
+    border-radius: 15px;
+  }
+  
+  .gt-item-videos-module img {
+    border-radius: 15px;
+  }
+  
+  .gt-item-videos-module.gt-style-1 .gt-cover {
+    border-radius: 15px;
+  }
+  
+  .gt-carousel-prev,
+  .gt-carousel-next {
+    width: 44px !important;
+    height: 44px !important;
+    line-height: 0;
+    cursor: pointer;
+    outline: 0;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+    border: 2px solid #192c4f;
+    color: #192c4f;
+    padding: 5px !important;
+    text-align: center;
+    border-radius: 44px;
+  }
+  
+  #home-vouchers .gt-carousel-prev,
+  #home-vouchers .gt-carousel-next,
+  #home-spotlight .gt-carousel-prev,
+  #home-spotlight .gt-carousel-next,
+  #home-video-and-trailers .gt-carousel-prev,
+  #home-video-and-trailers .gt-carousel-next {
+    padding: 8px !important;
+  }
+  
+  #home-video-and-trailers .gt-carousel-prev,
+  #home-video-and-trailers .gt-carousel-next {
+    color: white;
+    border: 2px solid white;
+  }
+  
+  #home-now-showing .gt-carousel-prev,
+  #home-now-showing .gt-carousel-next,
+  #home-our-features .gt-carousel-prev,
+  #home-our-features .gt-carousel-next {
+    padding: 8px !important;
+  }
+  
+  .career-content ul,
+  .accordion-body ul {
+    list-style-type: none; /* Remove bullets */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margins */
+    display: inline-block;
+    width: 100%;
+  }
+  
+  .career-content ul li,
+  .accordion-body ul li {
+    border-radius: 20px;
+    border: 1px solid #ebecee;
+    background-color: #fbfbfb;
+    padding: 44px 40px;
+    margin-bottom: 20px;
+    font-family: "Avenir LT Std";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 40px;
+    display: inline-block;
+    width: 100%;
+    /* darkest */
+  
+    color: #333333;
+  }
+  
+  .career-content ul li a.btn-apply-career,
+  .accordion-body ul li a.btn-apply-career {
+    border-radius: 60px;
+    padding: 6px 22px !important;
+    background: #ffffff;
+    /* tertiary grey */
+  
+    border: 1px solid #c0c5c8;
+    box-sizing: border-box;
+  
+    font-family: "Brandon Grotesque";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 26px;
+    /* identical to box height */
+  
+    text-align: center;
+    text-transform: uppercase;
+  
+    /* secondary blue */
+  
+    color: #192c4f;
+  
+    /* Inside Auto Layout */
+  
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 10px;
+  }
+  
+  .accordion-body {
+    padding: 1rem 0;
+  }
+  
+  .accordion-body li {
+    padding: 17px 21px !important;
+    border-radius: 0 !important;
+    border-left: 0 !important;
+    border-right: 0 !important;
+    font-size: 18px !important;
+  }
+  
+  .career-list-container-mobile {
+    display: none;
+  }
+  
+  .career-list-container-mobile .accordion {
+    border: 1px solid #ebecee;
+    border-radius: 20px;
+  }
+  
+  .career-list-container-mobile .accordion .accordion-item {
+    border-radius: 0;
+    border: 0;
+    background: none;
+  }
+  
+  .accordion-button {
+    border: 0;
+    background: none;
+    border-radius: 0;
+    font-family: "Avenir LT Std";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 27px;
+    padding: 37px 40px;
+    /* faint blue text */
+    color: #108ee9 !important;
+    background-color: white !important;
+  }
+  
+  .accordion-button.collapsed {
+    color: #7a8aa7 !important;
+    background-color: #f6fbff;
+  }
+  
+  .accordion-button:focus {
+    outline: none;
+    box-shadow: none;
+    color: #7a8aa7;
+  }
+  
+  .accordion-button:hover {
+    background-color: transparent;
+  }
+  
+  .accordion-button::after {
+    display: none;
+  }
+  
+  .accordion-item:first-child > :first-child,
+  .accordion-item:first-of-type .accordion-button {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+  
+  .accordion-item:last-child > :last-child {
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+  
+  .accordion-item:last-of-type .accordion-button.collapsed {
+    border-bottom-left-radius: 20px !important;
+    border-bottom-right-radius: 20px !important;
+  }
+  
+  .gt-search {
+    display: none !important;
+  }
+  
+  .home-tix-now-thumbnail {
+    width: 100%;
+    height: auto;
+  }
+  
+  .home-item-row-container {
+    padding-top: 80px !important;
+    padding-bottom: 125px !important;
+  }
+  
+  #home-now-showing,
+  #home-tix-now,
+  #home-our-features,
+  #home-our-partners {
+    padding-top: 80px !important;
+    padding-bottom: 80px !important;
+  }
+  
+  .glide__arrow--left {
+    left: 15px;
+  }
+  
+  .glide__arrow--right {
+    right: 15px;
+  }
+  
+  .home-tix-now-thumbnail-mobile {
+    display: none;
+  }
+  
+  .home-tix-now-right {
+    padding-left: 20px;
+  }
+  
+  .gt-article .gt-content-body + .gt-content-footer {
+    border-top: none;
+  }
+  
+  .gt-inner-items,
+  .gt-imdb-rating {
+    width: 100% !important;
+  }
+  
+  .gt-point {
+    border-right: 1px solid #bac0ca;
+    padding-right: 32px;
+    margin-right: 32px;
+  }
+  
+  .rating-source-container {
+    font-family: "Avenir LT Std";
+    margin-top: 12px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 19px;
+  
+    /* primary grey */
+  
+    color: #7e838c;
+  }
+  
+  .buy-ticket-button {
+    background: #001a3a;
+    /* secondary blue */
+  
+    border: 1px solid #192c4f;
+    box-sizing: border-box;
+    border-radius: 40px;
+    align-items: center;
+    padding: 15px 18px;
+    font-family: "Brandon Grotesque";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    color: #ffbf00 !important;
+    text-transform: uppercase;
+    line-height: 23px;
+  }
+  
+  .buy-ticket-button:hover {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    color: #ffbf00 !important;
+  }
+  
+  .stars img {
+    width: 25px;
+    height: auto;
+  }
+  
+  .glide-now-playing-single-title-item .glide__slide p a,
+  .glide-now-playing-home .glide__slide p a {
+    font-family: "Avenir LT Std";
+    font-weight: 800;
+    color: #333333;
+  }
+  .glide-now-playing-single-title-item .glide__slide p a img,
+  .glide-now-playing-home .glide__slide p a img {
+    border-radius: 15px;
+    height: 420px;
+    width: 100%;
+  }
+  
+  .swiper-pagination-bullet,
+  .glide__bullet {
+    width: 10px !important;
+    height: 10px !important;
+  }
+  
+  .btn-app-store,
+  .btn-play-store {
+    width: 171px;
+    height: auto;
+    display: inline-block !important;
+  }
+  
+  .btn-app-store {
+    margin-right: 25px;
+  }
+  
+  .home-app-store-container h4 {
+    font-family: "Brandon Grotesque";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 34px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #192c4f;
+  }
+  
+  .glide-now-playing-single-title-item {
+    margin-bottom: 100px;
+  }
+  .glide-now-playing-single-title-item .glide__arrow {
+    bottom: -18%;
+  }
+  
+  /* .glide-now-playing-single-title-item .glide__arrow--left {
+    left: 7%;
+  }
+  
+  .glide-now-playing-single-title-item .glide__arrow--right {
+    right: 7%;
+  } */
+  
+  .glide-now-playing-single-title-item .glide__bullets {
+    bottom: -3em;
+  }
+  
+  #title-other-movies {
+    margin-bottom: 60px;
+  }
+  
+  .career-row-1-left,
+  .career-row-2-left {
+    padding-right: 60px;
+  }
+  
+  rs-bullets {
+    display: none !important;
+  }
+  
+  .gt-title-overview.gt-style-1 .gt-details.gt-part-1 h1 {
+    margin-bottom: 16px;
+  }
+  
+  .gt-header .gt-social-links i,
+  .gt-header .gt-menu > ul > li > a {
+    color: #192c4f;
+  }
+  
+  .gt-header .fa-instagram:before {
+    content: url("/wp-content/themes/noxe-child/assets/img/icon-instagram.png");
+    zoom: 0.3;
+    transform: scale(0.3);
+    transform-origin: 30% 0;
+  }
+  
+  .gt-footer .fa-instagram:before {
+    content: url("/wp-content/themes/noxe-child/assets/img/icon-instagram-white.png");
+    zoom: 0.3;
+    transform: scale(0.3);
+    transform-origin: 30% 0;
+  }
+  
+  .gt-single-title .gt-carousel-prev,
+  .gt-single-title .gt-carousel-next,
+  .glide-now-playing-single-title-item .gt-carousel-prev,
+  .glide-now-playing-single-title-item .gt-carousel-next {
+    padding: 8px !important;
+  }
+  
+  .available-positions-heading h1 {
+    font-family: "Brandon Grotesque";
+    font-size: 36px;
+    font-weight: 900;
+    line-height: 51px;
+    color: #333333;
+    text-transform: uppercase;
+  }
+  
+  /* HOT FIX MINOR STYLE */
+  .gt-header .gt-menu > ul > li > a:hover {
+    opacity: 1;
+    color: #108EE9;
+  }
+  
+  .gt-footer-widgets.gt-style-1 {
+    padding: 80px 0 55px;
+  }
+  
+  /* .gt-footer-widgets.gt-style-1 .gt-container .gt-grid-col {
+    border-bottom: 1px solid #fff;
+  } */
+  
+  .gt-copyright .gt-flex-container {
+    justify-content: center;
+  }
+  /* END HOT FIX MINOR STYLE */
+  
+  /* MICROSITE STYLE */
+  .noxe-microsite {
+    flex-direction: column;
+    align-items: normal;
+    margin: 0 auto 1rem;
+    font-family: "Avenir", sans-serif;
+    letter-spacing: normal;
+    max-width: 1000px;
+  }
+  
+  .noxe-microsite > div:last-child {
+    margin-bottom: 2rem;
+  }
+  
+  .noxe-microsite .microsite__image img {
+    width: auto;
+    border: 0px solid transparent;
+    border-radius: 1.25rem;
+    margin-bottom: 1rem;
+  }
+  
+  /* .noxe-microsite .microsite__description,
+  .noxe-microsite .microsite__content {
+    border-bottom: 1px solid #A5A8AE;
+  } */
+  
+  .noxe-microsite .microsite__description .description__inner {
+    font-family: "Avenir", sans-serif;
+    display: flex;
+    justify-content: space-between!important;
+    font-weight: 600;
+    margin: .5rem 0;
+  }
+  
+  .noxe-microsite .microsite__content .content__inner,
+  .noxe-microsite .microsite__description .description__inner:last-child {
+    margin-bottom: 2rem;
+  }
+  
+  .noxe-microsite .microsite__description .description__inner .caption {
+    color: #A5A8AE;
+  }
+  
+  .noxe-microsite .microsite__description .description__inner .caption:before {
+    transform: scale(0.3);
+    transform-origin: 30% 0;
+    margin-right: 1rem;
+  }
+  
+  .noxe-microsite .microsite__description .description__inner.promo .caption:before {
+    content: url('/wp-content/themes/noxe-child/assets/img/ico_date.png');
+    zoom: 0.3;
+  }
+  
+  .noxe-microsite .microsite__description .description__inner.duedate .caption:before {
+    content: url('/wp-content/themes/noxe-child/assets/img/ico_time.png');
+    zoom: 0.4;
+  }
+  
+  .noxe-microsite .microsite__description .description__inner.purchase .caption:before {
+    content: url('/wp-content/themes/noxe-child/assets/img/ico_ticket.png');
+    zoom: 0.4;
+  }
+  
+  
+  .noxe-microsite .microsite__terms .terms__inner,
+  .noxe-microsite .microsite__other_content .other_content__inner,
+  .noxe-microsite .microsite__content .content__inner {
+    margin-top: 2rem;
+  }
+  
+  /* COMPONENT MICROSITE */
+  .card-related {
+    position: relative;
+    max-width: 552px;
+    margin: 1rem auto;
+    border-radius: .75rem;
+    box-shadow: 0px 8.238805770874023px 16.477611541748047px 0px rgba(122, 138, 167, 0.1);
+    font-family: "SF Pro Display", sans-serif;
+    letter-spacing: normal;
+  }
+  
+  .card-related .card-body.voucher {
+    font-family: "Avenir", sans-serif;
+    letter-spacing: normal;
+  }
+  
+  .card-related .card-body.event {
+    font-family: "SF Pro Display", sans-serif;
+    letter-spacing: normal;
+  }
+  
+  .card-related img {
+    border-top-left-radius: .75rem;
+    border-top-right-radius: .75rem;
+  }
+  
+  .card-related .card-subtitle {
+    color: #A5A8AE;
+  }
+  
+  .card-related .card-body.voucher .card-text {
+    position: relative;
+    display: flex;
+    justify-content: space-between !important;
+    align-items: center !important;
+    margin-top: 1rem;
+  }
+  
+  .card-related .card-body.voucher .card-text p {
+    margin: 0;
+  }
+  
+  .card-related .card-body.voucher .card-text .price-real{
+    position: absolute;
+    right: 0;
+    bottom: 2.5rem;
+    color: #A5A8AE;
+  }
+  
+  .card-related .card-body.voucher .card-text .price,
+  .card-related .card-body.voucher .card-text .price-discount{
+    font-size: 1.75rem;
+    font-weight: bold;
+    color: #FF6B6B;
+  }
+  
+  .btn-sticky {
+    width: 100%;
+    max-width: 480px;
+    background-color: #192C4F;
+    color: #FFBF00 !important;
+    font-family: "Brandon Grotesque", sans-serif;
+    font-weight: bolder;
+    border-radius: 50px;
+    padding: 1rem 0;
+  }
+  
+  .movie-related h4 small {
+    font-size: 1rem;
+  }
+  
+  /* END COMPONENT MICROSITE */
+  
+  .noxe-microsite .microsite__terms .terms__inner ol,
+  .noxe-microsite .microsite__other_content .other_content__inner ol {
+    margin: 0px;
+  }
+  
+  .noxe-microsite-button {
+    box-shadow: 0px -2px 6px 0px #00000014;
+    padding: 2rem 0;
+  }
+  
+  .noxe-microsite-button.sticky {
+    position: sticky;
+    bottom: 0;
+    background: white;
+  }
+  /* END MICROSITE STYLE */
+  
+  
+  /* FORM CONTACT US */
+  #post-18445,
+  #post-57454,
+  #post-18445 h2,
+  #post-57454 h2{
+    font-family: 'Brandon Grotesque', sans-serif !important;
+  }
+  
+  #post-18445 h2,
+  #post-57454 h2 {
+    font-weight: bolder;
+  }
+  
+  #post-18445 .cfx_form_div_1,
+  #post-57454 .cfx_form_div_1,
+  #post-18445 .tixid-contact-us p,
+  #post-57454 .tixid-contact-us p {
+    width: 50% !important;
+  }
+  
+  .cfx_form_contents {
+    font-family: "Brandon Grotesque", sans-serif;
+  }
+  
+  .cfx_form_contents .crm_form_body {
+    padding: 0 !important;
+    margin: 1rem 0;
+  }
+  
+  .cfx_form_div_1 .cfx_input {
+    background: #FFFFFF !important;
+    border: 1px solid #EBECEE !important;
+    border-radius: 10px !important;
+  }
+  
+  .cfx_form_div_1 .cfx_desc {
+    margin-top: .5rem;
+  }
+  
+  .cfx_form_div_1 .cfx_submit_wrap {
+    text-align: left !important;
+  }
+  
+  .text-blue {
+    color: #108EE9 !important;
+  }
+  
+  #post-18445 .gt-content-footer,
+  #post-57454 .gt-content-footer {
+    margin: 0;
+    padding: 0;
+  }
+  
+  
+  
+  /* BUTTON CONTACT US FORM */
+  .cfx_form_div_1 .cfx_submit {
+    width: 47% !important;
+    margin-top: 1.75rem !important;
+    background: #192C4F !important;
+    border-radius: 10px !important;
+    font-weight: bolder !important;
+  }
+  /* END BUTTON CONTACT US FORM */
+  
+  /* // Small devices (landscape phones, 576px and up) */
+  @media (max-width: 576px) {
+    #home-now-showing {
+      display: none;
+    }
+  
+    #home-now-showing-mobile {
+      display: block;
+    }
+  
+    .tparrows {
+      display: none !important;
+    }
+  
+    .gt-main {
+      margin-top: 0 !important;
+    }
+  
+    .gt-page-wrapper {
+      padding-top: 0 !important;
+    }
+  
+    .single-post .gt-content-header h1 {
+      font-size: 22px;
+      line-height: 30px;
+    }
+  
+    /* #home-our-partners img {
+      width: 50% !important;
+      height: auto !important;
+    } */
+  
+    .gt-item-crew-module li {
+      width: 100%;
+      float: none;
+    }
+  
+    .gt-carousel-controls.gt-style-1 .gt-carousel-pagination {
+      padding: 0 15px;
+      line-height: 14px;
+      margin: 0 auto;
+      position: absolute;
+      margin: 0 auto;
+      width: 75%;
+      left: 15%;
+    }
+  
+    .gt-carousel-pagination {
+      display: none;
+    }
+  
+    .glide__bullets {
+      display: none;
+    }
+  
+    .career-list-container-desktop {
+      display: none;
+    }
+  
+    .career-list-container-mobile {
+      display: block !important;
+    }
+  
+    .gt-footer .gt-grid-col:not(:first-child):not(:last-child) {
+      display: none;
+    }
+  
+    .gt-footer .gt-grid-col:first-child {
+      padding-bottom: 15px;
+    }
+  
+    .gt-footer .gt-grid-col:last-child {
+      padding-top: 15px;
+    }
+  
+    .gt-footer-widgets.gt-style-1 {
+      padding: 38px 0;
+    }
+  
+    .gt-footer p {
+      text-align: center;
+    }
+  
+    .gt-social-links.gt-align-left ul {
+      justify-content: center;
+    }
+  
+    .gt-social-links.gt-style-1 ul li:last-child {
+      display: none;
+    }
+  
+    .gt-footer .gt-grid-col:first-child > #noxe_social_media_links_widget-1 {
+      border-bottom: 1px solid white;
+      padding-bottom: 35px;
+    }
+  
+    .gt-footer .textwidget.custom-html-widget p.text-capitalize.pe-5{
+      padding: 0 !important;
+    }
+  
+    .gt-footer-widgets.gt-style-1 .gt-container .gt-grid-col {
+      border: unset;
+    }
+  
+    .gt-copyright-text {
+      padding: 0 2.75rem;
+    }
+  
+    .home-item-row-container {
+      padding-top: 28px !important;
+      padding-bottom: 28px !important;
+    }
+  
+    #home-vouchers {
+      display: block;
+    }
+  
+    #home-now-showing,
+    #home-tix-now,
+    #home-our-features,
+    #home-our-partners {
+      padding-top: 28px !important;
+      padding-bottom: 28px !important;
+    }
+  
+    #home-vouchers,
+    #home-spotlight,
+    #home-video-and-trailers {
+      padding-bottom: 75px !important;
+    }
+  
+    .wpb_text_column.wpb_content_element {
+      margin-bottom: 20px !important;
+    }
+  
+    .gt-off-canvas .gt-social {
+      display: none;
+    }
+  
+    .gt-off-canvas.gt-style-1 .gt-drilldown-menu ul li a,
+    .gt-off-canvas.gt-style-1 .gt-drilldown-menu ul li a:visited {
+      color: #192c4f;
+    }
+  
+    .gt-off-canvas.gt-style-1 .gt-drilldown-menu ul li::before {
+      content: none;
+    }
+  
+    .home-tix-now-content {
+      display: none;
+    }
+  
+    .home-tix-now-thumbnail {
+      display: none;
+    }
+    .home-tix-now-thumbnail-mobile {
+      display: block;
+      border-radius: 10px !important;
+    }
+  
+    .home-tix-now-container {
+      /* padding-left: 0 !important; */
+      padding-right: calc(var(--bs-gutter-x) * 0.5) !important;
+      padding-bottom: 30px !important;
+    }
+  
+    .home-tix-now-container ul li h4 a {
+      font-weight: normal;
+      font-size: 18px;
+    }
+  
+    .gt-page-sidebar-right {
+      margin-top: 0;
+    }
+  
+    .home-tix-now-container ul li {
+      margin-bottom: 0;
+    }
+  
+    .gt-title-overview.gt-style-1 .gt-details.gt-part-2 {
+      margin-bottom: 0;
+      padding-bottom: 50px;
+    }
+  
+    .gt-article-list + .gt-pagination {
+      margin-top: 30px;
+      margin-bottom: 40px;
+    }
+  
+    .stars img {
+      width: 13px;
+      height: auto;
+    }
+  
+    .gt-point {
+      /* padding-right: 16px;
+      margin-right: 16px; */
+    }
+    .gt-title-overview.gt-style-1 .gt-inner-wrapper {
+      margin: 0;
+    }
+  
+    .gt-title-overview.gt-style-1 .gt-inner-items {
+      margin: 0;
+    }
+  
+    .gt-title-overview.gt-style-1 .gt-inner-wrapper > div {
+      padding: 0;
+    }
+  
+    .buy-ticket-button {
+      padding: 5px 10px;
+    }
+  
+    .gt-title-overview.gt-style-1 .gt-inner-items > div {
+      padding: 0;
+    }
+  
+    .gt-item-crew-module.gt-style-1 ul li .gt-item {
+      padding: 0;
+    }
+  
+    .home-item-row-container h3 {
+      font-size: 20px;
+      padding-bottom: 20px !important;
+    }
+  
+    .glide__slide a span {
+      font-size: 18px;
+    }
+  
+    .home-tix-now-sidebar-container li a {
+      font-size: 18px;
+    }
+  
+    .btn-app-store,
+    .btn-play-store {
+      width: 130px;
+    }
+  
+    .home-app-store-container {
+      margin-bottom: 50px;
+    }
+  
+    #home-our-partners .partner-logo-container .vc_column-inner {
+      padding: 0;
+    }
+  
+    .partner-logo-container > div {
+      width: 50%;
+      float: left;
+    }
+  
+    .partner-logo-container img {
+      max-width: 100%;
+      height: auto;
+    }
+  
+    .partner-logo-xxi {
+      height: 40px !important;
+    }
+  
+    #home-vouchers,
+    #home-vouchers > div > div.vc_column-inner,
+    #home-spotlight,
+    #home-spotlight > div > div.vc_column-inner,
+    #home-now-showing,
+    #home-now-showing > div > div.vc_column-inner,
+    #home-video-and-trailers,
+    #home-video-and-trailers > div > div.vc_column-inner,
+    #home-our-features,
+    #home-our-features > div > div.vc_column-inner {
+      padding-left: 0 !important;
+      padding-right: 0 !important;
+    }
+  
+    #home-vouchers > div > div > div > div > div > div > div > div,
+    #home-spotlight > div > div > div > div > div > div > div > div,
+    #home-now-showing-mobile > div > div > div > div > h3,
+    #home-video-and-trailers > div > div > div > div > div > div > div > div,
+    #home-our-features > div > div > div > div > div > div > div > div {
+      margin-left: 30px;
+      margin-right: 30px;
+    }
+  
+    #home-vouchers .glide__arrow--left,
+    #home-spotlight .glide__arrow--left,
+    #home-video-and-trailers .glide__arrow--left,
+    #home-our-features .glide__arrow--left,
+    .glide-now-playing-single-title-item .glide__arrow--left {
+      left: 30px;
+    }
+    #home-vouchers .glide__arrow--right,
+    #home-spotlight .glide__arrow--right,
+    #home-video-and-trailers .glide__arrow--right,
+    #home-our-features .glide__arrow--right,
+    .glide-now-playing-single-title-item .glide__arrow--right {
+      right: 30px;
+    }
+  
+    #home-video-and-trailers {
+      padding-bottom: 100px !important;
+    }
+  
+    #home-video-and-trailers .glide__arrow {
+      bottom: -23%;
+    }
+  
+    #home-vouchers .glide__arrow,
+    #home-spotlight .glide__arrow {
+      bottom: -21%;
+    }
+  
+    .glide-now-playing-single-title-item {
+      margin-bottom: 60px;
+    }
+    .glide-now-playing-single-title-item .glide__arrow {
+      bottom: -18%;
+    }
+  
+    .gt-item-modules.gt-style-1 .gt-module-item {
+      margin-bottom: 50px;
+    }
+  
+    .image-3872 {
+      margin-top: 48px;
+    }
+  
+    .image-3874 img,
+    .image-3875 img,
+    .image-3877 img,
+    .image-3878 img {
+      width: 104px;
+      height: 104px;
+      margin-bottom: 34px;
+    }
+  
+    .image-3874,
+    .image-3875,
+    .image-3877,
+    .image-3878 {
+      margin-bottom: 0;
+    }
+  
+    .image-3874 {
+      margin-top: 48px;
+    }
+  
+    .values-left-container > div > div > div.wpb_text_column,
+    .values-right-container > div > div > div.wpb_text_column {
+      margin-bottom: 45px !important;
+    }
+  
+    .career-row-1-left,
+    .career-row-2-left {
+      padding-right: 0px;
+    }
+  
+    .footer-logo {
+      width: 94px !important;
+      height: auto;
+    }
+  
+    #home-now-showing-mobile .gt-carousel-prev,
+    #home-now-showing-mobile .gt-carousel-next,
+    #single-title-item-other-movie-container .gt-carousel-prev,
+    #single-title-item-other-movie-container .gt-carousel-next {
+      padding: 8px !important;
+    }
+  
+    .gt-mobile-header.gt-m-style-1 .gt-item.gt-language-switcher {
+      margin-right: 0;
+    }
+  
+    .gt-header i.fas.fa-link {
+      padding: 5px 10px;
+      font-size: 13px;
+      height: 21px;
+      margin-top: 3px;
+      display: block;
+    }
+  
+    .gt-header i.fas.fa-link:after {
+      content: "Download";
+    }
+  
+    .gt-point {
+      padding-right: 20px;
+      margin-right: 20px;
+    }
+  
+    .btn-view-more-article {
+      margin-bottom: 46px;
+    }
+  
+    .gt-item-modules .gt-module-title.gt-style-2 {
+      margin-bottom: 20px;
+    }
+  
+    .gt-single-title .gt-carousel-prev,
+    .gt-single-title .gt-carousel-next,
+    #home-our-features .gt-carousel-prev,
+    #home-our-features .gt-carousel-next {
+      padding: 7px !important;
+    }
+  
+    #home-our-features {
+      padding-bottom: 80px !important;
+    }
+  
+    #home-our-features .glide__arrow {
+      bottom: -33%;
+    }
+  
+    .available-positions-heading h1 {
+      font-size: 20px;
+    }
+  
+    .glide-now-playing-single-title-item .glide__slide p a img,
+    .glide-now-playing-home .glide__slide p a img {
+      height: 410px;
+    }
+  
+    .glide-now-playing-single-title-item .glide__track {
+      height: 430px;
+    }
+  
+    /* MICROSITE */
+  
+    .noxe-microsite {
+      max-width: unset;
+    }
+  
+    .card-related .card-body.voucher .card-text .price-real{
+      bottom: 1.75rem;
+    }
+  
+    .card-related .card-body.voucher .card-text .price,
+    .card-related .card-body.voucher .card-text .price-discount{
+      font-size: 1.25rem;
+    }
+  
+    .noxe-microsite-button .btn-sticky {
+      max-width: 250px;
+    }
+  
+    .movie-related p,
+    .movie-related h4,
+    .movie-related h4 small,
+    .movie-related .btn-sticky {
+      font-size: .9rem;
+    }
+  
+    .movie-related .btn-sticky {
+      padding: .5rem 0;
+    }
+    /* END MICROSITE */
+  
+    
+    /* CONTACT US */
+    #post-18445 .cfx_form_div_1,
+    #post-57454 .cfx_form_div_1,
+    #post-18445 .tixid-contact-us p,
+    #post-57454 .tixid-contact-us p {
+      width: 100% !important;
+    }
+  
+    .cfx_form_div_1 .cfx_submit {
+      width: 100% !important;
+      margin-top: 1.75rem !important;
+    }
+  }
+  
+  /* // Medium devices (tablets, 768px and up) */
+  @media (max-width: 768px) {
+  }
+  
+  /* // Large devices (desktops, 992px and up) */
+  @media (max-width: 992px) {
+  }
+  
+  /* // X-Large devices (large desktops, 1200px and up) */
+  @media (max-width: 1200px) {
+  }
+  
+  /* // XX-Large devices (larger desktops, 1400px and up) */
+  @media (max-width: 1400px) {
+  }
+  
