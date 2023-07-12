@@ -29,6 +29,11 @@ class Movies extends Model
         'updated_at'
     ];
 
+    public function movie_schedule()
+    {
+        return $this->hasMany(MovieSchedule::class);
+    }
+
     public function genre()
     {
         return $this->belongsTo(MovieGenre::class);

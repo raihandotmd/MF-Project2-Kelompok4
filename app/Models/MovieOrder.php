@@ -4,7 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Support\Facades\DB;
+use App\Models\MovieSchedule;
 use App\Models\User;
 
 class MovieOrder extends Model
@@ -22,14 +22,9 @@ class MovieOrder extends Model
             
         ];
         public function users(){
-            return $this->belongTo(User::class);
+            return $this->belongsTo(User::class, 'user_id');
         }
-        public function getAllData(){
-            return DB::table('Movie_order')
-            ->join('users', 'Movie_order.user_id', '=','user.id')
-            ->select('Movie_order*', 'users.name as name')
-            ->get();
-    
-    
+        public function movieSchedule(){
+            return $this->belongsTo(MovieSchedule::class, 'movie_schedule');
         }
 }
