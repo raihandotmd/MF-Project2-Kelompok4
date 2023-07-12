@@ -1,37 +1,5 @@
 <x-frontend.layout>
     @include('frontend.partials.hero._hero')
-    {{-- <section class="shop_section layout_padding mt-5">
-        <div class="container">
-            <div class="heading_container heading_center">
-                <h1 class="agile_w3_title"> Rilis <span> Movies </span> </h1>
-            </div>
-            <div class="row">
-                <div class="col-sm-6 col-xl-3">
-                    <x-frontend.box />
-                </div>
-                <div class="col-sm-6 col-xl-3">
-                    <x-frontend.box />
-                </div>
-                <div class="col-sm-6 col-xl-3">
-                    <x-frontend.box />
-                </div>
-                <div class="col-sm-6 col-xl-3">
-                    <x-frontend.box />
-                </div>
-                <div class="col-sm-6  col-xl-3">
-                    <x-frontend.box />
-                </div>
-                <div class="col-sm-6 col-xl-3">
-                    <x-frontend.box />
-                </div>
-                <div class="btn-box">
-                    <a href="">
-                        View All
-                    </a>
-                </div>
-
-            </div>
-    </section> --}}
 
     <section class="d-md-flex flex-md-column flex-xl-row justify-content-between xl:my-24" id="now-playing">
         <!--/top-movies-->
@@ -46,12 +14,6 @@
                             <x-frontend.movie_box :movie="$movie" />
                         </div>
                     @endforeach
-                    <div class="btn-box col-span-full">
-                        <a href="">
-                            View All
-                        </a>
-                    </div>
-
                 </div>
         </section>
         <section class="player-text d-flex flex-column align-items-center align-self-center featured_movie"
@@ -141,21 +103,11 @@
                             </h2>
                         </div>
                         <p class="text-2xl">
-                            MF-MOVIES didirikan di Mexico pada tahun 1971. Saat ini Cinépolis telah
-                            memposisikan dirinya
-                            sebagai jaringan bioskop kedua terbesar di dunia dalam hal penonton, beroperasi
-                            di 691 kompleks
-                            bioskop dengan 5,609 layar dan menghibur lebih dari 338 juta penonton setiap
-                            tahunnya dengan
-                            kehadiran global di 17 negara.
-
-                            MF-MOVIES adalah jaringan bioskop pertama di dunia yang mempelopori konsep
-                            bioskop mewah pertama
-                            pada tahun 1999 di kota Mexico. MF-MOVIES bertujuan untuk memberikan penontonnya
-                            pengalaman
-                            terbaik dalam hiburan menonton, dan memiliki tenaga kerja lebih dari 39,185
-                            orang di seluruh
-                            dunia untuk mendukung misi perusahaan.
+                            MoFlix, founded in Mexico in 1971, has grown to be the second largest cinema chain
+                            worldwide, serving more than 338 million audience members annually across 691 cinema
+                            complexes in 17 countries. MoFlix, a part of this network, was the first to introduce the
+                            concept of luxury cinema in 1999. Committed to offering the best entertainment experience,
+                            it supports its mission through the efforts of over 39,185 employees globally.
                         </p>
                     </div>
                 </div>
@@ -416,7 +368,7 @@
             <div class="heading_container">
                 <h1 class="gt-teks">PROMO</h1>
                 <p class="text-3xl w-75">
-                    Many desktop publishing packages and web pagend web page editors now use Lorem Ipsum as their
+                    We Have Many available Promo waiting for you to enjoy it!
                 </p>
             </div>
         </div>
