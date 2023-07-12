@@ -432,10 +432,7 @@
                         </h6>
                         <h5>
                             $5.0
-                        </h5><br>
-                        <div class="promo-box">
-                            <a href=""> Get </a>
-                        </div>
+                        </h5>
                     </div>
                 </div>
                 <div class="box">
@@ -448,10 +445,7 @@
                         </h6>
                         <h5>
                             $5.0
-                        </h5><br>
-                        <div class="promo-box">
-                            <a href=""> Get </a>
-                        </div>
+                        </h5>
                     </div>
                 </div>
                 <div class="box">
@@ -464,10 +458,7 @@
                         </h6>
                         <h5>
                             $5.0
-                        </h5><br>
-                        <div class="promo-box">
-                            <a href=""> Get </a>
-                        </div>
+                        </h5>
                     </div>
                 </div>
             </div>
