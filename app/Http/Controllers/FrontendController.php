@@ -3,8 +3,11 @@
 namespace App\Http\Controllers;
 
 use App\Http\Controllers\Frontend;
+use App\Models\MovieOrder;
 use Illuminate\Http\Request;
 use App\Models\MovieSchedule;
+use App\Models\Cinemas;
+use App\Models\Movies;
 
 class FrontendController extends Controller
 {
@@ -36,9 +39,11 @@ class FrontendController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(string $id)
+    public function ticketUser(MovieOrder $movieOrder)
     {
-        //
+
+        $movieOrder = MovieOrder::where('user_id', auth()->user()->id)->get();
+    return view('frontend.user_tickets', compact('movieOrder'));
     }
 
     /**
