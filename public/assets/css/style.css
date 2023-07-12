@@ -4572,3 +4572,21 @@ section.featured_movie h1 span {
 .hot_section{
 	border-bottom: 3px dotted #eee
 }
+
+.box {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+.box:hover {
+    transform: scale(1.05);
+}
+
+.box .img-box img {
+    width: 100%;
+    height: auto;
+    transition: all 0.3s ease-in-out;
+}
