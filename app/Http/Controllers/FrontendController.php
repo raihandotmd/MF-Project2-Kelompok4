@@ -16,7 +16,7 @@ class FrontendController extends Controller
      */
     public function index()
     {
-        $movies = MovieSchedule::take(6)->get();
+        $movies = MovieSchedule::take(8)->get();
         return view ('frontend.index', compact('movies'));
     }
 
