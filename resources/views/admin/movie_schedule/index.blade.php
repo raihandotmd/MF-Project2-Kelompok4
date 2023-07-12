@@ -23,8 +23,8 @@
                                 <thead>
                                     <tr>
                                         <th>No.</th>
-                                        <th>Movie Id</th>
-                                        <th>Cinema Id</th>
+                                        <th>Movie Code</th>
+                                        <th>Cinema Code</th>
                                         <th>Starts</th>
                                         <th>Ends</th>
                                         <th>Price</th>
@@ -35,8 +35,8 @@
                                     @foreach ($movies_schedule as $movie)
                                         <tr>
                                             <td>{{ $loop->iteration }}</td>
-                                            <td>{{ $movie->movie_id }}</td>
-                                            <td>{{ $movie->cinema_id }}</td>
+                                            <td>{{ $movie->movie->code }}</td>
+                                            <td>{{ $movie->cinema->code }}</td>
                                             <td>{{ $movie->starts }}</td>
                                             <td>{{ $movie->ends }}</td>
                                             <td>{{ $movie->price }}</td>
