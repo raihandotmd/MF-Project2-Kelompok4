@@ -18,7 +18,6 @@
                                         <th>email</th>
                                         <th>password</th>
                                         <th>role</th>
-                                        <th>remember token</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -28,8 +27,7 @@
                                             <td>{{ $user->name }}</td>
                                             <td>{{ $user->email }}</td>
                                             <td>{{ $user->password }}</td>
-                                            <td>{{ $user->role_id }}</td>
-                                            <td>{{ $user->remember_token }}</td>
+                                            <td>{{ ucfirst($user->role->name) }}</td>
                                         </tr>
                                     @endforeach
                                 </tbody>
