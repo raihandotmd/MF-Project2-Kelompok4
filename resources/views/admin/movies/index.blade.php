@@ -27,7 +27,6 @@
                                         <th>Title</th>
                                         <th>Image</th>
                                         <th>Trailer</th>
-                                        <th>Description</th>
                                         <th>Action</th>
                                     </tr>
                                 </thead>
@@ -39,7 +38,6 @@
                                             <td>{{ $movie->title }}</td>
                                             <td>{{ $movie->image }}</td>
                                             <td>{{ $movie->trailer }}</td>
-                                            <td>{{ $movie->description }}</td>
                                             <td>
                                                 <a href="{{ route('movies.show', $movie->id) }}"
                                                     class="btn btn-primary">Show</a>
