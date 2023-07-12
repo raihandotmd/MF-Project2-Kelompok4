@@ -14,9 +14,6 @@
                         <h4 class="card-title">Movies Order Table</h4>
                     </div>
                     <div class="card-content">
-                        <div class="card-body py-1">
-                            <a href="{{ route('movie_order.create') }}" class="btn btn-primary">Create</a>
-                        </div>
                         <!-- table hover -->
                         <div class="table-responsive">
                             <table class="table table-hover mb-0">
