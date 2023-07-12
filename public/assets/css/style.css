@@ -4662,3 +4662,11 @@ section.featured_movie h1 span {
 	padding: 0.45rem 1rem;
 
 }
+
+#close-modal:hover {
+	color: var(--primary-color)
+}
+
+#submit-transaction:hover {
+	color: var(--secondary-color)
+}
