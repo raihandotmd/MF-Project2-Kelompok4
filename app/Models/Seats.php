@@ -4,7 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-use App\Models\Cinema;
+use App\Models\Cinemas;
 
 class seats extends Model
 {
@@ -18,6 +18,6 @@ class seats extends Model
         'updated_at'
     ];
     public function cinema(){
-        return $this->belongsTo(Cinema::class);
+        return $this->belongsTo(Cinemas::class);
     }
 }

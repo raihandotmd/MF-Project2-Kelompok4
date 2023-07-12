@@ -4,6 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use App\Models\seats;
 
 class Cinemas extends Model
 {
@@ -13,4 +14,9 @@ class Cinemas extends Model
     protected $fillable = [
         'code',
     ];
+
+    public function seats(){
+        return $this->hasMany(seats::class, 'cinema_id');
+    }
 }
+
