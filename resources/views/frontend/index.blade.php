@@ -472,15 +472,11 @@
                         <div class="position-relative overflow-hidden">
                             <img src="assets/images/team-2.jpg" class="w-100" alt="">
                             <div class="team-overlay position-absolute start-0 top-0 w-100 h-100">
-                                <a class="btn btn-square mx-1" href="">
-                                    <i class="fa fa-facebook fa-lg" aria-hidden="true"></i>
+                                <a class="btn btn-square mx-1" href="https://github.com/notRaihan">
+                                    <i class="fa fa-github fa-lg" aria-hidden="true"></i>
                                 </a>
-                                <a class="btn btn-square mx-1" href="">
+                                <a class="btn btn-square mx-1" href="https://www.linkedin.com/in/notraihan/">
                                     <i class="fa fa-linkedin fa-lg" aria-hidden="true"></i>
-
-                                </a>
-                                <a class="btn btn-square mx-1" href="">
-                                    <i class="fa fa-instagram fa-lg" aria-hidden="true"></i>
 
                                 </a>
                             </div>
@@ -520,14 +516,13 @@
                         <div class="position-relative overflow-hidden">
                             <img src="assets/images/team-4.jpg" class="w-100" alt="">
                             <div class="team-overlay position-absolute start-0 top-0 w-100 h-100">
-                                <a class="btn btn-square mx-1" href="">
-                                    <i class="fa fa-facebook" aria-hidden="true"></i>
-                                </a>
-                                <a class="btn btn-square mx-1" href="">
+                                <a class="btn btn-square mx-1"
+                                    href="https://www.linkedin.com/in/rizki-hidayat-nasution-585425253/">
                                     <i class="fa fa-linkedin" aria-hidden="true"></i>
 
                                 </a>
-                                <a class="btn btn-square mx-1" href="">
+                                <a class="btn btn-square mx-1"
+                                    href="https://instagram.com/ikyy_h05?igshid=ZDc4ODBmNjlmNQ==">
                                     <i class="fa fa-instagram" aria-hidden="true"></i>
 
                                 </a>
