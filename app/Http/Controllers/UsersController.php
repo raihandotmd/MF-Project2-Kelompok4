@@ -2,9 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
-use App\Models\Users;
-Use Illuminate\Support\Facades\DB;
+use App\Models\User;
 
 class UsersController extends Controller
 {
@@ -15,11 +13,7 @@ class UsersController extends Controller
     {
         //
         {
-            $users = DB::table('Users')
-            ->join('users_roles', 'users.role_id', '=','role_id')
-            ->select('users.*', 'users_roles.name as name_role')
-            ->get();
-
+            $users = User::with('role')->get();
         
             return view('admin.users.index', compact('users'));
         }
