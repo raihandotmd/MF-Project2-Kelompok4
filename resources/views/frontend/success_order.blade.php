@@ -9,10 +9,11 @@
             <h1 class="card-title fw-bold text-success">Success</h1>
             <p class="card-text text-secondary">We received your order request!</p>
 
-            <p class="card-text mt-2">Here is your Tickets: <span class="fw-bold">#asdasdasdasda</span></p>
+            <p class="card-text mt-2">Here is your Tickets: <span class="fw-bold">#{{ session('ticketCode') }}</span>
+            </p>
             <div class="a-link mt-3 d-flex align-items-center gap-2 justify-content-center">
-                <a href="" class="btn btn-danger">Back to Home</a>
-                <a href="" class="view rounded">View Order</a>
+                <a href="{{ route('frontend') }}" class="btn btn-danger">Back to Home</a>
+                <a href="{{ route('movie.order') }}" class="view rounded">View All Tickets</a>
             </div>
         </div>
     </div>
