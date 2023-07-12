@@ -47,7 +47,8 @@
                                 <input type="hidden" name="seat" id="selected-seat-input">
                                 <input type="hidden" name="movie_schedule" id="movie_schedule-input">
                                 <div class="text-center my-4">
-                                    <button type="button" class="btn btn-danger" onclick="#">Cancel</button>
+                                    <a class="text-danger" href="{{ url()->previous() }}"
+                                        id="cancel-cinema-btn">Cancel</a>
                                     <button type="button" class="btn-box rounded p-2" id="checkout-btn"
                                         data-bs-target="#confirmModal" data-bs-toggle="modal" disabled>Next</button>
                                 </div>
