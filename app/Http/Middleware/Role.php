@@ -16,12 +16,15 @@ class Role
      *
      * @param  \Closure(\Illuminate\Http\Request): (\Symfony\Component\HttpFoundation\Response)  $next
      */
-    public function handle(Request $request, Closure $next, $roleName): Response
+    public function handle(Request $request, Closure $next, $roles): Response
     {
         if (Auth::check()) {
-            $role = Roles::where('name', $roleName)->first();
-            if ($role && Auth::user()->role_id == $role->id) {
-                return $next($request);
+            $roles = explode('-', $roles);
+            foreach ($roles as $role) {
+                $role = Roles::where('name', $role)->first();
+                if ($role && Auth::user()->role_id == $role->id) {
+                    return $next($request);
+                }
             }
         }
         return redirect('/deny');
