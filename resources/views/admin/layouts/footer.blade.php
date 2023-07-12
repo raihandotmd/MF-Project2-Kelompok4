@@ -5,9 +5,6 @@
 
 <script src="{{ asset('admin/assets/compiled/js/app.js') }}"></script>
 
-<!-- Need: Apexcharts -->
-<script src="{{ asset('admin/assets/extensions/apexcharts/apexcharts.min.js') }}"></script>
-<script src="{{ asset('admin/assets/static/js/pages/dashboard.js') }}"></script>
 </body>
 
 </html>
