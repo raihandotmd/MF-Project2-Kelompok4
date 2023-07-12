@@ -1,7 +1,7 @@
 <header class="header_section">
     <div class="container-fluid">
         <nav class="navbar navbar-expand-lg custom_nav-container justify-content-sm-center fixed-top bg-white p-3">
-            <a class="navbar-brand" href="{{ url('/frontend') }}">
+            <a class="navbar-brand" href="{{ url('/') }}">
                 <span>
                     MoFlix
                 </span>
@@ -39,14 +39,42 @@
                     <li class="nav-item">
                         <a class="nav-link" href="{{ url('/frontend#team') }}" onclick="scrollToMiddle(event)">Team</a>
                     </li>
-                    <li class="nav-item order-sm-first order-lg-last ml-lg-auto my-2">
-                        <div class="user_option-box">
-                            <a href="">
+                    @if (Auth::check())
+                        <li class="nav-item order-sm-first order-lg-last ml-lg-auto my-2 dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <i class="fa fa-user fa-lg" aria-hidden="true"></i>
-
                             </a>
-                        </div>
-                    </li>
+                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink"
+                                style="font-size: 1.2rem; margin-right: 1rem;">
+                                <a class="dropdown-item" href="{{ route('movie.order') }}">My Tickets</a>
+                                @if (Auth::user()->role->name == 'admin')
+                                    <a class="dropdown-item" href="{{ route('movies') }}">Admin Dashboard</a>
+                                @endif
+                                <a class="dropdown-item text-danger" href="{{ route('logout') }}"
+                                    onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+                                    Logout
+                                </a>
+                                <form id="logout-form" action="{{ route('logout') }}" method="POST"
+                                    style="display: none;">
+                                    @csrf
+                                </form>
+                            </div>
+                        </li>
+                    @else
+                        <li class="nav-item order-sm-first order-lg-last ml-lg-auto my-2 dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fa fa-user fa-lg" aria-hidden="true"></i>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink"
+                                style="font-size: 1.2rem; margin-right: 1rem;">
+                                <a class="dropdown-item" href="{{ route('login') }}">Login</a>
+                                <a class="dropdown-item" href="{{ route('register') }}">Register</a>
+
+                            </div>
+                        </li>
+                    @endif
                 </ul>
 
             </div>
