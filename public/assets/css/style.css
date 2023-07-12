@@ -4557,7 +4557,7 @@ section.featured_movie h1 span {
 	right: 5px
 }
  
-.poster-box button {
+.poster-box a {
 	display: block;
 	background-color: #F9CC14;
 	color: #000000;
@@ -4634,4 +4634,31 @@ section.featured_movie h1 span {
     background-color: #ccc;
     color: #999;
     cursor: not-allowed;
+}
+
+.movie-schedule li {
+	background-color: var(--primary-color);
+	border-radius: 10px;
+	color: var(--secondary-color);
+	
+	padding: 0.8rem;
+	margin: 1rem;
+	
+}
+.movie-schedule li span {
+	font-weight: bold;
+	color: #fff;
+}
+
+.a-link a.view {
+	color: #fff;
+	background-color: var(--primary-color);
+	padding: 0.45rem 1rem;
+
+}
+.a-link a.view:hover {
+	color: #000;
+	background-color: var(--secondary-color);
+	padding: 0.45rem 1rem;
+
 }
