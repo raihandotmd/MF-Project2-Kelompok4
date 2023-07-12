@@ -8,7 +8,7 @@
     <section class="bg-light">
         <div class="container pb-5">
             <div class="row">
-                <div class="col-lg-5 mt-5">
+                <div class="col-lg-5" style="margin-top: 5rem;">
                     <div class="card mb-3">
                         <div class="poster-box">
 
@@ -18,7 +18,8 @@
                                     alt="{{ $movieSchedule->title }}" id="product-detail">
                             </a>
 
-                            <a class="w-100 rounded my-2" href="#">Buy
+                            <a class="w-100 rounded my-2"
+                                href="{{ route('movie.cinema', [$movieSchedule->id, \App\Models\Cinemas::find($movie->cinema_id)->id]) }}">Buy
                                 Ticket</a>
                         </div>
                     </div>
