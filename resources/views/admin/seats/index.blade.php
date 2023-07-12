@@ -33,7 +33,7 @@
                                     @foreach ($seats as $seat)
                                         <tr>
                                             <td>{{ $loop->iteration }}</td>
-                                            <td>{{ $seat->cinema_id }}</td>
+                                            <td>{{ $seat->cinema->code }}</td>
                                             <td>{{ $seat->seat_code }}</td>
                                             <td>{{ $seat->seat_status }}</td>
                                             <td>
