@@ -36,10 +36,6 @@
                                             <td>{{ $movie_order->seat }}</td>
                                             <td>{{ $movie_order->ticket_code }}</td>
                                             <td>
-                                                {{-- <a href="{{ route('movie_order.show', $movie_order->id) }}"
-                                                    class="btn btn-primary">Show</a> --}}
-                                                <a href="{{ route('movie_order.edit', $movie_order->id) }}"
-                                                    class="btn btn-warning">Edit</a>
                                                 <form action="{{ route('movie_order.destroy', $movie_order->id) }}"
                                                     method="POST" class="d-inline">
                                                     @csrf
