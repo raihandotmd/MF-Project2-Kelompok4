@@ -1,7 +1,7 @@
 <header class="header_section">
     <div class="container-fluid">
         <nav class="navbar w-100 navbar-expand-lg custom_nav-container justify-content-sm-center fixed-top bg-white p-3">
-            <a class="navbar-brand" href="{{ url('/') }}">
+            <a class="navbar-brand mt-3" href="{{ url('/') }}">
                 <span>
                     MoFlix
                 </span>
