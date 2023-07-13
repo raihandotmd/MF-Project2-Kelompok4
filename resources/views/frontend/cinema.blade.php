@@ -1,5 +1,5 @@
 <x-frontend.layout>
-    @include('frontend.partials._nav')
+    @include('frontend.partials._logonav')
     <!-- Open Content -->
     <section class="bg-light cinemas">
         <div class="container pb-5">
