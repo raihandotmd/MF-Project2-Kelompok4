@@ -440,11 +440,11 @@
 
                 <h1 class="gt-teks mb-5 ">Our Team</h1>
             </div>
-            <div class="row g-4">
+            <div class="row g-4 align-items-center">
                 <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="team-item">
                         <div class="position-relative overflow-hidden">
-                            <img src="assets/images/team-1.jpg" class="w-100" alt="">
+                            <img src="{{ asset('assets/images/team-nabil.jpg') }}" class="w-100" alt="">
                             <div class="team-overlay position-absolute start-0 top-0 w-100 h-100">
                                 <a class="btn btn-square mx-1" href="https://github.com/nabilrobbani84">
                                     <i class="fa fa-github" aria-hidden="true"></i>
@@ -469,7 +469,7 @@
                 <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                     <div class="team-item">
                         <div class="position-relative overflow-hidden">
-                            <img src="assets/images/team-2.jpg" class="w-100" alt="">
+                            <img src="{{ asset('assets/images/team-raihan.png') }}" class="w-100" alt="">
                             <div class="team-overlay position-absolute start-0 top-0 w-100 h-100">
                                 <a class="btn btn-square mx-1" href="https://github.com/notRaihan">
                                     <i class="fa fa-github fa-lg" aria-hidden="true"></i>
@@ -489,7 +489,7 @@
                 <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
                     <div class="team-item">
                         <div class="position-relative overflow-hidden">
-                            <img src="assets/images/team-3.jpg" class="w-100" alt="">
+                            <img src="{{ asset('assets/images/team-soulthan.jpg') }}" class="w-100" alt="">
                             <div class="team-overlay position-absolute start-0 top-0 w-100 h-100">
                                 <a class="btn btn-square mx-1" href="https://github.com/soulthanfb">
                                     <i class="fa fa-github" aria-hidden="true"></i>
@@ -514,7 +514,7 @@
                 <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
                     <div class="team-item">
                         <div class="position-relative overflow-hidden">
-                            <img src="assets/images/team-4.jpg" class="w-100" alt="">
+                            <img src="{{ asset('assets/images/team-iky.jpg') }}" class="w-100" alt="">
                             <div class="team-overlay position-absolute start-0 top-0 w-100 h-100">
                                 <a class="btn btn-square mx-1"
                                     href="https://www.linkedin.com/in/rizki-hidayat-nasution-585425253/">
