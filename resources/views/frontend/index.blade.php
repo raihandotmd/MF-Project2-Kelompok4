@@ -462,7 +462,7 @@
                         </div>
                         <div class="bg-light text-center p-4">
                             <h5 class="fw-bold mb-0">Nabil Robbani</h5>
-                            <small>Designation</small>
+                            <small>Frontend Dev</small>
                         </div>
                     </div>
                 </div>
@@ -482,7 +482,7 @@
                         </div>
                         <div class="bg-light text-center p-4">
                             <h5 class="fw-bold mb-0">Muhammad Raihan</h5>
-                            <small>Designation</small>
+                            <small>Fullstack Dev</small>
                         </div>
                     </div>
                 </div>
@@ -507,7 +507,7 @@
                         </div>
                         <div class="bg-light text-center p-4">
                             <h5 class="fw-bold mb-0">Sulthan</h5>
-                            <small>Designation</small>
+                            <small>Backend Dev</small>
                         </div>
                     </div>
                 </div>
@@ -530,7 +530,7 @@
                         </div>
                         <div class="bg-light text-center p-4">
                             <h5 class="fw-bold mb-0">Iky</h5>
-                            <small>Designation</small>
+                            <small>Backend Dev</small>
                         </div>
                     </div>
                 </div>
