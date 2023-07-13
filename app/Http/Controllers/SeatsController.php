@@ -33,7 +33,7 @@ class SeatsController extends Controller
     {
         $validated = $request->validate([
             'cinema_id' => 'required',
-            'seat_code' => 'required|unique:seats|max:3',
+            'seat_code' => 'required|max:3',
             'seat_status' => 'required',
         ]);
 
