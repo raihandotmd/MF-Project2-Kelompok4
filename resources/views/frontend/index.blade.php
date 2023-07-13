@@ -28,24 +28,22 @@
                     style=" width: 100%;
                     aspect-ratio: 16/9;"></iframe>
                 <div class="player-text two w-auto">
-                    <p class="fexi_header pb-0">Spiderman </p>
+                    <p class="fexi_header pb-0">Spider-Man: Across the Spider-Verse</p>
                     <p class="fexi_header_para mb-4">
-                        Samberg, Jennifer Aniston,Ty
-                        Burrell
-                        EXPENDABLES (2023) - Andy Samberg Movie the company's top
-                        delivery stork,
-                        lands in hot water when the Baby Factory produces an adorable.......
+                        Miles Morales catapults across the Multiverse, where he encounters a team of Spider-People
+                        charged with protecting its very existence. When the heroes clash on how to handle a new threat,
+                        Miles must redefine what it means to be a hero.
                     </p>
                     <p class="fexi_header_para">
                         <span>Release On<label>:</label> </span>
-                        Aug 1,
+                        May 31,
                         2023
                     </p>
                     <p class="fexi_header_para">
                         <span>Genres<label>:</label> </span>
-                        <a href="genre.html">Drama</a> |
-                        <a href="genre.html">Adventure</a> |
-                        <a href="genre.html">Family</a>
+                        <a href="genre.html">Animation</a> |
+                        <a href="genre.html">Action</a> |
+                        <a href="genre.html">Adventure</a>
                     </p>
                     <p class="fexi_header_para fexi_header_para1 d-flex"><span>Star
                             Rating<label>:</label></span>
