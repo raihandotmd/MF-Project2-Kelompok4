@@ -448,14 +448,15 @@
                         <div class="position-relative overflow-hidden">
                             <img src="assets/images/team-1.jpg" class="w-100" alt="">
                             <div class="team-overlay position-absolute start-0 top-0 w-100 h-100">
-                                <a class="btn btn-square mx-1" href="">
-                                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                                <a class="btn btn-square mx-1" href="https://github.com/nabilrobbani84">
+                                    <i class="fa fa-github" aria-hidden="true"></i>
                                 </a>
-                                <a class="btn btn-square mx-1" href="">
+                                <a class="btn btn-square mx-1"
+                                    href="https://www.linkedin.com/in/nabil-robbani-366a30251/">
                                     <i class="fa fa-linkedin" aria-hidden="true"></i>
 
                                 </a>
-                                <a class="btn btn-square mx-1" href="">
+                                <a class="btn btn-square mx-1" href="https://www.instagram.com/billrbbn_/">
                                     <i class="fa fa-instagram" aria-hidden="true"></i>
 
                                 </a>
@@ -492,14 +493,15 @@
                         <div class="position-relative overflow-hidden">
                             <img src="assets/images/team-3.jpg" class="w-100" alt="">
                             <div class="team-overlay position-absolute start-0 top-0 w-100 h-100">
-                                <a class="btn btn-square mx-1" href="">
-                                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                                <a class="btn btn-square mx-1" href="https://github.com/soulthanfb">
+                                    <i class="fa fa-github" aria-hidden="true"></i>
                                 </a>
-                                <a class="btn btn-square mx-1" href="">
+                                <a class="btn btn-square mx-1"
+                                    href="https://www.linkedin.com/in/soulthan-fadhlillah-bagus/">
                                     <i class="fa fa-linkedin" aria-hidden="true"></i>
 
                                 </a>
-                                <a class="btn btn-square mx-1" href="">
+                                <a class="btn btn-square mx-1" href="https://www.instagram.com/soulthanfb/">
                                     <i class="fa fa-instagram" aria-hidden="true"></i>
 
                                 </a>
