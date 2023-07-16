@@ -13,6 +13,7 @@ class CinemasController extends Controller
     public function index()
     {
         $cinemas = Cinemas::all();
+
         return view('admin.cinemas.index', compact('cinemas'));
     }
 
@@ -37,6 +38,7 @@ class CinemasController extends Controller
         if ($cinemas) {
             return redirect()->route('cinemas')->with('success', 'Cinema created successfully');
         }
+
         return back();
     }
 
@@ -46,6 +48,7 @@ class CinemasController extends Controller
     public function edit(string $id)
     {
         $cinema = Cinemas::find($id);
+
         return view('admin.cinemas.form_edit', compact('cinema'));
     }
 
@@ -60,10 +63,11 @@ class CinemasController extends Controller
 
         $cinemas = Cinemas::find($request->idedit);
         $cinemas->update($validated);
-        
+
         if ($cinemas) {
             return redirect()->route('cinemas')->with('success', 'Cinema updated successfully');
         }
+
         return back();
     }
 
@@ -74,6 +78,7 @@ class CinemasController extends Controller
     {
         $cinema = Cinemas::find($id);
         $cinema->delete();
+
         return redirect()->route('cinemas')->with('success', 'Cinema deleted successfully');
     }
 }

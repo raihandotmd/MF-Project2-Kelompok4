@@ -8,12 +8,14 @@ use Illuminate\Database\Eloquent\Model;
 class Role extends Model
 {
     use HasFactory;
-        //panggil tabel
+
+    //panggil tabel
     protected $table = 'users_roles';
+
     public $timestamps = false;
-        //kolom yang bisa diisi
+
+    //kolom yang bisa diisi
     protected $fillable = [
         'name',
     ];
-
 }

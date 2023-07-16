@@ -20,7 +20,7 @@ return new class extends Migration
             )->required();
             $table->string('image', 25)->required();
             $table->string('trailer', 255)->required();
-            $table->string('duration',10)->required();
+            $table->string('duration', 10)->required();
             $table->date('release_date')->required();
             $table->string('director', 255)->required();
             $table->string('cast', 255)->required();

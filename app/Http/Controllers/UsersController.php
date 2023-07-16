@@ -12,12 +12,10 @@ class UsersController extends Controller
     public function index()
     {
         //
-        {
-            $users = User::with('role')->get();
-        
-            return view('admin.users.index', compact('users'));
-        }
+
+        $users = User::with('role')->get();
+
+        return view('admin.users.index', compact('users'));
+
     }
-
-
 }

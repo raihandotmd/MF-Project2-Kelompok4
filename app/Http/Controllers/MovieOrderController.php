@@ -2,8 +2,8 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
 use App\Models\movieOrder;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
 class MovieOrderController extends Controller
@@ -17,9 +17,9 @@ class MovieOrderController extends Controller
             ->join('users', 'movie_order.user_id', '=', 'users.id')
             ->select('movie_order.*', 'users.name as name_movie')
             ->get();
+
         return view('admin.movies_order.index', compact('movies_order'));
     }
-    
 
     /**
      * Show the form for creating a new resource.
@@ -27,9 +27,9 @@ class MovieOrderController extends Controller
     public function create()
     {
         $movies_schedule = DB::table('movie_schedule')->get();
-        $users = DB ::table('users')->get(); 
+        $users = DB::table('users')->get();
 
-        return view ('admin.movies_order.form', compact('users','movies_schedule'));
+        return view('admin.movies_order.form', compact('users', 'movies_schedule'));
     }
 
     /**
@@ -37,7 +37,7 @@ class MovieOrderController extends Controller
      */
     public function store(Request $request, movieOrder $movieOrder)
     {
-        
+
         $validated = $request->validate([
             'movie_schedule' => 'required',
             'user_id' => 'required',
@@ -49,6 +49,7 @@ class MovieOrderController extends Controller
         if ($movieOrder) {
             return redirect()->route('movie_order');
         }
+
         return back();
     }
 
@@ -59,9 +60,9 @@ class MovieOrderController extends Controller
     {
         $movie_order = movieOrder::find($id);
         $movies_schedule = DB::table('movie_schedule')->get();
-        $users = DB ::table('users')->get(); 
+        $users = DB::table('users')->get();
 
-        return view('admin.movies_order.form_edit', compact('movie_order','users','movies_schedule'));
+        return view('admin.movies_order.form_edit', compact('movie_order', 'users', 'movies_schedule'));
     }
 
     /**
@@ -80,6 +81,7 @@ class MovieOrderController extends Controller
         if ($movie_order) {
             return redirect()->route('movie_order');
         }
+
         return back();
     }
 
@@ -90,6 +92,7 @@ class MovieOrderController extends Controller
     {
         $movieOrder = movieOrder::find($id);
         $movieOrder->delete();
+
         return redirect()->route('movie_order')->with('success', 'Data berhasil dihapus');
     }
 }

@@ -4,13 +4,13 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-use App\Models\Movies;
-use App\Models\Cinemas;
 
 class MovieSchedule extends Model
 {
     use HasFactory;
+
     protected $table = 'movie_schedule';
+
     protected $fillable = [
         'movie_id',
         'cinema_id',

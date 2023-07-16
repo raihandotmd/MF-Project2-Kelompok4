@@ -4,12 +4,13 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-use App\Models\MovieGenre;
 
 class Movies extends Model
 {
     use HasFactory;
+
     protected $table = 'movies';
+
     protected $fillable = [
         'code',
         'title',
@@ -26,7 +27,7 @@ class Movies extends Model
         'language',
         'age_limit',
         'created_at',
-        'updated_at'
+        'updated_at',
     ];
 
     public function movie_schedule()
@@ -38,5 +39,4 @@ class Movies extends Model
     {
         return $this->belongsTo(MovieGenre::class);
     }
-    
 }

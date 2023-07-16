@@ -2,9 +2,8 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
-use App\Models\Movies;
 use App\Models\MovieSchedule;
+use Illuminate\Http\Request;
 
 class MoviesFrontendController extends Controller
 {
@@ -38,6 +37,7 @@ class MoviesFrontendController extends Controller
     public function show(string $id)
     {
         $movie = MovieSchedule::find($id);
+
         return view('frontend.single_page.movie_detail', compact('movie'));
     }
 

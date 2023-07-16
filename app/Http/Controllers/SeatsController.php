@@ -2,9 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Cinemas;
 use App\Models\Seats;
 use Illuminate\Http\Request;
-use App\Models\Cinemas;
 
 class SeatsController extends Controller
 {
@@ -14,6 +14,7 @@ class SeatsController extends Controller
     public function index()
     {
         $seats = Seats::all();
+
         return view('admin.seats.index', compact('seats'));
     }
 
@@ -23,6 +24,7 @@ class SeatsController extends Controller
     public function create()
     {
         $cinemas = Cinemas::all();
+
         return view('admin.seats.form', compact('cinemas'));
     }
 
@@ -42,6 +44,7 @@ class SeatsController extends Controller
         if ($seats) {
             return redirect()->route('seats')->with('success', 'Seat created successfully');
         }
+
         return back();
     }
 
@@ -51,9 +54,9 @@ class SeatsController extends Controller
     public function edit(string $id)
     {
 
-        
         $seat = Seats::find($id);
         $cinemas = Cinemas::all();
+
         return view('admin.seats.form_edit', compact('seat', 'cinemas'));
 
     }
@@ -74,6 +77,7 @@ class SeatsController extends Controller
         if ($seat) {
             return redirect()->route('seats')->with('success', 'Seat updated successfully');
         }
+
         return back();
     }
 
@@ -84,6 +88,7 @@ class SeatsController extends Controller
     {
         $seat = Seats::find($id);
         $seat->delete();
+
         return redirect()->route('seats')->with('success', 'Seat deleted successfully');
     }
 }

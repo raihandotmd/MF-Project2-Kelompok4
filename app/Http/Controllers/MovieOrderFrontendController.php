@@ -2,12 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
 use App\Models\Cinemas;
 use App\Models\MovieOrder;
 use App\Models\MovieSchedule;
+use Illuminate\Http\Request;
 use Illuminate\Support\Str;
-use App\Models\Seats;
 
 class MovieOrderFrontendController extends Controller
 {
@@ -40,7 +39,7 @@ class MovieOrderFrontendController extends Controller
 
         $ticketCode = $movieOrder['ticket_code'];
         if ($movieOrder) {
-            return redirect()->route('movie.order.success',)->with('ticketCode', $ticketCode);
+            return redirect()->route('movie.order.success')->with('ticketCode', $ticketCode);
         }
     }
 
@@ -50,19 +49,20 @@ class MovieOrderFrontendController extends Controller
     public function show(string $id, string $cinema_id)
     {
         $cinema = Cinemas::find($cinema_id);
-        $movie = MovieSchedule ::find($id);
+        $movie = MovieSchedule::find($id);
         $seats = $cinema->seats()->get();
+
         return view('frontend.cinema', compact('cinema', 'seats', 'movie'));
     }
 
     public function success(Request $request)
     {
-        if (!$request->session()->has('ticketCode')) {
+        if (! $request->session()->has('ticketCode')) {
             return redirect()->route('frontend');
         }
+
         return view('frontend.success_order');
     }
-
 
     /**
      * Show the form for editing the specified resource.

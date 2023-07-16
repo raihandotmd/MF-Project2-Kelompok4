@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Cinemas;
+use App\Models\Movies;
 use App\Models\MovieSchedule;
 use Illuminate\Http\Request;
-use App\Models\Movies;
-use App\Models\Cinemas;
 
 class MovieScheduleController extends Controller
 {
@@ -15,6 +15,7 @@ class MovieScheduleController extends Controller
     public function index()
     {
         $movies_schedule = MovieSchedule::all();
+
         return view('admin.movie_schedule.index', compact('movies_schedule'));
     }
 
@@ -25,6 +26,7 @@ class MovieScheduleController extends Controller
     {
         $movies = Movies::all();
         $cinemas = Cinemas::all();
+
         return view('admin.movie_schedule.form', compact('movies', 'cinemas'));
     }
 
@@ -45,6 +47,7 @@ class MovieScheduleController extends Controller
         if ($moviesSchedule) {
             return redirect()->route('movie_schedule')->with('success', 'Movie Schedule created successfully');
         }
+
         return redirect()->back();
     }
 
@@ -57,6 +60,7 @@ class MovieScheduleController extends Controller
         $movie_schedule = MovieSchedule::find($id);
         $movies = Movies::all();
         $cinemas = Cinemas::all();
+
         return view('admin.movie_schedule.form_edit', compact('movie_schedule', 'movies', 'cinemas'));
     }
 
@@ -77,6 +81,7 @@ class MovieScheduleController extends Controller
         if ($movieSchedule) {
             return redirect()->route('movie_schedule')->with('success', 'Movie Schedule updated successfully');
         }
+
         return redirect()->back();
     }
 
@@ -87,7 +92,8 @@ class MovieScheduleController extends Controller
     {
         $movie_schedule = MovieSchedule::find($id);
         $movie_schedule->delete();
+
         return redirect()->route('movie_schedule')->with('success', 'Movie Schedule deleted successfully');
-        
+
     }
 }

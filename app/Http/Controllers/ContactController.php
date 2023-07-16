@@ -2,7 +2,6 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Contact;
 use Illuminate\Http\Request;
 
 class ContactController extends Controller
@@ -12,9 +11,9 @@ class ContactController extends Controller
      */
     public function index()
     {
-        $contact = "Ini adalah informasi kontak";
+        $contact = 'Ini adalah informasi kontak';
 
-    return view('frontend.contact', compact('contact'));
+        return view('frontend.contact', compact('contact'));
     }
 
     /**

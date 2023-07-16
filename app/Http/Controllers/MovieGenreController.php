@@ -13,6 +13,7 @@ class MovieGenreController extends Controller
     public function index()
     {
         $movie_genres = MovieGenre::all();
+
         return view('admin.movie_genre.index', compact('movie_genres'));
     }
 
@@ -39,6 +40,7 @@ class MovieGenreController extends Controller
         if ($movieGenre) {
             return redirect()->route('movie_genre')->with('success', 'Movie Genre created successfully');
         }
+
         return back();
     }
 
@@ -48,6 +50,7 @@ class MovieGenreController extends Controller
     public function edit(string $id)
     {
         $movie_genre = MovieGenre::find($id);
+
         return view('admin.movie_genre.form_edit', compact('movie_genre'));
     }
 
@@ -61,11 +64,12 @@ class MovieGenreController extends Controller
 
         ]);
         $movieGenre = MovieGenre::find($request->idedit);
-        
+
         $movieGenre->update($validated);
         if ($movieGenre) {
             return redirect()->route('movie_genre')->with('success', 'Movie Genre updated successfully');
         }
+
         return back();
     }
 
@@ -76,6 +80,7 @@ class MovieGenreController extends Controller
     {
         $movieGenre = MovieGenre::find($id);
         $movieGenre->delete();
+
         return redirect()->route('movie_genre')->with('success', 'Movie Genre deleted successfully');
     }
 }

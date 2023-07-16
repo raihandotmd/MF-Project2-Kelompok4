@@ -3,7 +3,6 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\movieOrder;
 use Illuminate\Support\Facades\DB;
 
 class formOrderController extends Controller
@@ -24,9 +23,9 @@ class formOrderController extends Controller
     {
         //
         $movies_schedule = DB::table('movie_schedule')->get();
-        $users = DB ::table('users')->get(); 
+        $users = DB::table('users')->get();
 
-    return view ('frontend.formOrder', compact('users','movies_schedule'));
+        return view('frontend.formOrder', compact('users', 'movies_schedule'));
     }
 
     /**

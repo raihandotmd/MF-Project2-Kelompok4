@@ -2,9 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\MovieGenre;
 use App\Models\Movies;
 use Illuminate\Http\Request;
-use App\Models\MovieGenre;
 
 class MoviesController extends Controller
 {
@@ -14,6 +14,7 @@ class MoviesController extends Controller
     public function index()
     {
         $movies = Movies::all();
+
         return view('admin.movies.index', compact('movies'));
     }
 
@@ -23,6 +24,7 @@ class MoviesController extends Controller
     public function create()
     {
         $genres = MovieGenre::all();
+
         return view('admin.movies.form', compact('genres'));
     }
 
@@ -53,10 +55,10 @@ class MoviesController extends Controller
         }
         $movies->create($validated);
 
-        
         if ($movies) {
             return redirect()->route('movies')->with('success', 'Movie created successfully');
         }
+
         return back();
     }
 
@@ -67,6 +69,7 @@ class MoviesController extends Controller
     {
         $movie = Movies::find($id);
         $genre = MovieGenre::find($movie->genre_id);
+
         return view('admin.movies.show', compact('movie', 'genre'));
     }
 
@@ -77,6 +80,7 @@ class MoviesController extends Controller
     {
         $movie = Movies::find($id);
         $genres = MovieGenre::all();
+
         return view('admin.movies.form_edit', compact('movie', 'genres'));
     }
 
@@ -103,16 +107,16 @@ class MoviesController extends Controller
 
         $movie = Movies::find($request->idedit);
 
-
         if ($request->hasFile('image')) {
             $validated['image'] = $request->file('image')->store('movies', 'public');
         }
 
         $movie->update($validated);
-        
+
         if ($movie) {
             return redirect()->route('movies')->with('success', 'Movie updated successfully');
         }
+
         return back();
     }
 
@@ -123,6 +127,7 @@ class MoviesController extends Controller
     {
         $movie = Movies::find($id);
         $movie->delete();
+
         return redirect()->route('movies')->with('success', 'Movie deleted successfully');
     }
 }

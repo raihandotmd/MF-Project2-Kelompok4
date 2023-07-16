@@ -2,11 +2,9 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\User;
 use App\Models\UsersRoles;
 use Illuminate\Http\Request;
-Use Illuminate\Support\Facades\DB;
-
+use Illuminate\Support\Facades\DB;
 
 class UsersRolesController extends Controller
 {
@@ -16,8 +14,8 @@ class UsersRolesController extends Controller
     public function index()
     {
 
-        $user_roles = DB:: table ('users_roles')->get();
-     
+        $user_roles = DB::table('users_roles')->get();
+
         //untuk mengarahkan ke file pesana
         return view('admin.users_roles.index', compact('user_roles'));
     }
@@ -44,9 +42,9 @@ class UsersRolesController extends Controller
         if ($user_roles) {
             return redirect()->route('users_roles')->with('success', 'User Role created successfully');
         }
+
         return back();
     }
-
 
     /**
      * Show the form for editing the specified resource.
@@ -55,8 +53,6 @@ class UsersRolesController extends Controller
     {
 
         $user_roles = UsersRoles::find($id);
-
-
 
         return view('admin.users_roles.form_edit', compact('user_roles'));
     }
@@ -71,10 +67,11 @@ class UsersRolesController extends Controller
         ]);
 
         $user_roles = UsersRoles::find($request->idedit);
-        $user_roles ->update($validated);
+        $user_roles->update($validated);
         if ($user_roles) {
             return redirect()->route('users_roles')->with('success', 'User Role updated successfully');
         }
+
         return back();
     }
 
@@ -89,6 +86,7 @@ class UsersRolesController extends Controller
         if ($user_roles) {
             return redirect()->route('users_roles')->with('success', 'User Role deleted successfully');
         }
+
         return back();
     }
 }
