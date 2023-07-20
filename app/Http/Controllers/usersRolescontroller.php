@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\UsersRoles;
+use App\Models\Role as UsersRoles;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
