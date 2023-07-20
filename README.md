@@ -16,3 +16,6 @@ Description: Order Movies Ticket Online
 
 -   Website Structure/Brainstorm [Figma](https://www.figma.com/file/N46jyZrxIVHfsBAUefQSPo/Project-UAS-MoFlix?type=whiteboard&node-id=0%3A1&t=h8SUNckoQTCOW8q0-1)
 -   Project [Progress](https://github.com/users/notRaihan/projects/4)
+
+##### Credits
+- Admin Page [Mazer Dashboard](https://github.com/zuramai/mazer)
