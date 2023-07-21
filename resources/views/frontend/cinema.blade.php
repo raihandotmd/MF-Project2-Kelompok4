@@ -25,12 +25,15 @@
                                     @php
                                         $prevFirstChar = null;
                                     @endphp
+                                    <!-- Sort the seats by seat_code -->
                                     @foreach ($seats->sortBy('seat_code') as $seat)
                                         @php
-                                            $firstChar = substr($seat->seat_code, 0, 1);
+                                            $firstChar = substr($seat->seat_code, 0, 1); // Get the first char of seat_code
                                         @endphp
+                                        <!-- Check if the first char is not the same as the previous char, if true make new div row -->
                                         @if ($firstChar !== $prevFirstChar)
                                             @if (!is_null($prevFirstChar))
+                                                <!-- Close row, but check first if the prev char is not null. this prevent for first iteration loop -->
                                 </div>
                                 @endif
                                 <div class="row justify-content-center">
@@ -40,7 +43,7 @@
                                         {{ $seat->seat_code }}
                                     </div>
                                     @php
-                                        $prevFirstChar = $firstChar;
+                                        $prevFirstChar = $firstChar; // Set the prev char to current char
                                     @endphp
                                     @endforeach
                                 </div>
