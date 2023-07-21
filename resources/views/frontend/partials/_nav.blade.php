@@ -83,6 +83,8 @@
 </header>
 
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
 <script>
     function scrollToMiddle(event) {
         event.preventDefault();
@@ -94,4 +96,11 @@
             behavior: 'smooth'
         });
     }
+
+    $(document).ready(function() {
+        $('.navbar-nav .nav-item').on('click', function() {
+            $('.navbar-nav .nav-item').removeClass('active');
+            $(this).addClass('active');
+        });
+    });
 </script>
